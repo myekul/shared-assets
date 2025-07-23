@@ -38,3 +38,11 @@ function buttonClick(pressed, unpressed, className) {
 function fontAwesome(icon) {
     return `<i class="fa fa-${icon}"></i>`
 }
+function setFooter(text) {
+    fetch('https://myekul.github.io/shared-assets/myekul/footer.html')
+        .then(r => r.text())
+        .then(t => document.querySelector('footer').innerHTML = t)
+        .then(() => {
+            document.getElementById('footerText').innerHTML = text
+        })
+}
