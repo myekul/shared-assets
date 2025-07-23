@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickable {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+
+.clickable:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.clickable:active {
+    opacity: 0.6
+}
