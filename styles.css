@@ -1,3 +1,24 @@
+:root {
+    --cuphead-yellow: #ffcf10;
+    --cuphead-green: #a0e1c0;
+    --dlc-font: #433650;
+    --gray: dimgray;
+    --font: 'cuphead-memphis';
+    --font2: 'cuphead-vogue';
+    --banner: var(--cuphead-yellow);
+    --bannerText: black;
+}
+
+@font-face {
+    font-family: "cuphead-memphis";
+    src: url("fonts/cuphead-memphis.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "cuphead-vogue";
+    src: url("fonts/CupheadVogue-ExtraBold-merged.ttf") format("truetype");
+}
+
 .container {
     display: flex;
     margin: auto;
@@ -19,4 +40,52 @@
 
 .clickable:active {
     opacity: 0.6
+}
+
+.button {
+    width: 140px;
+    height: 22px;
+    font-size: 80%;
+    font-family: var(--font);
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 2px;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex
+}
+
+.button:hover {
+    opacity: 0.8
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+.loader {
+    border: 6px solid dimgray;
+    border-top: 6px solid var(--banner);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.divider {
+    margin: 0 15px;
+    border-left: 2px solid white;
+    height: 35px;
 }

@@ -28,3 +28,13 @@ function hide(elem) {
     }
     elem.style.display = 'none'
 }
+function buttonClick(pressed, unpressed, className) {
+    document.querySelectorAll('#' + unpressed + ' .button').forEach(button => {
+        button.classList.remove(className)
+    })
+    const button = document.getElementById(pressed)
+    button?.classList.add(className)
+}
+function fontAwesome(icon) {
+    return `<i class="fa fa-${icon}"></i>`
+}
