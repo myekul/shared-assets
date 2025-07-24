@@ -6,6 +6,8 @@
     --font2: 'cuphead-vogue';
     --banner: var(--cuphead-yellow);
     --bannerText: black;
+    --background1: #343434;
+    --background2: #3C3C3C;
 }
 
 @font-face {
@@ -22,6 +24,16 @@ body {
     font-family: var(--font);
 }
 
+#bodyContent {
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex
+}
+
+main {
+    flex: 1;
+}
+
 .myekul {
     width: 48px;
     height: auto;
@@ -35,12 +47,57 @@ body {
     padding: 0
 }
 
-/* Footer */
+.background1 {
+    background-color: var(--background1) !important;
+}
+
+.background2 {
+    background-color: var(--background2);
+}
+
+.banner {
+    background-color: var(--banner) !important;
+    color: var(--bannerText) !important
+}
+
+.gray {
+    background-color: var(--gray);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--banner);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--gray);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background1);
+}
+
+/* Banner */
+
+header {
+    background-color: var(--banner);
+    color: var(--bannerText);
+    height: 100px;
+}
 
 footer {
     height: 40px;
     margin-top: 20px;
     padding-bottom: 30px;
+    background-color: var(--banner);
+    color: var(--bannerText);
 }
 
 .footerText {

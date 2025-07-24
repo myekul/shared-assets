@@ -46,3 +46,6 @@ function setFooter(text) {
             document.getElementById('footerText').innerHTML = text
         })
 }
+function getRowColor(index) {
+    return index % 2 == 0 ? 'background2' : 'background1'
+}
