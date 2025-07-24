@@ -1,0 +1,57 @@
+:root {
+    --cuphead-yellow: #ffcf10;
+    --cuphead-green: #a0e1c0;
+    --dlc-font: #433650;
+    --font: 'cuphead-memphis';
+    --font2: 'cuphead-vogue';
+    --banner: var(--cuphead-yellow);
+    --bannerText: black;
+}
+
+@font-face {
+    font-family: "cuphead-memphis";
+    src: url("fonts/cuphead-memphis.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "cuphead-vogue";
+    src: url("fonts/CupheadVogue-ExtraBold-merged.ttf") format("truetype");
+}
+
+body {
+    font-family: var(--font);
+}
+
+.myekul {
+    width: 48px;
+    height: auto;
+    filter: drop-shadow(0.5px 0 0 black)
+        /* Right shadow */
+        drop-shadow(-0.5px 0 0 black)
+        /* Left shadow */
+        drop-shadow(0 0.5px 0 black)
+        /* Bottom shadow */
+        drop-shadow(0 -0.5px 0 black);
+    padding: 0
+}
+
+/* Footer */
+
+footer {
+    height: 40px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.footerText {
+    font-size: 130%;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+footer img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    padding: 5px
+}

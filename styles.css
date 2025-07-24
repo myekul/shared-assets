@@ -1,22 +1,15 @@
 :root {
-    --cuphead-yellow: #ffcf10;
-    --cuphead-green: #a0e1c0;
-    --dlc-font: #433650;
     --gray: dimgray;
-    --font: 'cuphead-memphis';
-    --font2: 'cuphead-vogue';
-    --banner: var(--cuphead-yellow);
-    --bannerText: black;
 }
 
-@font-face {
-    font-family: "cuphead-memphis";
-    src: url("fonts/cuphead-memphis.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "cuphead-vogue";
-    src: url("fonts/CupheadVogue-ExtraBold-merged.ttf") format("truetype");
+body {
+    font-family: var(--font);
+    font-size: 17px;
+    color: white;
+    margin: 0;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .container {
