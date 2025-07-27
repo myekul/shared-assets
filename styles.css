@@ -45,16 +45,19 @@ body {
     cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.grow:hover {
     transform: scale(1.08);
 }
 
-.button:active {
+.button:active,
+.grow:active {
     transform: scale(0.95);
 }
 
 .clickable:active,
-.button:active {
+.button:active,
+.grow:active {
     opacity: 0.6;
 }
 
