@@ -28,8 +28,6 @@ body {
     width: 140px;
     height: 22px;
     font-size: 80%;
-    font-family: var(--font);
-    cursor: pointer;
     border-radius: 15px;
     margin: 2px;
     background-color: white;
@@ -37,6 +35,10 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.button,
+.grow {
     transition: transform 0.1s ease
 }
 
@@ -48,6 +50,7 @@ body {
 .button:hover,
 .grow:hover {
     transform: scale(1.08);
+    cursor: pointer
 }
 
 .button:active,
