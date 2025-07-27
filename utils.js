@@ -57,3 +57,6 @@ function setFooter(text) {
 function getRowColor(index) {
     return index % 2 == 0 ? 'background2' : 'background1'
 }
+function myekulColor(content) {
+    return `<span class='myekulColor'>${content}</span>`
+}

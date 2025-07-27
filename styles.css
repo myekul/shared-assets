@@ -4,11 +4,15 @@
 
 body {
     font-size: 17px;
-    color: white;
     margin: 0;
     overscroll-behavior: none;
     overflow-x: hidden;
     overflow-y: scroll;
+    background: repeating-linear-gradient(45deg,
+            var(--background1),
+            var(--background1) 10px,
+            var(--background2) 10px,
+            var(--background2) 20px);
 }
 
 .container {
@@ -25,15 +29,6 @@ body {
     -moz-user-select: none;
 }
 
-.clickable:hover {
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.clickable:active {
-    opacity: 0.6
-}
-
 .button {
     width: 140px;
     height: 22px;
@@ -46,13 +41,24 @@ body {
     color: black;
     justify-content: center;
     align-items: center;
-    display: flex
+    display: flex;
+    transition: transform 0.1s ease
+}
+
+.clickable:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .button:hover {
-    opacity: 0.8
+    transform: scale(1.08);
 }
 
+.button:active {
+    transform: scale(0.95);
+}
+
+.clickable:active,
 .button:active {
     opacity: 0.6;
 }

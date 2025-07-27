@@ -22,6 +22,7 @@
 
 body {
     font-family: var(--font);
+    color: white
 }
 
 #bodyContent {
@@ -32,6 +33,14 @@ body {
 
 main {
     flex: 1;
+}
+
+select {
+    font-family: var(--font);
+    border-radius: 15px;
+    padding: 0 3px;
+    margin: 0 3px;
+    color: black
 }
 
 .myekul {
@@ -45,6 +54,11 @@ main {
         /* Bottom shadow */
         drop-shadow(0 -0.5px 0 black);
     padding: 0
+}
+
+.myekulColor {
+    color: #F0C03E;
+    white-space: nowrap;
 }
 
 .background1 {
@@ -62,6 +76,11 @@ main {
 
 .gray {
     background-color: var(--gray);
+}
+
+input {
+    font-family: var(--font);
+    accent-color: var(--banner)
 }
 
 /* Scrollbar */
