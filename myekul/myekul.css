@@ -1,13 +1,14 @@
 :root {
-    --cuphead-yellow: #ffcf10;
-    --cuphead-green: #a0e1c0;
+    --cuphead: #ffcf10;
+    --cupheadDLC: #a0e1c0;
     --dlc-font: #433650;
     --font: 'cuphead-memphis';
     --font2: 'cuphead-vogue';
-    --banner: var(--cuphead-yellow);
+    --banner: var(--cuphead);
     --bannerText: black;
     --background1: #343434;
     --background2: #3C3C3C;
+    --monkey: #63b5a9
 }
 
 @font-face {
@@ -22,7 +23,12 @@
 
 body {
     font-family: var(--font);
-    color: white
+    color: white;
+    background: repeating-linear-gradient(45deg,
+            var(--background1),
+            var(--background1) 10px,
+            var(--background2) 10px,
+            var(--background2) 20px);
 }
 
 #bodyContent {
@@ -41,6 +47,11 @@ select {
     padding: 0 3px;
     margin: 0 3px;
     color: black
+}
+
+a {
+    text-decoration: none;
+    color: inherit
 }
 
 .myekul {
@@ -81,6 +92,15 @@ select {
 input {
     font-family: var(--font);
     accent-color: var(--banner)
+}
+
+.cuphead {
+    background-color: var(--cuphead) !important;
+    color: black
+}
+
+.monkey {
+    background-color: var(--monkey);
 }
 
 /* Scrollbar */

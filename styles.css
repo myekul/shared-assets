@@ -8,11 +8,6 @@ body {
     overscroll-behavior: none;
     overflow-x: hidden;
     overflow-y: scroll;
-    background: repeating-linear-gradient(45deg,
-            var(--background1),
-            var(--background1) 10px,
-            var(--background2) 10px,
-            var(--background2) 20px);
 }
 
 .container {
