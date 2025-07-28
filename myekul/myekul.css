@@ -21,6 +21,11 @@
     src: url("fonts/CupheadVogue-ExtraBold-merged.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "FOT";
+    src: url("fonts/FOT-RodinHimawariProUB.otf") format("opentype");
+}
+
 body {
     font-family: var(--font);
     color: white;
