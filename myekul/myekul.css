@@ -18,7 +18,12 @@
 
 @font-face {
     font-family: "cuphead-vogue";
-    src: url("fonts/CupheadVogue-ExtraBold-merged.ttf") format("truetype");
+    src: url("fonts/cuphead-vogue.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "cuphead-felix";
+    src: url("fonts/cuphead-felix.ttf") format("truetype");
 }
 
 @font-face {
