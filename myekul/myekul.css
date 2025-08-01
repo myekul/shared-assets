@@ -113,6 +113,21 @@ input {
     background-color: var(--monkey);
 }
 
+.first {
+    background-color: var(--cuphead) !important;
+    color: black
+}
+
+.second {
+    background-color: silver !important;
+    color: black
+}
+
+.third {
+    background-color: darkorange !important;
+    color: black
+}
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {

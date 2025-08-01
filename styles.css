@@ -64,6 +64,32 @@ body {
     opacity: 0.6;
 }
 
+.active {
+    border: 4px solid white
+}
+
+.activeBanner {
+    color: var(--bannerText);
+    background-color: var(--banner) !important;
+}
+
+.selected {
+    background-color: white !important;
+    color: black !important;
+}
+
+.active:hover,
+.active:active,
+.activeBanner:hover,
+.activeBanner:active,
+.selected:hover,
+.selected:active {
+    opacity: 1 !important;
+    cursor: default !important;
+    transition: none !important;
+    transform: none !important;
+}
+
 .loader {
     border: 6px solid dimgray;
     border-top: 6px solid var(--banner);
