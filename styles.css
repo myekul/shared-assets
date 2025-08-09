@@ -203,7 +203,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: display 5s;
-    display: none
 }
 
 #modal-close {

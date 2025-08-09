@@ -73,7 +73,7 @@ function openModal(body, title, subtitle) {
     const modalContent = document.getElementById('modal-content')
     modalContent.style.animation = 'modalUp 0.25s ease-out forwards';
     document.addEventListener('keydown', function (event) {
-        if (event.key == 'Escape' && showModal) {
+        if (event.key == 'Escape') {
             closeModal()
         }
     });
@@ -86,6 +86,12 @@ function closeModal() {
     setTimeout(() => {
         hide(modal)
     }, 200);
+}
+window.onclick = function (event) {
+    const modal = document.getElementById("modal");
+    if (event.target == modal) {
+        closeModal()
+    }
 }
 fetch('https://myekul.github.io/shared-assets/modal.html')
     .then(r => r.text())
