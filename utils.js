@@ -60,3 +60,33 @@ function getRowColor(index) {
 function myekulColor(content) {
     return `<span class='myekulColor'>${content}</span>`
 }
+// Modal
+function openModal(body, title, subtitle) {
+    if (title) {
+        document.getElementById('modal-title').innerHTML = title
+    }
+    document.getElementById('modal-subtitle').innerHTML = subtitle ? subtitle : ''
+    document.getElementById('modal-body').innerHTML = body
+    const modal = document.getElementById("modal");
+    modal.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
+    modal.style.display = "block";
+    const modalContent = document.getElementById('modal-content')
+    modalContent.style.animation = 'modalUp 0.25s ease-out forwards';
+    document.addEventListener('keydown', function (event) {
+        if (event.key == 'Escape' && showModal) {
+            closeModal()
+        }
+    });
+}
+function closeModal() {
+    const modal = document.getElementById("modal");
+    modal.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+    const modalContent = document.getElementById('modal-content')
+    modalContent.style.animation = 'modalDown 0.25s ease-out forwards';
+    setTimeout(() => {
+        hide(modal)
+    }, 200);
+}
+fetch('https://myekul.github.io/shared-assets/modal.html')
+    .then(r => r.text())
+    .then(t => document.getElementById('modal').innerHTML = t)
