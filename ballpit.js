@@ -1,8 +1,4 @@
-import * as Matter from "https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js";
-
-const { Engine, Runner, Bodies, World, Events, Mouse, MouseConstraint } = Matter;
-
-export function ballpitEngine() {
+function ballpitEngine() {
     const elements = document.querySelectorAll('.ball, .square');
     elements.forEach(el => {
         el.ondragstart = e => {
@@ -10,6 +6,8 @@ export function ballpitEngine() {
             return false;
         };
     });
+    // Matter.js aliases
+    const { Engine, Runner, Bodies, World, Events, Mouse, MouseConstraint } = Matter;
 
     // Create engine & world
     const engine = Engine.create();
