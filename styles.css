@@ -219,3 +219,16 @@ body {
 .modalBoardTitle span {
     font-size: 150%
 }
+
+/* Ballpit */
+
+.ball,
+.square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    cursor: grab;
+    user-select: none;
+    z-index: 2
+}
