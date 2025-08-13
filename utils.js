@@ -60,6 +60,19 @@ function getRowColor(index) {
 function myekulColor(content) {
     return `<span class='myekulColor'>${content}</span>`
 }
+function convertToObjects(data) {
+    const headers = data[0]; // First row of the dataset is data keys
+    const rows = data.slice(1);
+    const objects = [];
+    rows.forEach(row => {
+        let rowData = {};
+        headers.forEach((header, index) => {
+            rowData[header] = row[index];
+        });
+        objects.push(rowData);
+    });
+    return objects;
+}
 // Modal
 function openModal(body, title, subtitle) {
     if (title) {
