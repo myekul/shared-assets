@@ -104,3 +104,10 @@ function ballpitEngine(elemSize = 100, floorOffset = -40) {
         }
     });
 }
+function ballpitRefresh() {
+    return `<div class="container">
+        <div class="button" style='border-radius:50%;width:40px;height:40px;font-size:150%;margin-top:10px' onclick="action()">
+        ${fontAwesome('refresh')}
+        </div>
+    </div>`
+}
