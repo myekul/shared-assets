@@ -1,6 +1,8 @@
-function ballpitEngine() {
+function ballpitEngine(elemSize = 100, floorOffset = -40) {
     const elements = document.querySelectorAll('.ball, .square');
     elements.forEach(el => {
+        el.style.width = elemSize
+        el.style.height = elemSize
         el.ondragstart = e => {
             e.preventDefault();
             return false;
@@ -21,7 +23,7 @@ function ballpitEngine() {
 
     // Create invisible walls
     const walls = [
-        Bodies.rectangle(width / 2, height - 40, width, 50, { isStatic: true }), // floor
+        Bodies.rectangle(width / 2, height + floorOffset, width, 50, { isStatic: true }), // floor
         Bodies.rectangle(width / 2, -25, width, 50, { isStatic: true }),         // ceiling
         Bodies.rectangle(-25, height / 2, 50, height, { isStatic: true }),       // left wall
         Bodies.rectangle(width + 25, height / 2, 50, height, { isStatic: true }) // right wall
@@ -30,8 +32,8 @@ function ballpitEngine() {
 
     // Create bodies for each DOM element
     const bodies = [];
-    const radius = 50;
-    const squareSize = 100;
+    const squareSize = elemSize;
+    const radius = elemSize / 2;
     const spawnX = width / 2;
     const spawnY = height / 2;
     const jitter = 5; // max random offset in pixels
