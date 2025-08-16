@@ -143,8 +143,8 @@ function loadClient(now) {
 async function fetchData() {
     try {
         const response = await gapi.client.sheets.spreadsheets.values.get({
-            sheetid,
-            range,
+            spreadsheetId: sheetId,
+            range: range,
         });
         processData(response.result.values)
     } catch (err) {
