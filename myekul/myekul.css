@@ -31,6 +31,11 @@
     src: url("fonts/FOT-RodinHimawariProUB.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "pikmin";
+    src: url("fonts/pikmin.ttf") format("truetype");
+}
+
 body {
     font-family: var(--font);
     color: white;

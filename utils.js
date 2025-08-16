@@ -38,13 +38,14 @@ function buttonClick(pressed, unpressed, className) {
 function fontAwesome(icon) {
     return `<i class="fa fa-${icon}"></i>`
 }
-function setTitle(text) {
-    fetch('https://myekul.github.io/shared-assets/myekul/title.html')
-        .then(r => r.text())
-        .then(t => document.getElementById('title').innerHTML = t)
-        .then(() => {
-            document.getElementById('titleText').innerHTML = text
-        })
+async function setHTML(src, elem) {
+    const r = await fetch(src);
+    const t = await r.text();
+    document.getElementById(elem).innerHTML = t;
+}
+async function setTitle(text) {
+    await setHTML('https://myekul.github.io/shared-assets/myekul/title.html', 'title')
+    document.getElementById('titleText').innerHTML = text
 }
 function setFooter(text) {
     fetch('https://myekul.github.io/shared-assets/myekul/footer.html')
@@ -108,4 +109,9 @@ window.onclick = function (event) {
 }
 fetch('https://myekul.github.io/shared-assets/modal.html')
     .then(r => r.text())
-    .then(t => document.getElementById('modal').innerHTML = t)
+    .then(t => {
+        const modal = document.createElement('div');
+        modal.id = 'modal';
+        modal.innerHTML = t;
+        document.body.appendChild(modal);
+    });
