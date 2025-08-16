@@ -115,3 +115,15 @@ fetch('https://myekul.github.io/shared-assets/modal.html')
         modal.innerHTML = t;
         document.body.appendChild(modal);
     });
+async function setTabs(tabs) {
+    await setHTML('https://myekul.github.io/shared-assets/tabsDiv.html', 'tabsDiv')
+    let HTMLContent = ''
+    tabs.forEach(pageName => {
+        if (pageName) {
+            HTMLContent += `<div id='${pageName}Button' class='button' onclick="showTab(${pageName})">${fontAwesome(fontAwesomeSet[pageName][1])}</div>`
+        } else {
+            HTMLContent += `<div class='dot'></div>`
+        }
+    })
+    document.getElementById('tabs').innerHTML = HTMLContent
+}
