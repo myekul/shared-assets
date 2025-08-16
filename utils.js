@@ -127,3 +127,25 @@ async function setTabs(tabs) {
     })
     document.getElementById('tabs').innerHTML = HTMLContent
 }
+function loadClient() {
+    gapi.client.setApiKey('AIzaSyBFOYjIw9IrbPirN1ov4zkVBTFOOCX1l8w');
+    gapi.client.load('https://sheets.googleapis.com/$discovery/rest?version=v4')
+        .then(() => {
+            console.log("GAPI client loaded for API");
+        })
+        .catch(error => {
+            console.error("Error loading GAPI client: ", error);
+        });
+}
+async function fetchData(sheetid, range) {
+    try {
+        const response = await gapi.client.sheets.spreadsheets.values.get({
+            sheetid,
+            range,
+        });
+        return response;
+    } catch (err) {
+        console.error(err);
+        throw err;
+    }
+}

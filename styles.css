@@ -133,6 +133,11 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.headerRow {
+    padding: 5px 0;
+    background-color: var(--background2)
+}
+
 #tabsDiv {
     height: 30px;
     margin-bottom: 20px
@@ -141,6 +146,11 @@ body {
 #tabs .button {
     width: 40px;
     font-size: 110%
+}
+
+.progress {
+    height: 5px;
+    background-color: var(--banner);
 }
 
 /* Modal */
