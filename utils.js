@@ -120,7 +120,7 @@ async function setTabs(tabs) {
     let HTMLContent = ''
     tabs.forEach(pageName => {
         if (pageName) {
-            HTMLContent += `<div id='${pageName}Button' class='button' onclick="showTab(${pageName})">${fontAwesome(fontAwesomeSet[pageName][1])}</div>`
+            HTMLContent += `<div id='${pageName}Button' class='button' onclick="showTab('${pageName}')">${fontAwesome(fontAwesomeSet[pageName][1])}</div>`
         } else {
             HTMLContent += `<div class='dot'></div>`
         }
