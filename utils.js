@@ -107,14 +107,21 @@ window.onclick = function (event) {
         closeModal()
     }
 }
-fetch('https://myekul.github.io/shared-assets/modal.html')
-    .then(r => r.text())
-    .then(t => {
-        const modal = document.createElement('div');
-        modal.id = 'modal';
-        modal.innerHTML = t;
-        document.body.appendChild(modal);
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('https://myekul.github.io/shared-assets/modal.html')
+        .then(r => r.text())
+        .then(t => {
+            const modal = document.createElement('div');
+            modal.id = 'modal';
+            modal.innerHTML = t;
+            document.body.appendChild(modal);
+        })
+})
+function showTab(tab) {
+    globalTab = tab
+    buttonClick(globalTab + 'Button', 'tabs', 'activeBanner')
+    action()
+}
 async function setTabs(tabs) {
     await setHTML('https://myekul.github.io/shared-assets/tabsDiv.html', 'tabsDiv')
     let HTMLContent = ''
