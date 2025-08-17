@@ -117,9 +117,14 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.appendChild(modal);
         })
 })
+function initializeHash(tab) {
+    const hash = window.location.hash
+    window.globalTab = hash ? hash.slice(1) : tab
+}
 function showTab(tab) {
     globalTab = tab
     buttonClick(globalTab + 'Button', 'tabs', 'activeBanner')
+    window.history.pushState(null, null, '#' + tab);
     action()
 }
 async function setTabs(tabs) {
