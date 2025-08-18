@@ -3,10 +3,11 @@ function ballpitEngine(elemSize = 100, floorOffset = -40) {
     elements.forEach(el => {
         el.style.width = elemSize
         el.style.height = elemSize
-        el.ondragstart = e => {
+        el.addEventListener("dragstart", e => {
             e.preventDefault();
             return false;
-        };
+        }, { passive: false });
+
     });
     // Matter.js aliases
     const { Engine, Runner, Bodies, World, Events, Mouse, MouseConstraint } = Matter;
@@ -32,26 +33,26 @@ function ballpitEngine(elemSize = 100, floorOffset = -40) {
 
     // Create bodies for each DOM element
     const bodies = [];
-    const squareSize = elemSize;
-    const radius = elemSize / 2;
     const spawnX = width / 2;
     const spawnY = height / 2;
     const jitter = 5; // max random offset in pixels
 
     document.querySelectorAll(".ball").forEach(el => {
+        const size = parseInt(el.dataset.size) / 2 || elemSize / 2;
         const offsetX = (Math.random() * 2 - 1) * jitter;
         const offsetY = (Math.random() * 2 - 1) * jitter;
 
-        let body = Bodies.circle(spawnX + offsetX, spawnY + offsetY, radius, { restitution: 0.7 });
+        let body = Bodies.circle(spawnX + offsetX, spawnY + offsetY, size, { restitution: 0.7 });
         World.add(world, body);
         bodies.push({ el, body, shape: "circle" });
     });
 
     document.querySelectorAll(".square").forEach(el => {
+        const size = parseInt(el.dataset.size) || elemSize;
         const offsetX = (Math.random() * 2 - 1) * jitter;
         const offsetY = (Math.random() * 2 - 1) * jitter;
 
-        let body = Bodies.rectangle(spawnX + offsetX, spawnY + offsetY, squareSize, squareSize, { restitution: 0.7 });
+        let body = Bodies.rectangle(spawnX + offsetX, spawnY + offsetY, size, size, { restitution: 0.7 });
         World.add(world, body);
         bodies.push({ el, body, shape: "square" });
     });
@@ -76,7 +77,7 @@ function ballpitEngine(elemSize = 100, floorOffset = -40) {
     //     });
     // });
     Events.on(engine, "afterUpdate", () => {
-        const boundsPadding = Math.max(radius, squareSize / 2) + 10;
+        const boundsPadding = elemSize + 10;
 
         for (let i = bodies.length - 1; i >= 0; i--) {
             const { el, body, shape } = bodies[i];
@@ -93,11 +94,11 @@ function ballpitEngine(elemSize = 100, floorOffset = -40) {
                 bodies.splice(i, 1);
             } else {
                 if (shape === "circle") {
-                    el.style.left = x - radius + "px";
-                    el.style.top = y - radius + "px";
+                    el.style.left = x - elemSize / 2 + "px";
+                    el.style.top = y - elemSize / 2 + "px";
                 } else if (shape === "square") {
-                    el.style.left = x - squareSize / 2 + "px";
-                    el.style.top = y - squareSize / 2 + "px";
+                    el.style.left = x - elemSize / 2 + "px";
+                    el.style.top = y - elemSize / 2 + "px";
                 }
                 el.style.transform = `rotate(${body.angle}rad)`;
             }
