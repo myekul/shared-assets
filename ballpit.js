@@ -44,7 +44,7 @@ function ballpitEngine(elemSize = 100, floorOffset = -40) {
 
         let body = Bodies.circle(spawnX + offsetX, spawnY + offsetY, size, { restitution: 0.7 });
         World.add(world, body);
-        bodies.push({ el, body, shape: "circle" });
+        bodies.push({ el, body, shape: "circle", size });
     });
 
     document.querySelectorAll(".square").forEach(el => {
@@ -54,7 +54,7 @@ function ballpitEngine(elemSize = 100, floorOffset = -40) {
 
         let body = Bodies.rectangle(spawnX + offsetX, spawnY + offsetY, size, size, { restitution: 0.7 });
         World.add(world, body);
-        bodies.push({ el, body, shape: "square" });
+        bodies.push({ el, body, shape: "square", size });
     });
 
     // Add mouse constraint
@@ -77,12 +77,12 @@ function ballpitEngine(elemSize = 100, floorOffset = -40) {
     //     });
     // });
     Events.on(engine, "afterUpdate", () => {
-        const boundsPadding = elemSize + 10;
 
         for (let i = bodies.length - 1; i >= 0; i--) {
-            const { el, body, shape } = bodies[i];
+            const { el, body, shape, size } = bodies[i];
             const { x, y } = body.position;
 
+            const boundsPadding = size + 10;
             if (
                 x < -boundsPadding ||
                 x > width + boundsPadding ||
@@ -94,11 +94,11 @@ function ballpitEngine(elemSize = 100, floorOffset = -40) {
                 bodies.splice(i, 1);
             } else {
                 if (shape === "circle") {
-                    el.style.left = x - elemSize / 2 + "px";
-                    el.style.top = y - elemSize / 2 + "px";
+                    el.style.left = x - size + "px";
+                    el.style.top = y - size + "px";
                 } else if (shape === "square") {
-                    el.style.left = x - elemSize / 2 + "px";
-                    el.style.top = y - elemSize / 2 + "px";
+                    el.style.left = x - size / 2 + "px";
+                    el.style.top = y - size / 2 + "px";
                 }
                 el.style.transform = `rotate(${body.angle}rad)`;
             }
