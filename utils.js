@@ -164,3 +164,10 @@ async function fetchData() {
         throw err;
     }
 }
+function boardTitleWrapper(content) {
+    if (content) return `<div><table class='boardTitleTable'><tr>${content}</tr></table></div>`
+    return ''
+}
+function boardTitleCell(className, content) {
+    return `<td class='${className}' style='height:32px;padding:0 5px'>${content}</td>`
+}

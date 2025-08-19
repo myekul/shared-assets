@@ -153,6 +153,13 @@ body {
     background-color: var(--banner);
 }
 
+.boardTitleTable {
+    border: 3px solid var(--banner);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 110%
+}
+
 /* Modal */
 
 #modal {
