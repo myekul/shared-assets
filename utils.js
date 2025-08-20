@@ -55,6 +55,10 @@ function setFooter(text) {
             document.getElementById('footerText').innerHTML = text
         })
 }
+async function setSidebar(content) {
+    await setHTML('https://myekul.github.io/shared-assets/sidebarDiv.html', 'sidebarDiv')
+    document.getElementById('sidebar').innerHTML = content
+}
 function getRowColor(index) {
     return index % 2 == 0 ? 'background2' : 'background1'
 }
@@ -170,4 +174,16 @@ function boardTitleWrapper(content) {
 }
 function boardTitleCell(className, content) {
     return `<td class='${className}' style='height:32px;padding:0 5px'>${content}</td>`
+}
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar')
+    if (sidebar.style.display == '') {
+        sidebar.classList.add('hidden')
+        setTimeout(() => {
+            hide(sidebar)
+        }, 200);
+    } else {
+        sidebar.classList.remove('hidden')
+        show(sidebar)
+    }
 }
