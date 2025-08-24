@@ -167,5 +167,5 @@ bosses.forEach(boss => {
 async function setCupheadProjects() {
     const r = await fetch('https://myekul.github.io/shared-assets/cuphead/projects.html');
     const t = await r.text();
-    document.querySelector('header').innerHTML += t
+    document.querySelector('header').insertAdjacentHTML("afterbegin", t)
 }
