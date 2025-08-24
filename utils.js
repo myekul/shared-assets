@@ -69,13 +69,13 @@ function setResources() {
 function fontAwesome(icon) {
     return `<i class="fa fa-${icon}"></i>`
 }
+function fontAwesomeText(icon, text) {
+    return `<div class='font2 container' style='gap:12px;font-size:200%'>${fontAwesome(icon)}${text}</div>`
+}
 function setPageTitle(icon, text) {
     const pageTitle = document.getElementById('pageTitle')
-    pageTitle.classList.add('font2')
-    pageTitle.classList.add('container')
-    pageTitle.style.fontSize = '200%'
     pageTitle.style.padding = '15px 0'
-    pageTitle.innerText = fontAwesome(icon) + `&nbsp;&nbsp;` + text
+    pageTitle.innerText = fontAwesomeText(icon, text)
 }
 function getRowColor(index) {
     return index % 2 == 0 ? 'background2' : 'background1'
