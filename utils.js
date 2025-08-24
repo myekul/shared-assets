@@ -35,9 +35,6 @@ function buttonClick(pressed, unpressed, className) {
     const button = document.getElementById(pressed)
     button?.classList.add(className)
 }
-function fontAwesome(icon) {
-    return `<i class="fa fa-${icon}"></i>`
-}
 async function setHTML(src, elem) {
     const r = await fetch(src);
     const t = await r.text();
@@ -69,6 +66,17 @@ function setResources() {
     resources.classList.add('container')
     resources.style.gap = '60px'
 }
+function fontAwesome(icon) {
+    return `<i class="fa fa-${icon}"></i>`
+}
+function setPageTitle(icon, text) {
+    const pageTitle = document.getElementById('pageTitle')
+    pageTitle.classList.add('font2')
+    pageTitle.classList.add('container')
+    pageTitle.style.fontSize = '200%'
+    pageTitle.style.padding = '15px 0'
+    pageTitle.innerText = fontAwesome(icon) + `&nbsp;&nbsp;` + text
+}
 function getRowColor(index) {
     return index % 2 == 0 ? 'background2' : 'background1'
 }
@@ -87,6 +95,9 @@ function convertToObjects(data) {
         objects.push(rowData);
     });
     return objects;
+}
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 // Modal
 function openModal(body, title, subtitle) {
