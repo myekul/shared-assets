@@ -65,6 +65,9 @@ function setResources() {
         elem.classList.add('container')
         elem.style.gap = '10px'
     })
+    const resources = document.getElementById('resources')
+    resources.classList.add('container')
+    resources.style.gap = '60px'
 }
 function getRowColor(index) {
     return index % 2 == 0 ? 'background2' : 'background1'

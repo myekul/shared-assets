@@ -347,6 +347,7 @@ body {
     max-width: 340px;
     font-size: 14px;
     padding: 10px 0;
+    margin: 0;
     margin-bottom: 10px;
     color: darkgray;
 }
