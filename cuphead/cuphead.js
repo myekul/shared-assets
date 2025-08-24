@@ -168,4 +168,7 @@ async function setCupheadProjects() {
     const r = await fetch('https://myekul.github.io/shared-assets/cuphead/projects.html');
     const t = await r.text();
     document.querySelector('header').insertAdjacentHTML("afterbegin", t)
+    document.querySelectorAll('#cupheadProjects a').forEach(elem => {
+        elem.classList.add('container')
+    })
 }
