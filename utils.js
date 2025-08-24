@@ -59,6 +59,13 @@ async function setSidebar(content) {
     await setHTML('https://myekul.github.io/shared-assets/sidebarDiv.html', 'sidebarDiv')
     document.getElementById('sidebar').innerHTML = content
 }
+function setResources() {
+    document.querySelectorAll('#resources > div > div > a').forEach(elem => {
+        elem.classList.add('button')
+        elem.classList.add('container')
+        elem.style.gap = '10px'
+    })
+}
 function getRowColor(index) {
     return index % 2 == 0 ? 'background2' : 'background1'
 }

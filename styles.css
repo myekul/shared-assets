@@ -332,3 +332,20 @@ body {
         transform: translateX(-150%);
     }
 }
+
+/* Resources */
+
+#resources > div > div > a {
+    width: 330px;
+    height: 60px;
+    border-radius: 40px;
+    font-size: 130%;
+}
+
+#resources > div > div > span {
+    white-space: normal;
+    max-width: 330px;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-bottom: 10px
+}
