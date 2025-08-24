@@ -73,7 +73,7 @@ function fontAwesomeText(icon, text) {
     return `<div class='font2 container' style='gap:12px;font-size:200%;padding:15px 0'>${fontAwesome(icon)}${text}</div>`
 }
 function setPageTitle(icon, text) {
-    document.getElementById('pageTitle').innerText = fontAwesomeText(icon, text)
+    document.getElementById('pageTitle').innerHTML = fontAwesomeText(icon, text)
 }
 function getRowColor(index) {
     return index % 2 == 0 ? 'background2' : 'background1'
@@ -105,6 +105,22 @@ function getColorFromClass(className, textColor) {
     const color = getComputedStyle(tempEl)[field];
     document.body.removeChild(tempEl);
     return color;
+}
+// Sounds
+function playSound(sfx) {
+    const sound = document.getElementById(sfx)
+    if (sound) {
+        sound.currentTime = 0
+        sound.volume = 0.2
+        sound.play()
+    }
+}
+function stopSound(sfx) {
+    const sound = document.getElementById(sfx)
+    if (sound) {
+        sound.pause()
+        sound.currentTime = 0
+    }
 }
 // Modal
 function openModal(body, title, subtitle) {
