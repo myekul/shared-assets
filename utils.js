@@ -97,6 +97,15 @@ function convertToObjects(data) {
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+function getColorFromClass(className, textColor) {
+    const field = textColor ? 'color' : 'backgroundColor'
+    const tempEl = document.createElement('div');
+    tempEl.className = className;
+    document.body.appendChild(tempEl);
+    const color = getComputedStyle(tempEl)[field];
+    document.body.removeChild(tempEl);
+    return color;
+}
 // Modal
 function openModal(body, title, subtitle) {
     if (title) {
