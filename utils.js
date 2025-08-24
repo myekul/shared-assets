@@ -70,12 +70,10 @@ function fontAwesome(icon) {
     return `<i class="fa fa-${icon}"></i>`
 }
 function fontAwesomeText(icon, text) {
-    return `<div class='font2 container' style='gap:12px;font-size:200%'>${fontAwesome(icon)}${text}</div>`
+    return `<div class='font2 container' style='gap:12px;font-size:200%;padding:15px 0'>${fontAwesome(icon)}${text}</div>`
 }
 function setPageTitle(icon, text) {
-    const pageTitle = document.getElementById('pageTitle')
-    pageTitle.style.padding = '15px 0'
-    pageTitle.innerText = fontAwesomeText(icon, text)
+    document.getElementById('pageTitle').innerText = fontAwesomeText(icon, text)
 }
 function getRowColor(index) {
     return index % 2 == 0 ? 'background2' : 'background1'

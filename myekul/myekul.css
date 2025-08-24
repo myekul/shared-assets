@@ -8,7 +8,6 @@
     --bannerText: black;
     --background1: #343434;
     --background2: #3C3C3C;
-    --monkey: #63b5a9
 }
 
 @font-face {
@@ -116,10 +115,6 @@ input {
 .cuphead {
     background-color: var(--cuphead) !important;
     color: black
-}
-
-.monkey {
-    background-color: var(--monkey);
 }
 
 .first {

@@ -9,7 +9,7 @@
 }
 
 .nmg {
-    background-color: lightcoral;
+    background-color: salmon;
     color: black
 }
 
@@ -180,4 +180,29 @@
 .chefsaltbaker {
     background-color: lightgray;
     color: black
+}
+
+/* Other */
+
+.monkey {
+    background-color: #63b5a9
+}
+
+#cupheadProjects a {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-top: 30px;
+    padding-bottom: 7px;
+    width: 50px;
+    transform: translateY(-20px);
+    transition: transform 0.1s cubic-bezier(.4,0,.2,1);
+}
+
+#cupheadProjects a:hover {
+    transform: scale(1.3);
+}
+
+#cupheadProjects img {
+    height: auto;
+    width: 40px;
 }
