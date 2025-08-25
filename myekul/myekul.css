@@ -99,7 +99,7 @@ a {
     color: var(--bannerText) !important
 }
 
-.font2{
+.font2 {
     font-family: var(--font2);
 }
 
@@ -166,11 +166,7 @@ footer {
     padding-bottom: 30px;
     background-color: var(--banner);
     color: var(--bannerText);
-}
-
-.footerText {
     font-size: 130%;
-    padding: 0 10px;
     font-weight: bold;
 }
 
@@ -179,4 +175,16 @@ footer img {
     width: auto;
     object-fit: contain;
     padding: 5px
+}
+
+#myekulGithub {
+    margin: 0 12px;
+    background-color: darkslateblue;
+    border-radius: 30px;
+    padding: 0 4px;
+    height: 50px;
+    font-size: 90%;
+    gap: 5px;
+    padding-left: 8px;
+    color: var(--cuphead)
 }
