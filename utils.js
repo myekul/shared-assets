@@ -59,7 +59,6 @@ async function setSidebar(content) {
 function setResources() {
     document.querySelectorAll('#resources > div > div > a').forEach(elem => {
         elem.classList.add('button')
-        elem.classList.add('container')
         elem.style.gap = '10px'
     })
     const resources = document.getElementById('resources')
