@@ -186,5 +186,7 @@ footer img {
     font-size: 90%;
     gap: 5px;
     padding-left: 8px;
-    color: var(--cuphead)
+    color: var(--cuphead);
+    font-family: 'cuphead-memphis';
+    text-shadow: none;
 }
