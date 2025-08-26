@@ -65,18 +65,6 @@ function setResources() {
     resources.classList.add('container')
     resources.style.gap = '60px'
 }
-function setAudio(source, audioNames) {
-    if (source == 'cuphead') {
-        audioNames = ['cardup', 'carddown', 'cardflip', 'category_select', 'equip_move', 'locked', 'move', 'ready', 'win_time_loop', 'win_time_loop_end']
-    }
-    audioNames.forEach(audio => {
-        const audioElement = document.createElement('audio');
-        audioElement.id = audio;
-        const src = source == 'cuphead' ? `https://myekul.github.io/shared-assets/cuphead/sfx/` : 'sfx/' + source + '/'
-        audioElement.src = src + audio + '.wav';
-        document.body.appendChild(audioElement);
-    });
-}
 function fontAwesome(icon) {
     return `<i class="fa fa-${icon}"></i>`
 }
@@ -118,6 +106,18 @@ function getColorFromClass(className, textColor) {
     return color;
 }
 // Sounds
+function setAudio(source, audioNames) {
+    if (source == 'cuphead') {
+        audioNames = ['cardup', 'carddown', 'cardflip', 'category_select', 'equip_move', 'locked', 'move', 'ready', 'win_time_loop', 'win_time_loop_end']
+    }
+    audioNames.forEach(audio => {
+        const audioElement = document.createElement('audio');
+        audioElement.id = audio;
+        const src = source == 'cuphead' ? `https://myekul.github.io/shared-assets/cuphead/sfx/` : 'sfx/' + source + '/'
+        audioElement.src = src + audio + '.wav';
+        document.body.appendChild(audioElement);
+    });
+}
 function playSound(sfx) {
     const sound = document.getElementById(sfx)
     if (sound) {
@@ -134,10 +134,9 @@ function stopSound(sfx) {
     }
 }
 // Modal
-function openModal(body, title, subtitle) {
-    if (title) {
-        document.getElementById('modal-title').innerHTML = title
-    }
+function openModal(body, title, subtitle, shh) {
+    if (!shh) playSound('cardup')
+    if (title) document.getElementById('modal-title').innerHTML = title
     document.getElementById('modal-subtitle').innerHTML = subtitle ? subtitle : ''
     document.getElementById('modal-body').innerHTML = body
     const modal = document.getElementById("modal");
@@ -146,12 +145,11 @@ function openModal(body, title, subtitle) {
     const modalContent = document.getElementById('modal-content')
     modalContent.style.animation = 'modalUp 0.25s ease-out forwards';
     document.addEventListener('keydown', function (event) {
-        if (event.key == 'Escape') {
-            closeModal()
-        }
+        if (event.key == 'Escape') closeModal()
     });
 }
 function closeModal() {
+    playSound('carddown')
     const modal = document.getElementById("modal");
     modal.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     const modalContent = document.getElementById('modal-content')
@@ -191,7 +189,7 @@ async function setTabs(tabs) {
     let HTMLContent = ''
     tabs.forEach(pageName => {
         if (pageName) {
-            HTMLContent += `<div id='${pageName}Button' class='button' onclick="showTab('${pageName}')">${fontAwesome(fontAwesomeSet[pageName][1])}</div>`
+            HTMLContent += `<div id='${pageName}Button' class='button' onclick="playSound('category_select');showTab('${pageName}')">${fontAwesome(fontAwesomeSet[pageName][1])}</div>`
         } else {
             HTMLContent += `<div class='dot'></div>`
         }
