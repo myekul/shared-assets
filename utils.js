@@ -65,6 +65,18 @@ function setResources() {
     resources.classList.add('container')
     resources.style.gap = '60px'
 }
+function setAudio(source, audioNames) {
+    if (source == 'cuphead') {
+        audioNames = ['cardup', 'carddown', 'cardflip', 'category_select', 'equip_move', 'locked', 'move', 'ready', 'win_time_loop', 'win_time_loop_end']
+    }
+    audioNames.forEach(audio => {
+        const audioElement = document.createElement('audio');
+        audioElement.id = audio;
+        const src = source == 'cuphead' ? `https://myekul.github.io/shared-assets/cuphead/sfx/` : 'sfx/' + source + '/'
+        audioElement.src = src + audio + '.wav';
+        document.body.appendChild(audioElement);
+    });
+}
 function fontAwesome(icon) {
     return `<i class="fa fa-${icon}"></i>`
 }
