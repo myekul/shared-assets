@@ -172,3 +172,9 @@ async function setCupheadProjects() {
         elem.classList.add('container')
     })
 }
+function cupheadShot(shot, size, extra) {
+    if (shot) {
+        return `<img src="https://myekul.github.io/shared-assets/cuphead/images/inventory/weapon/${shot}.png" ${extra ? `class='container'` : ''} ${size ? `style='height:${size}px'` : ''}>`
+    }
+    return ''
+}
