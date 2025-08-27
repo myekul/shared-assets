@@ -53,6 +53,7 @@ function setFooter(text) {
         })
 }
 async function setSidebar(content) {
+    addStylesheet('https://myekul.github.io/shared-assets/styles/sidebar.css')
     await setHTML('https://myekul.github.io/shared-assets/sidebarDiv.html', 'sidebarDiv')
     document.getElementById('sidebar').innerHTML = content
 }
@@ -165,6 +166,7 @@ window.onclick = function (event) {
     }
 }
 document.addEventListener('DOMContentLoaded', function () {
+    addStylesheet('https://myekul.github.io/shared-assets/styles/modal.css')
     fetch('https://myekul.github.io/shared-assets/modal.html')
         .then(r => r.text())
         .then(t => {
@@ -174,6 +176,12 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.appendChild(modal);
         })
 })
+function addStylesheet(href) {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    document.head.appendChild(link);
+}
 function initializeHash(tab) {
     const hash = window.location.hash
     window.globalTab = hash ? hash.slice(1) : tab
