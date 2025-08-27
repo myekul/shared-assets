@@ -243,6 +243,27 @@ function toggleSidebar() {
 function sharedAssetsImg(src) {
     return `<img src='${sharedAssetsURL(src)}'>`
 }
-function sharedAssetsURL(src){
+function sharedAssetsURL(src) {
     return `https://myekul.github.io/shared-assets/images/${src}.png`
+}
+function setDiscord() {
+    fetch('https://discord.com/api/guilds/1386406855391313960/widget.json')
+        .then(response => response.json())
+        .then(data => {
+            window.discordData = data
+            discordOnline(data.presence_count)
+        })
+}
+function discordOnline(num) {
+    const HTMLContent = `
+        <div class='container grow' style='gap:5px' onclick="openModal(${discord()}, 'DISCORD')">
+            <img src="${sharedAssetsURL('discord')}" class="brightPulse" style="padding-left:10px;height:24px">
+            <div style='width:8px;height:8px;background-color:limegreen;border-radius:50%'></div>
+            ${num}
+        </div>`
+    document.getElementById("headerRow")
+        .insertAdjacentHTML("beforeend", HTMLContent);
+}
+function getAnchor(url) {
+    return url ? `<a href="${url}" target='_blank'>` : ''
 }
