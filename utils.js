@@ -118,6 +118,16 @@ function setAudio(source, audioNames) {
         audioElement.src = src + audio + '.wav';
         document.body.appendChild(audioElement);
     });
+    document.querySelectorAll('input').forEach(elem => {
+        elem.addEventListener('click', () => {
+            playSound('move')
+        })
+    })
+    document.querySelectorAll('.button').forEach(elem => {
+        elem.addEventListener('click', () => {
+            playSound('category_select')
+        })
+    })
 }
 function playSound(sfx) {
     const sound = document.getElementById(sfx)
