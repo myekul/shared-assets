@@ -256,7 +256,7 @@ function setDiscord() {
 }
 function discordOnline(num) {
     const HTMLContent = `
-        <div class='container grow' style='gap:5px' onclick="openModal(${discord()}, 'DISCORD')">
+        <div class='container grow' style='gap:5px' onclick="openModal('${discord()}', 'DISCORD')">
             <img src="${sharedAssetsURL('discord')}" class="brightPulse" style="padding-left:10px;height:24px">
             <div style='width:8px;height:8px;background-color:limegreen;border-radius:50%'></div>
             ${num}
