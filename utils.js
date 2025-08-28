@@ -45,6 +45,7 @@ async function setTitle(text) {
     document.getElementById('titleText').innerHTML = text
 }
 function setFooter(text) {
+    addStylesheet('https://myekul.github.io/shared-assets/myekul/myekul.css')
     fetch('https://myekul.github.io/shared-assets/myekul/footer.html')
         .then(r => r.text())
         .then(t => document.querySelector('footer').innerHTML = t)
@@ -53,8 +54,8 @@ function setFooter(text) {
         })
 }
 async function setSidebar(content) {
-    addStylesheet('https://myekul.github.io/shared-assets/styles/sidebar.css')
-    await setHTML('https://myekul.github.io/shared-assets/sidebarDiv.html', 'sidebarDiv')
+    addStylesheet('https://myekul.github.io/shared-assets/elements/sidebar/sidebar.css')
+    await setHTML('https://myekul.github.io/shared-assets/elements/sidebar/sidebar.html', 'sidebarDiv')
     document.getElementById('sidebar').innerHTML = content
 }
 function setResources() {
@@ -145,45 +146,17 @@ function stopSound(sfx) {
     }
 }
 // Modal
-function openModal(body, title, subtitle, shh) {
-    if (!shh) playSound('cardup')
-    if (title) document.getElementById('modal-title').innerHTML = title
-    document.getElementById('modal-subtitle').innerHTML = subtitle ? subtitle : ''
-    document.getElementById('modal-body').innerHTML = body
-    const modal = document.getElementById("modal");
-    modal.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
-    modal.style.display = "block";
-    const modalContent = document.getElementById('modal-content')
-    modalContent.style.animation = 'modalUp 0.25s ease-out forwards';
-    document.addEventListener('keydown', function (event) {
-        if (event.key == 'Escape') closeModal()
-    });
-}
-function closeModal() {
-    playSound('carddown')
-    const modal = document.getElementById("modal");
-    modal.style.backgroundColor = 'rgba(0, 0, 0, 0)';
-    const modalContent = document.getElementById('modal-content')
-    modalContent.style.animation = 'modalDown 0.25s ease-out forwards';
-    setTimeout(() => {
-        hide(modal)
-    }, 200);
-}
-window.onclick = function (event) {
-    const modal = document.getElementById("modal");
-    if (event.target == modal) {
-        closeModal()
-    }
-}
 document.addEventListener('DOMContentLoaded', function () {
-    addStylesheet('https://myekul.github.io/shared-assets/styles/modal.css')
-    fetch('https://myekul.github.io/shared-assets/modal.html')
+    addStylesheet('https://myekul.github.io/shared-assets/elements/modal/modal.css')
+    fetch('https://myekul.github.io/shared-assets/elements/modal/modal.html')
         .then(r => r.text())
         .then(t => {
-            const modal = document.createElement('div');
-            modal.id = 'modal';
-            modal.innerHTML = t;
-            document.body.appendChild(modal);
+            addJSFile('https://myekul.github.io/shared-assets/elements/modal/modal.js', () => {
+                const modal = document.createElement('div');
+                modal.id = 'modal';
+                modal.innerHTML = t;
+                document.body.appendChild(modal);
+            })
         })
 })
 function addStylesheet(href) {
@@ -210,7 +183,7 @@ function showTab(tab) {
     action()
 }
 async function setTabs(tabs) {
-    await setHTML('https://myekul.github.io/shared-assets/tabsDiv.html', 'tabsDiv')
+    await setHTML('https://myekul.github.io/shared-assets/html/tabs.html', 'tabsDiv')
     let HTMLContent = ''
     tabs.forEach(pageName => {
         if (pageName) {
@@ -275,44 +248,11 @@ function setDiscord() {
     fetch('https://discord.com/api/guilds/1386406855391313960/widget.json')
         .then(response => response.json())
         .then(data => {
-            window.discordData = data
-            discordOnline(data.presence_count)
+            addJSFile('https://myekul.github.io/shared-assets/elements/discord.js', () => {
+                window.discordData = data
+                discordOnline(data.presence_count)
+            })
         })
-}
-function discordOnline(num) {
-    const HTMLContent = `
-        <div class='container grow' style='gap:5px;margin:0' onclick="openModal(discord(), 'DISCORD')">
-            <img src="${sharedAssetsURL('discord')}" class="brightPulse" style="padding-left:10px;height:24px">
-            <div style='width:8px;height:8px;background-color:limegreen;border-radius:50%'></div>
-            ${num}
-        </div>`
-    document.getElementById("headerRow")
-        .insertAdjacentHTML("beforeend", HTMLContent);
-}
-function discord() {
-    let HTMLContent = ''
-    HTMLContent += `<div class='textBlock' style='max-width:500px;font-size:90%'>Join our vibrant community in ${myekulColor('myekul castle')}! Stay up-to-date with all the latest features and behind-the-scenes glimpses of ${myekulColor('the myekul project')}.</div>`
-    HTMLContent += `
-            <div class='container' style='padding:16px 0;gap:8px'>
-            <img src='${sharedAssetsURL('discord')}' style='height:24px'></img>
-                ${getAnchor(discordData.instant_invite)}<div class='button banner'>Join Server!</div></a>
-                <div style='width:8px;height:8px;background-color:limegreen;border-radius:50%'></div>
-                ${discordData.presence_count}
-            </div>`
-    HTMLContent += `<div class='container'><table>`
-    discordData.members.forEach(member => {
-        // if (member.username == 'm...') {
-        //     member.username = 'myekul'
-        // }
-        const srcMember = players ? players.find(player => player.name == member.username) : ''
-        HTMLContent += `<tr>`
-        HTMLContent += `<td><img src='${member.avatar_url}' style='height:30px;border-radius:15px'></td>`
-        HTMLContent += `<td style='text-align:left;padding-left:5px'>${srcMember ? getPlayerName(srcMember) : member.username}</td>`
-        HTMLContent += member.game ? `<td style='padding-left:10px;color:var(--gray);text-align:left'>${member.game.name}</td>` : ''
-        HTMLContent += `</tr>`
-    })
-    HTMLContent += `</table></div>`
-    return HTMLContent
 }
 function getAnchor(url) {
     return url ? `<a href="${url}" target='_blank'>` : ''
