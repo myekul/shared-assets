@@ -135,7 +135,8 @@ body {
 
 #headerRow {
     padding: 5px 0;
-    background-color: var(--background2)
+    background-color: var(--background2);
+    height:26px
 }
 
 #tabsDiv {
@@ -191,4 +192,24 @@ body {
     margin: 0;
     margin-bottom: 10px;
     color: darkgray;
+}
+
+/* Discord */
+
+.brightPulse {
+    animation: brightPulse 1.3s infinite;
+}
+
+@keyframes brightPulse {
+    0% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.5);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
 }
