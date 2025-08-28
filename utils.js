@@ -239,8 +239,8 @@ function toggleSidebar() {
         show(sidebar)
     }
 }
-function sharedAssetsImg(src, size = 'auto') {
-    return `<img src='${sharedAssetsURL(src)}' style='height:${size};width:auto'>`
+function sharedAssetsImg(src) {
+    return `<img src='${sharedAssetsURL(src)}'>`
 }
 function sharedAssetsURL(src) {
     return `https://myekul.github.io/shared-assets/images/${src}.png`
