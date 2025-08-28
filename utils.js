@@ -45,7 +45,6 @@ async function setTitle(text) {
     document.getElementById('titleText').innerHTML = text
 }
 function setFooter(text) {
-    addStylesheet('https://myekul.github.io/shared-assets/myekul/myekul.css')
     fetch('https://myekul.github.io/shared-assets/myekul/footer.html')
         .then(r => r.text())
         .then(t => document.querySelector('footer').innerHTML = t)
