@@ -28,3 +28,10 @@ window.onclick = function (event) {
         closeModal()
     }
 }
+if (document.querySelector('title').innerText == 'Combined Leaderboard') {
+    const closeModalOG = closeModal
+    closeModal = function () {
+        closeModalOG()
+        closeModalCL()
+    }
+}

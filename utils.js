@@ -228,11 +228,13 @@ function boardTitleCell(className, content) {
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar')
     if (sidebar.style.display == '') {
+        playSound('carddown')
         sidebar.classList.add('hidden')
         setTimeout(() => {
             hide(sidebar)
         }, 200);
     } else {
+        playSound('cardup')
         sidebar.classList.remove('hidden')
         show(sidebar)
     }
