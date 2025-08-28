@@ -192,6 +192,13 @@ function addStylesheet(href) {
     link.href = href;
     document.head.appendChild(link);
 }
+function addJSFile(path, callback) {
+    const script = document.createElement('script');
+    script.src = path;
+    script.type = 'text/javascript';
+    script.onload = callback;
+    document.head.appendChild(script);
+}
 function initializeHash(tab) {
     const hash = window.location.hash
     window.globalTab = hash ? hash.slice(1) : tab
@@ -297,7 +304,7 @@ function discord() {
         // if (member.username == 'm...') {
         //     member.username = 'myekul'
         // }
-        const srcMember = players?.find(player => player.name == member.username)
+        const srcMember = players ? players.find(player => player.name == member.username) : ''
         HTMLContent += `<tr>`
         HTMLContent += `<td><img src='${member.avatar_url}' style='height:30px;border-radius:15px'></td>`
         HTMLContent += `<td style='text-align:left;padding-left:5px'>${srcMember ? getPlayerName(srcMember) : member.username}</td>`
