@@ -157,7 +157,7 @@ input {
 header {
     background-color: var(--banner);
     color: var(--bannerText);
-    height: 100px;
+    height: 80px;
 }
 
 footer {

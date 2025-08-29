@@ -51,6 +51,7 @@ function setFooter(text) {
         .then(() => {
             document.getElementById('footerText').innerHTML = text
         })
+    setDiscord()
 }
 async function setSidebar(content) {
     addStylesheet('https://myekul.github.io/shared-assets/elements/sidebar/sidebar.css')
