@@ -1,6 +1,14 @@
+function ballpitPrepare() {
+    setHTML('https://myekul.github.io/shared-assets/elements/ballpit/ballpit.html', 'ballpit')
+        .then(() => {
+            document.getElementById('ballpit').innerHTML += content
+            ballpitEngine(elemSize, floorOffset)
+        })
+}
 function ballpitEngine(elemSize, floorOffset) {
+
     ballpitLoaded = true
-    
+
     const elements = document.querySelectorAll('.ball, .square');
     elements.forEach(el => {
         el.style.width = elemSize

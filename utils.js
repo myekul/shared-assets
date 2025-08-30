@@ -259,16 +259,11 @@ function setDiscord() {
 let ballpitLoaded = false
 function setBallpit(content, elemSize = 100, floorOffset = -40) {
     if (ballpitLoaded) {
-        document.getElementById('ballpit').innerHTML += content
-        ballpitEngine(elemSize, floorOffset)
+        ballpitPrepare(content, elemSize, floorOffset)
     } else {
         addJSFile('https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js', () => {
             addJSFile('https://myekul.github.io/shared-assets/elements/ballpit/ballpit.js', () => {
-                setHTML('https://myekul.github.io/shared-assets/elements/ballpit/ballpit.html', 'ballpit')
-                    .then(() => {
-                        document.getElementById('ballpit').innerHTML += content
-                        ballpitEngine(elemSize, floorOffset)
-                    })
+                ballpitPrepare(content, elemSize, floorOffset)
             })
         })
     }

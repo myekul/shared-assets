@@ -169,7 +169,6 @@ body {
     position: absolute;
     user-select: none;
     cursor: grab;
-    user-select: none;
     z-index: 2
 }
 
