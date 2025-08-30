@@ -1,10 +1,3 @@
-function ballpitRefresh() {
-    return `<div class="container">
-        <div class="button" style='border-radius:50%;width:40px;height:40px;font-size:150%;z-index:3' onclick="action()">
-        ${fontAwesome('refresh')}
-        </div>
-    </div>`
-}
 function ballpitEngine(elemSize, floorOffset) {
     // Matter.js aliases
     const { Engine, Runner, Bodies, World, Events, Mouse, MouseConstraint } = Matter;
