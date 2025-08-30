@@ -1,4 +1,16 @@
 function ballpitEngine(elemSize, floorOffset) {
+    ballpitLoaded = true
+    
+    const elements = document.querySelectorAll('.ball, .square');
+    elements.forEach(el => {
+        el.style.width = elemSize
+        el.style.height = elemSize
+        el.addEventListener("dragstart", e => {
+            e.preventDefault();
+            return false;
+        }, { passive: false });
+    });
+
     // Matter.js aliases
     const { Engine, Runner, Bodies, World, Events, Mouse, MouseConstraint } = Matter;
 
