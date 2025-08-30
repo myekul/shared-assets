@@ -270,11 +270,11 @@ function setBallpit(content, elemSize = 100, floorOffset = -40) {
     if (ballpitLoaded) {
         ballpitEngine(elemSize, floorOffset)
     } else {
-        ballpitLoaded = true
         addJSFile('https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js', () => {
-            addJSFile('https://myekul.github.io/shared-assets/elements/ballpit.js', () => {
+            addJSFile('https://myekul.github.io/shared-assets/elements/ballpit/ballpit.js', () => {
                 setHTML('https://myekul.github.io/shared-assets/elements/ballpit/ballpit.html', 'ballpit')
                     .then(() => {
+                        ballpitLoaded = true
                         document.getElementById('ballpit').innerHTML += content
                         ballpitEngine(elemSize, floorOffset)
                     })
