@@ -256,6 +256,28 @@ function setDiscord() {
             })
         })
 }
+let ballpitLoaded = false
+function setBallpit(elemSize = 100, floorOffset = -40) {
+    const elements = document.querySelectorAll('.ball, .square');
+    elements.forEach(el => {
+        el.style.width = elemSize
+        el.style.height = elemSize
+        el.addEventListener("dragstart", e => {
+            e.preventDefault();
+            return false;
+        }, { passive: false });
+    });
+    if (ballpitLoaded) {
+        ballpitEngine(elemSize, floorOffset)
+    } else {
+        ballpitLoaded = true
+        addJSFile('https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js', () => {
+            addJSFile('https://myekul.github.io/shared-assets/elements/ballpit.js', () => {
+                ballpitEngine(elemSize, floorOffset)
+            })
+        })
+    }
+}
 function getAnchor(url) {
     return url ? `<a href="${url}" target='_blank'>` : ''
 }

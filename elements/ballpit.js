@@ -1,17 +1,3 @@
-function ballpitEngine(elemSize = 100, floorOffset = -40) {
-    const elements = document.querySelectorAll('.ball, .square');
-    elements.forEach(el => {
-        el.style.width = elemSize
-        el.style.height = elemSize
-        el.addEventListener("dragstart", e => {
-            e.preventDefault();
-            return false;
-        }, { passive: false });
-    });
-    addJSFile('https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js', () => {
-        commenceBallpit(elemSize, floorOffset)
-    })
-}
 function ballpitRefresh() {
     return `<div class="container">
         <div class="button" style='border-radius:50%;width:40px;height:40px;font-size:150%;z-index:3' onclick="action()">
@@ -19,7 +5,7 @@ function ballpitRefresh() {
         </div>
     </div>`
 }
-function commenceBallpit(elemSize, floorOffset) {
+function ballpitEngine(elemSize, floorOffset) {
     // Matter.js aliases
     const { Engine, Runner, Bodies, World, Events, Mouse, MouseConstraint } = Matter;
 

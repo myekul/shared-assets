@@ -1,3 +1,13 @@
+setCuphead()
+async function setCuphead() {
+    setAudio('cuphead')
+    const r = await fetch('https://myekul.github.io/shared-assets/cuphead/projects.html');
+    const t = await r.text();
+    document.querySelector('header').insertAdjacentHTML("afterbegin", t)
+    document.querySelectorAll('#cupheadProjects a').forEach(elem => {
+        elem.classList.add('container')
+    })
+}
 const bosses = [
     {
         id: 'therootpack',
@@ -164,14 +174,6 @@ bosses.forEach(boss => {
         boss.plane = false
     }
 })
-async function setCupheadProjects() {
-    const r = await fetch('https://myekul.github.io/shared-assets/cuphead/projects.html');
-    const t = await r.text();
-    document.querySelector('header').insertAdjacentHTML("afterbegin", t)
-    document.querySelectorAll('#cupheadProjects a').forEach(elem => {
-        elem.classList.add('container')
-    })
-}
 function cupheadShot(shot, size, extra) {
     if (shot) {
         return `<img src="https://myekul.github.io/shared-assets/cuphead/images/inventory/weapon/${shot}.png" ${extra ? `class='container'` : ''} ${size ? `style='height:${size}px'` : ''}>`
