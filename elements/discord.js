@@ -10,7 +10,11 @@ function discordOnline(num) {
 }
 function discord() {
     let HTMLContent = ''
-    HTMLContent += `<div class='textBlock' style='max-width:500px;font-size:90%'>Join our vibrant community in ${myekulColor('myekul castle')}! Stay up-to-date with all the latest features and behind-the-scenes glimpses of ${myekulColor('the myekul project')}.</div>`
+    HTMLContent += `
+    <div class='textBlock' style='max-width:500px;font-size:90%'>
+    Join our community in ${myekulColor('myekul castle')}!
+    Stay up-to-date with all the latest features and behind-the-scenes glimpses of ${myekulColor('the myekul project')}.
+    </div>`
     HTMLContent += `
             <div class='container' style='padding:16px 0;gap:8px'>
             <img src='${sharedAssetsURL('discord')}' style='height:24px'></img>

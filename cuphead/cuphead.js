@@ -6,9 +6,6 @@ async function setCuphead() {
     document.querySelectorAll('#cupheadProjects a').forEach(elem => {
         elem.classList.add('container')
     })
-    document.addEventListener('DOMContentLoaded', function () {
-        setAudio('cuphead')
-    })
 }
 const bosses = [
     {
