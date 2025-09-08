@@ -275,3 +275,16 @@ function setBallpit(content, elemSize = 100, floorOffset = -40) {
 function getAnchor(url) {
     return url ? `<a href="${url}" target='_blank'>` : ''
 }
+function getParam(paramName) {
+    return new URLSearchParams(window.location.search).get(paramName)
+}
+function setParam(paramName, param) {
+    const url = new URL(window.location.href);
+    url.searchParams.set(paramName, param);
+    window.history.pushState({}, '', url);
+}
+function deleteParam(paramName) {
+    const url = new URL(window.location.href);
+    url.searchParams.delete(paramName);
+    window.history.pushState({}, '', url);
+}
