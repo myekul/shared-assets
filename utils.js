@@ -173,8 +173,12 @@ function addJSFile(path, callback) {
     document.head.appendChild(script);
 }
 function initializeHash(tab) {
-    const hash = window.location.hash
-    window.globalTab = hash ? hash.slice(1) : tab
+    let hash = window.location.hash
+    if (hash) {
+        hash = hash.slice(1)
+        if (![fontAwesomeSet[hash]]) hash = null
+    }
+    window.globalTab = hash ? hash : tab
 }
 function showTab(tab) {
     globalTab = tab
