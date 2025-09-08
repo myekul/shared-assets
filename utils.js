@@ -1,3 +1,36 @@
+const fontAwesomeSet = {
+    home: ['Home', 'home'],
+    ballpit: ['Ballpit', 'smile-o'],
+    random: ['Random', 'question'],
+    // Combined Leaderboard
+    featured: ['Featured', 'star'],
+    leaderboards: ['Leaderboards', 'cubes'],
+    WRs: ['World Records', 'trophy'],
+    map: ['Map', 'flag'],
+    sort: ['Sort', 'sort-amount-asc'],
+    runRecap: ['Run Recap', 'history'],
+    commBest: ['Comm Best Splits', 'tasks'],
+    // Speedrun Resources
+    bossInfo: ['Boss Info', 'drivers-license-o'],
+    tutorials: ['Tutorials', 'book'],
+    monkeyTool: ['Monkey Tool', 'wrench'],
+    graveyardTool: ['Graveyard Tool', 'wrench'],
+    shots: ['Shots', 'crosshairs'],
+    // myekuldex
+    pokedex: ['Pokedex', 'book'],
+    sfx: ['SFX', 'volume-up'],
+    // Pikmin Place
+    sublevels: ['Sublevels', 'bars'],
+    // Roster Realm
+    list: ['List', 'book'],
+    // Media Anthology
+    artist: ['Artist', 'users'],
+    stats: ['Stats', 'pie-chart'],
+    era: ['Era', 'calendar'],
+    durations: ['Durations', 'clock-o'],
+    nationality: ['Nationality', 'flag'],
+    media: ['Media', 'newspaper-o'],
+}
 function getDateDif(date1, date2) {
     return Math.floor((date1 - date2) / (100 * 60 * 60 * 24) / 10)
 }
