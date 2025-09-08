@@ -176,7 +176,7 @@ function initializeHash(tab) {
     let hash = window.location.hash
     if (hash) {
         hash = hash.slice(1)
-        if (![fontAwesomeSet[hash]]) hash = null
+        if (!fontAwesomeSet[hash]) hash = null
     }
     window.globalTab = hash ? hash : tab
 }
