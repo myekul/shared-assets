@@ -191,7 +191,7 @@
     padding-bottom: 7px;
     width: 50px;
     transform: translateY(-20px);
-    transition: transform 0.1s cubic-bezier(.4,0,.2,1);
+    transition: transform 0.1s cubic-bezier(.4, 0, .2, 1);
 }
 
 #cupheadProjects a:hover {
@@ -201,4 +201,19 @@
 #cupheadProjects img {
     height: 40px;
     width: auto;
+}
+
+.isle1 {
+    background-color: cornflowerblue;
+    color: black
+}
+
+.isle3 {
+    background-color: gold;
+    color: black
+}
+
+.hell {
+    background-color: darkgray;
+    color: black
 }

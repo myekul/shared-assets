@@ -344,3 +344,11 @@ function deleteParam(paramName) {
     url.searchParams.delete(paramName);
     window.history.pushState({}, '', url);
 }
+function getDelta(delta) {
+    const negative = delta < 0
+    delta = Math.abs(delta)
+    return (negative ? '-' : '+') + (delta >= 60 ? secondsToHMS(delta) : delta + 's')
+}
+function redGreen(delta) {
+    return 'color:' + (delta > 0 ? 'red' : 'limegreen')
+}
