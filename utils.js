@@ -352,3 +352,16 @@ function getDelta(delta) {
 function redGreen(delta) {
     return 'color:' + (delta > 0 ? 'red' : 'limegreen')
 }
+function getScore(category, runTime) {
+    const wrTime = getWorldRecord(category)
+    const percentage = wrTime / runTime
+    return percentage * 100
+}
+function getWorldRecord(category) {
+    return category.runs[0]?.score
+}
+const placeClass = {
+    1: 'first',
+    2: 'second',
+    3: 'third'
+}
