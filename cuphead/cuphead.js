@@ -195,6 +195,13 @@ const runNgunIDs = {
     perilouspiers: 1464969492,
     ruggedridge: 1464969493
 }
+const isles = [
+    { id: 'isle1', name: 'Isle 1', className: 'isle1', numBosses: 5 },
+    { id: 'isle2', name: 'Isle 2', className: 'expert', numBosses: 5 },
+    { id: 'isle3', name: 'Isle 3', className: 'isle3', numBosses: 7 },
+    { id: 'hell', name: 'Hell', className: 'hell', numBosses: 2 },
+    { id: 'isle4', name: 'Isle 4', className: 'dlc', numBosses: 6 }
+]
 bosses.forEach(boss => {
     if (boss.id == 'kingdice') {
         boss.time = 259

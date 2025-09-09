@@ -31,6 +31,30 @@ const fontAwesomeSet = {
     nationality: ['Nationality', 'flag'],
     media: ['Media', 'newspaper-o'],
 }
+const grades = [
+    { grade: 'A+', className: 'grade-a-plus', threshold: 97 },
+    { grade: 'A', className: 'grade-a', threshold: 93 },
+    { grade: 'A-', className: 'grade-a-minus', threshold: 90 },
+    { grade: 'B+', className: 'grade-b-plus', threshold: 87 },
+    { grade: 'B', className: 'grade-b', threshold: 83 },
+    { grade: 'B-', className: 'grade-b-minus', threshold: 80 },
+    { grade: 'C+', className: 'grade-c-plus', threshold: 77 },
+    { grade: 'C', className: 'grade-c', threshold: 73 },
+    { grade: 'C-', className: 'grade-c-minus', threshold: 70 },
+    { grade: 'D+', className: 'grade-d-plus', threshold: 67 },
+    { grade: 'D', className: 'grade-d', threshold: 63 },
+    { grade: 'D-', className: 'grade-d-minus', threshold: 60 },
+    { grade: 'F', className: 'grade-f', threshold: 0 }
+]
+grades.forEach(grade => {
+    grade.className += ' grade'
+})
+function getLetterGrade(percentage) {
+    for (let grade of grades) {
+        if (percentage >= grade.threshold) return grade;
+    }
+    return grades[grades.length - 1]
+}
 function getDateDif(date1, date2) {
     return Math.floor((date1 - date2) / (100 * 60 * 60 * 24) / 10)
 }
@@ -178,7 +202,6 @@ function stopSound(sfx) {
         sound.currentTime = 0
     }
 }
-// Modal
 document.addEventListener('DOMContentLoaded', function () {
     addStylesheet('https://myekul.github.io/shared-assets/elements/modal/modal.css')
     fetch('https://myekul.github.io/shared-assets/elements/modal/modal.html')
