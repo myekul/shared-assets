@@ -8,8 +8,9 @@ const fontAwesomeSet = {
     WRs: ['World Records', 'trophy'],
     map: ['Map', 'flag'],
     sort: ['Sort', 'sort-amount-asc'],
+    // Run Recap
     runRecap: ['Run Recap', 'history'],
-    commBest: ['Comm Best Splits', 'tasks'],
+    commBestSplits: ['Comm Best Splits', 'tasks'],
     // Speedrun Resources
     bossInfo: ['Boss Info', 'drivers-license-o'],
     tutorials: ['Tutorials', 'book'],
