@@ -11,6 +11,8 @@ const fontAwesomeSet = {
     // Run Recap
     commBestILs: ['Comm Best ILs', 'tasks'],
     commBestSplits: ['Comm Best Splits', 'tasks'],
+    sums: ['Sums', 'plus'],
+    grid: ['Grid', 'group'],
     // Speedrun Resources
     bossInfo: ['Boss Info', 'drivers-license-o'],
     tutorials: ['Tutorials', 'book'],
