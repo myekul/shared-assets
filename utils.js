@@ -251,9 +251,11 @@ async function setTabs(tabs) {
     tabs.forEach(elem => {
         if (elem) {
             if (Array.isArray(elem)) {
-                HTMLContent += elem
+                elem.forEach(elem2 => {
+                    HTMLContent += elem2
+                })
             } else {
-                HTMLContent += `<div id='${pageName}Button' class='button' onclick="playSound('category_select');showTab('${pageName}')">${fontAwesome(fontAwesomeSet[pageName][1])}</div>`
+                HTMLContent += `<div id='${elem}Button' class='button' onclick="playSound('category_select');showTab('${elem}')">${fontAwesome(fontAwesomeSet[elem][1])}</div>`
             }
         } else {
             HTMLContent += `<div class='dot'></div>`
