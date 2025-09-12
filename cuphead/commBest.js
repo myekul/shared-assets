@@ -26,7 +26,7 @@ const commBestILs = {
         numRuns: 10,
         shot1: 'lobber',
         shot2: 'spread',
-        tas: [31, 38, 18, 55, 26, 27, 43, 73, 33, 39, 31, 33, 38, 27, 32, 45, 51, 84, 38]
+        tas: [31, 38, 18, 55, 26, 27, 43, 73, 33, 39, 31, 33, 38, 27, 32, 45, 51, 97, 38]
     },
     Legacy: {
         name: 'Legacy',
@@ -44,7 +44,7 @@ const commBestILs = {
         markin: 'NMG Any%',
         className: 'nmg',
         category: 2,
-        numRuns: 3,
+        numRuns: 5,
         shot1: 'lobber',
         shot2: 'spread'
     },
@@ -79,7 +79,7 @@ const commBestILs = {
         markin: 'DLC Any% (L/S)',
         className: 'dlc',
         category: 3,
-        numRuns: 3,
+        numRuns: 5,
         shot1: 'lobber',
         shot2: 'spread',
         extraRuns: [

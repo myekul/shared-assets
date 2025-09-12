@@ -195,6 +195,7 @@ const runNgunIDs = {
     perilouspiers: 1464969492,
     ruggedridge: 1464969493
 }
+const nullTime = 3.4028234663852886e+38
 const isles = [
     { id: 'isle1', name: 'Isle 1', className: 'isle1', numBosses: 5 },
     { id: 'isle2', name: 'Isle 2', className: 'expert', numBosses: 5 },

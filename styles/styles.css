@@ -162,6 +162,12 @@ body {
     font-size: 110%
 }
 
+.grayedOut {
+    opacity: 0.4 !important;
+    cursor: default !important;
+    transform: none !important
+}
+
 /* Ballpit */
 
 .ball,
