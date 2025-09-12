@@ -248,9 +248,13 @@ function showTab(tab) {
 async function setTabs(tabs) {
     await setHTML('https://myekul.github.io/shared-assets/html/tabs.html', 'tabsDiv')
     let HTMLContent = ''
-    tabs.forEach(pageName => {
-        if (pageName) {
-            HTMLContent += `<div id='${pageName}Button' class='button' onclick="playSound('category_select');showTab('${pageName}')">${fontAwesome(fontAwesomeSet[pageName][1])}</div>`
+    tabs.forEach(elem => {
+        if (elem) {
+            if (Array.isArray(elem)) {
+                HTMLContent += elem
+            } else {
+                HTMLContent += `<div id='${pageName}Button' class='button' onclick="playSound('category_select');showTab('${pageName}')">${fontAwesome(fontAwesomeSet[pageName][1])}</div>`
+            }
         } else {
             HTMLContent += `<div class='dot'></div>`
         }
