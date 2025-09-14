@@ -24,6 +24,8 @@ const fontAwesomeSet = {
     sfx: ['SFX', 'volume-up'],
     // Pikmin Place
     sublevels: ['Sublevels', 'bars'],
+    // Star Haven
+    courses: ['Courses', 'star'],
     // Roster Realm
     list: ['List', 'book'],
     // Media Anthology
@@ -255,7 +257,9 @@ async function setTabs(tabs) {
                     HTMLContent += elem2
                 })
             } else {
-                HTMLContent += `<div id='${elem}Button' class='button' onclick="playSound('category_select');showTab('${elem}')">${fontAwesome(fontAwesomeSet[elem][1])}</div>`
+                let tabContent = ''
+                if (fontAwesomeSet[elem]) tabContent = fontAwesome(fontAwesomeSet[elem][1])
+                HTMLContent += `<div id='${elem}Button' class='button' onclick="playSound('category_select');showTab('${elem}')">${tabContent}</div>`
             }
         } else {
             HTMLContent += `<div class='dot'></div>`

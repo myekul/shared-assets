@@ -68,7 +68,7 @@ const commBestILs = {
         markin: 'DLC Any% (L/S)',
         className: 'dlc',
         category: 3,
-        numRuns: 3,
+        numRuns: 5,
         // shot1: 'lobber',
         // shot2: 'spread'
         subcat: 'Any%'
