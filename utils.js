@@ -363,7 +363,7 @@ function getDelta(delta) {
     return (negative ? '-' : '+') + (delta >= 60 ? secondsToHMS(delta) : delta + 's')
 }
 function redGreen(delta) {
-    return 'color:' + (delta > 0 ? 'red' : 'limegreen')
+    return 'delta-' + (delta > 0 ? 'red' : 'green')
 }
 function getScore(category, runTime) {
     const wrTime = getWorldRecord(category)

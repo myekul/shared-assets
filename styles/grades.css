@@ -53,3 +53,11 @@
 .grade-f {
     background-color: maroon !important;
 }
+
+.delta-green {
+    color: limegreen
+}
+
+.delta-red {
+    color: red
+}
