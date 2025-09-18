@@ -358,7 +358,7 @@ function deleteParam(paramName) {
     window.history.pushState({}, '', url);
 }
 function getDelta(delta) {
-    const negative = delta < 0
+    const negative = delta <= 0
     delta = Math.abs(delta)
     return (negative ? '-' : '+') + (delta >= 60 ? secondsToHMS(delta) : delta + 's')
 }
@@ -372,6 +372,20 @@ function getScore(category, runTime) {
 }
 function getWorldRecord(category) {
     return category.runs[0]?.score
+}
+function displayPercentage(percentage) {
+    if (percentage) {
+        percentage = percentage.toFixed(2).toString()
+        let percentageDecimals = '00'
+        if (percentage.split('.').length > 1) {
+            percentageDecimals = percentage.split('.')[1]
+            if (percentageDecimals.length == 1) {
+                percentageDecimals += 0
+            }
+        }
+        return percentage.split('.')[0] + `<span style='font-size:70%;justify-self:flex-end'>.${percentageDecimals}</span>`
+    }
+    return ''
 }
 const placeClass = {
     1: 'first',
