@@ -12,8 +12,8 @@ function openModal(body, title, subtitle, shh) {
         if (event.key == 'Escape') closeModal()
     });
 }
-function closeModal() {
-    playSound('carddown')
+function closeModal(shh) {
+    if (!shh) playSound('carddown')
     const modal = document.getElementById("modal");
     modal.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     const modalContent = document.getElementById('modal-content')
