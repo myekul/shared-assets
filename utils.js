@@ -18,6 +18,7 @@ const fontAwesomeSet = {
     tutorials: ['Tutorials', 'book'],
     monkeyTool: ['Monkey Tool', 'wrench'],
     graveyardTool: ['Graveyard Tool', 'wrench'],
+    rumorTool: ['Rumor Tool', 'wrench'],
     shots: ['Shots', 'crosshairs'],
     // myekuldex
     pokedex: ['Pokedex', 'book'],
