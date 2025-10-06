@@ -86,44 +86,44 @@ const alt = {
         ],
         drkahlsrobot: [
             {
-                name: 'Red Gems',
+                name: 'Red Gem',
                 time: 41,
                 runs: [
                     {
                         player: '*ClipBoardGuy',
-                        url: ''
+                        url: 'https://youtu.be/qLbPsCGQo-g'
                     }
                 ]
             },
             {
-                name: 'Blue Gems',
+                name: 'Blue Gem',
                 time: 41,
                 runs: [
                     {
                         player: '*ClipBoardGuy',
-                        url: 'https://youtu.be/EC3p6veqeuA'
+                        url: 'https://youtu.be/QlDaMfYHmnk'
                     }
                 ]
             }
         ],
         thedevil: [
-            {
-                name: 'Ring Dragon (No freeze)',
-                time: 47,
-                runs: [
-                    {
-                        player: '*myekul',
-                        url: ''
-                    }
-                ]
-            },
+            // {
+            //     name: 'Ring Dragon (No freeze)',
+            //     time: 47,
+            //     runs: [
+            //         {
+            //             player: '*myekul',
+            //             url: ''
+            //         }
+            //     ]
+            // },
             {
                 name: 'Ring Dragon (Freeze)',
                 time: 42,
                 runs: [
                     {
                         player: '*Lewzr',
-                        url: ''
+                        url: 'https://youtu.be/SeaoWgXfEbA'
                     }
                 ]
             },
@@ -148,6 +148,18 @@ const alt = {
                     {
                         player: 'Jason2890',
                         url: 'https://youtu.be/I3b9GXHC5vA'
+                    }
+                ]
+            }
+        ],
+        goopylegrande:[
+{
+                name: 'Parries + Doubles',
+                time: 26,
+                runs: [
+                    {
+                        player: '*Yuka',
+                        url: 'https://youtu.be/qhAG8U9AYNA'
                     }
                 ]
             }
