@@ -7,7 +7,7 @@ const alt = {
                 runs: [
                     {
                         player: '*ExclamationMarkYT',
-                        link: 'https://youtu.be/5XuoQ9-PDu4'
+                        url: 'https://youtu.be/5XuoQ9-PDu4'
                     }
                 ]
             }
@@ -19,7 +19,7 @@ const alt = {
                 runs: [
                     {
                         player: '*Grondious',
-                        link: 'https://youtu.be/-ujkzkqRZ8w'
+                        url: 'https://youtu.be/-ujkzkqRZ8w'
                     }
                 ]
             }
@@ -31,7 +31,7 @@ const alt = {
                 runs: [
                     {
                         player: '*Grondious',
-                        link: 'https://youtu.be/wBCzMTzm2dE'
+                        url: 'https://youtu.be/wBCzMTzm2dE'
                     }
                 ]
             }
@@ -43,7 +43,7 @@ const alt = {
                 runs: [
                     {
                         player: 'Misterbutter444',
-                        link: 'https://youtu.be/wBCzMTzm2dE'
+                        url: 'https://youtu.be/wBCzMTzm2dE'
                     }
                 ]
             },
@@ -53,7 +53,7 @@ const alt = {
                 runs: [
                     {
                         player: '*SBDWolf',
-                        link: 'https://youtu.be/wGOuZEeCbH4'
+                        url: 'https://youtu.be/wGOuZEeCbH4'
                     }
                 ]
             }
@@ -65,7 +65,7 @@ const alt = {
                 runs: [
                     {
                         player: '*Grondious',
-                        link: 'https://youtu.be/wBCzMTzm2dE'
+                        url: 'https://youtu.be/wBCzMTzm2dE'
                     }
                 ]
             },
@@ -75,11 +75,11 @@ const alt = {
                 runs: [
                     {
                         player: 'Misterbutter444',
-                        link: 'https://youtu.be/EC3p6veqeuA'
+                        url: 'https://youtu.be/EC3p6veqeuA'
                     },
                     {
                         player: 'ClipBoardGuy',
-                        link: 'https://www.twitch.tv/videos/2381852669'
+                        url: 'https://www.twitch.tv/videos/2381852669'
                     }
                 ]
             }
@@ -91,7 +91,7 @@ const alt = {
                 runs: [
                     {
                         player: '*ClipBoardGuy',
-                        link: ''
+                        url: ''
                     }
                 ]
             },
@@ -101,7 +101,7 @@ const alt = {
                 runs: [
                     {
                         player: '*ClipBoardGuy',
-                        link: 'https://youtu.be/EC3p6veqeuA'
+                        url: 'https://youtu.be/EC3p6veqeuA'
                     }
                 ]
             }
@@ -113,7 +113,7 @@ const alt = {
                 runs: [
                     {
                         player: '*myekul',
-                        link: ''
+                        url: ''
                     }
                 ]
             },
@@ -123,7 +123,7 @@ const alt = {
                 runs: [
                     {
                         player: '*Lewzr',
-                        link: ''
+                        url: ''
                     }
                 ]
             },
@@ -133,7 +133,7 @@ const alt = {
                 runs: [
                     {
                         player: '*ClipBoardGuy',
-                        link: 'https://youtu.be/4QkAnWDeX6E'
+                        url: 'https://youtu.be/4QkAnWDeX6E'
                     }
                 ]
             }
@@ -147,7 +147,7 @@ const alt = {
                 runs: [
                     {
                         player: 'Jason2890',
-                        link: 'https://youtu.be/I3b9GXHC5vA'
+                        url: 'https://youtu.be/I3b9GXHC5vA'
                     }
                 ]
             }
@@ -161,11 +161,11 @@ const alt = {
                 runs: [
                     {
                         player: 'MarkinSws',
-                        link: 'https://youtu.be/O9X7G-i-QAo?feature=shared&t=35'
+                        url: 'https://youtu.be/O9X7G-i-QAo?feature=shared&t=35'
                     },
                     {
                         player: '*Quincely0',
-                        link: 'https://youtu.be/mFQMrdYSZyA'
+                        url: 'https://youtu.be/mFQMrdYSZyA'
                     }
                 ]
             }
@@ -177,7 +177,7 @@ const alt = {
                 runs: [
                     {
                         player: 'MarkinSws',
-                        link: 'https://youtu.be/eEc9lHX2BYU?feature=shared&t=12'
+                        url: 'https://youtu.be/eEc9lHX2BYU?feature=shared&t=12'
                     }
                 ]
             }
