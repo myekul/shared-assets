@@ -31,7 +31,7 @@ const alt = {
             },
             {
                 name: 'Lunge',
-                time: 22.60,
+                time: "22.60",
                 player: 'Grondious',
                 url: 'https://youtu.be/-ujkzkqRZ8w'
             }
@@ -84,7 +84,7 @@ const alt = {
                 url: 'https://youtu.be/wGOuZEeCbH4'
             }
         ],
-        wallywarbles:[
+        wallywarbles: [
             {
                 name: '',
                 time: 46.77,
@@ -92,7 +92,7 @@ const alt = {
                 url: 'https://youtu.be/hsDpiF7xC4s'
             }
         ],
-        djimmithegreat:[
+        djimmithegreat: [
             {
                 name: 'Phase 2 Extra Bullets',
                 time: "1:15.83",
@@ -106,12 +106,20 @@ const alt = {
             //     url: 'https://youtu.be/EvywFzRtkuc'
             // }
         ],
-        beppitheclown:[
+        beppitheclown: [
             {
                 name: '',
                 time: 38.26,
                 player: 'Lewzr',
                 url: 'https://youtu.be/diUqcbv3y1g'
+            }
+        ],
+        grimmatchstick: [
+            {
+                name: '',
+                time: 45.89,
+                player: 'Quincely0',
+                url: 'https://youtu.be/wADPxhZkybg'
             }
         ],
         rumorhoneybottoms: [
@@ -148,7 +156,7 @@ const alt = {
                 url: 'https://youtu.be/UFn71NypSZg'
             }
         ],
-        sallystageplay:[
+        sallystageplay: [
             {
                 name: '',
                 time: 44.66,
@@ -170,7 +178,7 @@ const alt = {
                 url: 'https://youtu.be/7SiU5u3AW6U'
             }
         ],
-        captainbrineybeard:[
+        captainbrineybeard: [
             {
                 name: '',
                 time: 36.71,
@@ -178,7 +186,7 @@ const alt = {
                 url: 'https://youtu.be/N6EBTHs8yXg'
             }
         ],
-        calamaria:[
+        calamaria: [
             {
                 name: 'Parries',
                 time: 50.96,
@@ -212,7 +220,7 @@ const alt = {
                 url: 'https://youtu.be/izDrJFDhWOk'
             }
         ],
-        kingdice:[
+        kingdice: [
             {
                 name: '',
                 time: "1:44.69 / 1:46.47 RTA",
@@ -289,7 +297,7 @@ const alt = {
             }
         ]
     },
-    'DLC': {
+    'DLC L/S': {
         estherwinchester: [
             {
                 name: '1 Nuke',
@@ -306,5 +314,23 @@ const alt = {
                 url: 'https://youtu.be/eEc9lHX2BYU?feature=shared&t=12'
             }
         ]
+    },
+    'DLC C/S': {
+        estherwinchester: [
+            {
+                name: '1 Nuke',
+                time: 59.34,
+                player: 'Quincely0',
+                url: 'https://youtu.be/mFQMrdYSZyA'
+            }
+        ],
+        chefsaltbaker: [
+            {
+                name: 'Strawberries',
+                time: 53.26,
+                player: 'myekul',
+                url: 'https://youtu.be/nyD7tfeUwXM'
+            }
+        ],
     }
 }
