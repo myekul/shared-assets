@@ -15,11 +15,12 @@ const fontAwesomeSet = {
     grid: ['Grid', 'group'],
     // Speedrun Resources
     bossInfo: ['Boss Info', 'drivers-license-o'],
+    hp: ['HP', 'heart'],
+    shotInfo: ['Shots', 'crosshairs'],
     tutorials: ['Tutorials', 'book'],
     monkeyTool: ['Monkey Tool', 'wrench'],
     graveyardTool: ['Graveyard Tool', 'wrench'],
     rumorTool: ['Rumor Tool', 'wrench'],
-    shots: ['Shots', 'crosshairs'],
     // myekuldex
     pokedex: ['Pokedex', 'book'],
     sfx: ['SFX', 'volume-up'],

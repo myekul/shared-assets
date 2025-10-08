@@ -3,139 +3,109 @@ const alt = {
         therootpack: [
             {
                 name: '1 Onion EX',
-                time: 34,
-                runs: [
-                    {
-                        player: '*ExclamationMarkYT',
-                        url: 'https://youtu.be/5XuoQ9-PDu4'
-                    }
-                ]
+                time: 34.36,
+                player: '*ExclamationMarkYT',
+                url: 'https://youtu.be/5XuoQ9-PDu4'
             }
         ],
         goopylegrande: [
             {
                 name: 'Lunge',
-                time: 22,
-                runs: [
-                    {
-                        player: '*Grondious',
-                        url: 'https://youtu.be/-ujkzkqRZ8w'
-                    }
-                ]
+                time: 22.60,
+                player: '*Grondious',
+                url: 'https://youtu.be/-ujkzkqRZ8w'
             }
         ],
         cagneycarnation: [
             {
                 name: 'Seeds',
-                time: 33,
-                runs: [
-                    {
-                        player: '*Grondious',
-                        url: 'https://youtu.be/wBCzMTzm2dE'
-                    }
-                ]
+                time: 33.96,
+                player: '*Grondious',
+                url: 'https://youtu.be/wBCzMTzm2dE'
             }
         ],
         baronessvonbonbon: [
             {
                 name: 'Waffle, Cupcake, Gumball',
-                time: 33,
-                runs: [
-                    {
-                        player: 'Misterbutter444',
-                        url: 'https://youtu.be/wBCzMTzm2dE'
-                    }
-                ]
+                time: 33.37,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/QhJ6cLoV7MQ'
             },
             {
                 name: 'Candy Corn, Cupcake, Waffle',
-                time: 32,
-                runs: [
-                    {
-                        player: '*SBDWolf',
-                        url: 'https://youtu.be/wGOuZEeCbH4'
-                    }
-                ]
+                time: 32.67,
+                player: '*SBDWolf',
+                url: 'https://youtu.be/wGOuZEeCbH4'
             }
         ],
         rumorhoneybottoms: [
             {
                 name: 'Orbs',
-                time: 40,
-                runs: [
-                    {
-                        player: '*Grondious',
-                        url: 'https://youtu.be/wBCzMTzm2dE'
-                    }
-                ]
+                time: 40.92,
+                player: '*Grondious',
+                url: 'https://youtu.be/agOxv114yyc'
             },
             {
                 name: 'Triangles',
-                time: 41,
-                runs: [
-                    {
-                        player: 'Misterbutter444',
-                        url: 'https://youtu.be/EC3p6veqeuA'
-                    },
-                    {
-                        player: 'ClipBoardGuy',
-                        url: 'https://www.twitch.tv/videos/2381852669'
-                    }
-                ]
+                time: 41.59,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/EC3p6veqeuA'
             }
         ],
         drkahlsrobot: [
             {
                 name: 'Red Gem',
-                time: 41,
-                runs: [
-                    {
-                        player: '*ClipBoardGuy',
-                        url: 'https://youtu.be/qLbPsCGQo-g'
-                    }
-                ]
+                time: '41.46 / 42.47 RTA',
+                player: '*ClipBoardGuy',
+                url: 'https://youtu.be/qLbPsCGQo-g'
             },
             {
                 name: 'Blue Gem',
-                time: 41,
-                runs: [
-                    {
-                        player: '*ClipBoardGuy',
-                        url: 'https://youtu.be/UFn71NypSZg'
-                    }
-                ]
+                time: '41.93 / 42.66 RTA',
+                player: '*ClipBoardGuy',
+                url: 'https://youtu.be/UFn71NypSZg'
+            }
+        ],
+        wernerwerman: [
+            {
+                name: 'Parries',
+                time: '34.17 / 34.89 RTA',
+                player: '*SBDWolf',
+                url: 'https://youtu.be/izDrJFDhWOk'
+            }
+        ],
+        phantomexpress: [
+            {
+                name: 'Safe Phase 1',
+                time: '59.99 / 62.21 RTA',
+                player: '*Grondious',
+                url: 'https://youtu.be/izDrJFDhWOk'
             }
         ],
         thedevil: [
             // {
             //     name: 'Ring Dragon (No freeze)',
             //     time: 47,
-            //     runs: [
-            //         {
-            //             player: '*myekul',
-            //             url: ''
-            //         }
-            //     ]
+            //     player: '*myekul',
+            //     url: ''
             // },
             {
                 name: 'Ring Dragon (Freeze)',
-                time: 42,
-                runs: [
-                    {
-                        player: '*Lewzr',
-                        url: 'https://youtu.be/SeaoWgXfEbA'
-                    }
-                ]
+                time: 42.15,
+                player: '*Lewzr',
+                url: 'https://youtu.be/SeaoWgXfEbA'
+            },
+            {
+                name: 'Dragon First',
+                time: 49.54,
+                player: '*myekul',
+                url: 'https://youtu.be/W4lcHJRARJA'
             },
             {
                 name: 'Clap Bubbles Clap Dragon',
-                time: 51,
-                runs: [
-                    {
-                        player: '*ClipBoardGuy',
-                        url: 'https://youtu.be/4QkAnWDeX6E'
-                    }
-                ]
+                time: 51.97,
+                player: '*ClipBoardGuy',
+                url: 'https://youtu.be/4QkAnWDeX6E'
             }
         ]
     },
@@ -144,24 +114,16 @@ const alt = {
             {
                 name: 'Punches Snakes',
                 time: 49,
-                runs: [
-                    {
-                        player: 'Jason2890',
-                        url: 'https://youtu.be/I3b9GXHC5vA'
-                    }
-                ]
+                player: 'Jason2890',
+                url: 'https://youtu.be/I3b9GXHC5vA'
             }
         ],
-        goopylegrande:[
-{
+        goopylegrande: [
+            {
                 name: 'Parries + Doubles',
-                time: 26,
-                runs: [
-                    {
-                        player: '*Yuka',
-                        url: 'https://youtu.be/qhAG8U9AYNA'
-                    }
-                ]
+                time: '26.99 / 27.36 RTA',
+                player: 'Yuka',
+                url: 'https://youtu.be/qhAG8U9AYNA'
             }
         ]
     },
@@ -169,29 +131,17 @@ const alt = {
         estherwinchester: [
             {
                 name: '1 Nuke',
-                time: 59,
-                runs: [
-                    {
-                        player: 'MarkinSws',
-                        url: 'https://youtu.be/O9X7G-i-QAo?feature=shared&t=35'
-                    },
-                    {
-                        player: '*Quincely0',
-                        url: 'https://youtu.be/mFQMrdYSZyA'
-                    }
-                ]
+                time: 59.34,
+                player: '*Quincely0',
+                url: 'https://youtu.be/mFQMrdYSZyA'
             }
         ],
-        moonshinemob:[
+        moonshinemob: [
             {
                 name: 'No Lunar Eclipse',
-                time: 37,
-                runs: [
-                    {
-                        player: 'MarkinSws',
-                        url: 'https://youtu.be/eEc9lHX2BYU?feature=shared&t=12'
-                    }
-                ]
+                time: 37.61,
+                player: 'MarkinSws',
+                url: 'https://youtu.be/eEc9lHX2BYU?feature=shared&t=12'
             }
         ]
     }
