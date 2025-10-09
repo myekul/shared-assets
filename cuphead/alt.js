@@ -53,7 +53,7 @@ const alt = {
             },
             {
                 name: 'No Lunge EX',
-                time: 30.77,
+                time: 32.52,
                 player: 'Quincely0',
                 url: 'https://youtu.be/_1xtRopi5Qc'
             },
@@ -247,18 +247,18 @@ const alt = {
                 player: 'Lewzr',
                 url: 'https://youtu.be/SeaoWgXfEbA'
             },
-            // {
-            //     name: 'Ring Dragon (No freeze)',
-            //     time: 46,
-            //     player: 'myekul',
-            //     url: ''
-            // },
-            // {
-            //     name: 'Clap Dragon',
-            //     time: 48,
-            //     player: 'myekul',
-            //     url: ''
-            // },
+            {
+                name: 'Ring Dragon (No freeze)',
+                time: 46.80,
+                player: 'myekul',
+                url: 'https://youtu.be/c3muDgZht_M'
+            },
+            {
+                name: 'Clap Dragon',
+                time: 47.99,
+                player: 'myekul',
+                url: 'https://youtu.be/GmJrlC0C4lg'
+            },
             {
                 name: 'Dragon First',
                 time: 49.54,
