@@ -30,10 +30,10 @@ const alt = {
                 url: 'https://youtu.be/lpWutnyKGlY'
             },
             {
-                name: 'Lunge',
-                time: "22.60",
-                player: 'Grondious',
-                url: 'https://youtu.be/-ujkzkqRZ8w'
+                name: 'Sneeze',
+                time: 22.45,
+                player: 'Yuka',
+                url: 'https://youtu.be/UaZ4xqejmR4'
             }
         ],
         hildaberg: [
@@ -137,9 +137,9 @@ const alt = {
             },
             {
                 name: 'Triangles',
-                time: 41.59,
-                player: 'Misterbutter444',
-                url: 'https://youtu.be/EC3p6veqeuA'
+                time: 40.91,
+                player: 'Lewzr',
+                url: 'https://youtu.be/DhCxFrpfDa0'
             }
         ],
         drkahlsrobot: [
@@ -196,28 +196,34 @@ const alt = {
         ],
         phantomexpress: [
             {
-                name: 'Left Cart Final',
+                name: '1 Triple, Left Pumpkin, Left Cart Final',
                 time: '57.48 / 59.12 RTA',
                 player: 'SBDWolf',
                 url: 'https://youtu.be/L82I_PlmAuw'
             },
             {
-                name: '2 Triples, Middle Cart Final',
+                name: '2 Triples, Left Pumpkin',
                 time: '57.70 / 59.34 RTA',
                 player: 'GamerAttack27',
                 url: 'https://youtu.be/Fw05Vx5NOR8'
             },
             {
-                name: 'Middle Cart Final',
+                name: '1 Triple, Left Pumpkin',
                 time: '57.84 / 59.48 RTA',
                 player: 'Misterbutter444',
                 url: 'https://youtu.be/dLVsNJ5ElXQ'
             },
             {
-                name: 'Safe Phase 1',
+                name: '1 Double, Left Pumpkin',
+                time: '58.57 / 60.41 RTA',
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/Q2yE0RMxHfc'
+            },
+            {
+                name: 'Safe Phase 1, 1 Triple, Left Pumpkin',
                 time: '59.99 / 62.21 RTA',
                 player: 'Grondious',
-                url: 'https://youtu.be/izDrJFDhWOk'
+                url: 'https://youtu.be/x_2IL7qJpVk'
             }
         ],
         kingdice: [
@@ -248,10 +254,40 @@ const alt = {
                 url: 'https://youtu.be/SeaoWgXfEbA'
             },
             {
+                name: 'Bubbles Spider',
+                time: 43.39,
+                player: 'Lewzr',
+                url: 'https://youtu.be/oYO-G9jognc'
+            },
+            {
+                name: 'Clap Bubbles Dragon',
+                time: 44.01,
+                player: 'Lewzr',
+                url: 'https://youtu.be/N5kU6mmnnVU'
+            },
+            {
+                name: 'Bubbles Clap Dragon',
+                time: 44.67,
+                player: 'Lewzr',
+                url: 'https://youtu.be/15BGNHK4n9s'
+            },
+            {
                 name: 'Ring Dragon (No freeze)',
-                time: 46.80,
+                time: "46.80",
                 player: 'myekul',
                 url: 'https://youtu.be/c3muDgZht_M'
+            },
+            {
+                name: 'Clap Ring Clap Dragon',
+                time: 47.55,
+                player: 'Lewzr',
+                url: 'https://youtu.be/hE9MjoNtnGM'
+            },
+            {
+                name: 'Clap Pinwheel Clap Dragon',
+                time: 47.62,
+                player: 'Lewzr',
+                url: 'https://youtu.be/yDOCP1QhrYk'
             },
             {
                 name: 'Clap Dragon',
@@ -295,7 +331,15 @@ const alt = {
                 player: 'Yuka',
                 url: 'https://youtu.be/qhAG8U9AYNA'
             }
-        ]
+        ],
+        baronessvonbonbon: [
+            {
+                name: 'Waffle, Cupcake, Gumball',
+                time: 34.68,
+                player: 'HappyWolf',
+                url: 'https://youtu.be/CDO4WD1o8HI'
+            }
+        ],
     },
     'DLC L/S': {
         estherwinchester: [
