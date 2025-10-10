@@ -499,13 +499,15 @@ const alt = {
         drkahlsrobot: [
             {
                 name: 'Red Gem',
-                time: '41.46 / 42.47 RTA',
+                time: 41.46,
+                rta: 42.47,
                 player: 'ClipBoardGuy',
                 url: 'https://youtu.be/qLbPsCGQo-g'
             },
             {
                 name: 'Blue Gem',
-                time: '41.93 / 42.66 RTA',
+                time: 41.93,
+                rta: 42.66,
                 player: 'ClipBoardGuy',
                 url: 'https://youtu.be/UFn71NypSZg'
             }
@@ -520,16 +522,23 @@ const alt = {
         ],
         wernerwerman: [
             {
-                name: 'Parries',
-                time: '34.17 / 34.89 RTA',
+                name: 'Catapult, Charge (Parries)',
+                time: 34.17,
+                rta: 34.89,
                 player: 'SBDWolf',
                 url: 'https://youtu.be/izDrJFDhWOk'
             },
             {
-                name: 'No Parries',
-                time: '36.83',
+                name: 'Catapult, Charge',
+                time: 36.83,
                 player: 'Grondious',
                 url: 'https://youtu.be/7SiU5u3AW6U'
+            },
+            {
+                name: 'Cherry Bombs, Catapult',
+                time: 38.76,
+                player: 'Lewzr',
+                url: 'https://youtu.be/QjstsSlNaOY'
             }
         ],
         captainbrineybeard: [
@@ -542,40 +551,53 @@ const alt = {
         ],
         calamaria: [
             {
-                name: 'Parries',
+                name: 'Red Fish, Pufferfish (Parries)',
                 time: 50.96,
+                rta: 52.06,
                 player: 'Lewzr',
                 url: 'https://youtu.be/WHPWKFNR1wY'
+            },
+            {
+                name: 'Seahorse, Red Fish, Pufferfish (Parries)',
+                time: 51.53,
+                rta: 52.56,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/TDRTnzhNqL4'
             }
         ],
         phantomexpress: [
             {
                 name: '1 Triple, Left Pumpkin, Left Cart Final',
-                time: '57.48 / 59.12 RTA',
+                time: 57.48,
+                rta: 59.12,
                 player: 'SBDWolf',
                 url: 'https://youtu.be/L82I_PlmAuw'
             },
             {
                 name: '2 Triples, Left Pumpkin',
-                time: '57.70 / 59.34 RTA',
+                time: 57.70,
+                rta: 59.34,
                 player: 'GamerAttack27',
                 url: 'https://youtu.be/Fw05Vx5NOR8'
             },
             {
                 name: '1 Triple, Left Pumpkin',
-                time: '57.84 / 59.48 RTA',
+                time: 57.84,
+                rta: 59.48,
                 player: 'Misterbutter444',
                 url: 'https://youtu.be/dLVsNJ5ElXQ'
             },
             {
                 name: '1 Double, Left Pumpkin',
-                time: '58.57 / 60.41 RTA',
+                time: 58.57,
+                rta: 60.41,
                 player: 'ClipBoardGuy',
                 url: 'https://youtu.be/Q2yE0RMxHfc'
             },
             {
                 name: 'Safe Phase 1, 1 Triple, Left Pumpkin',
-                time: '59.99 / 62.21 RTA',
+                time: 59.99,
+                rta: 62.21,
                 player: 'Grondious',
                 url: 'https://youtu.be/x_2IL7qJpVk'
             }
@@ -583,7 +605,8 @@ const alt = {
         kingdice: [
             {
                 name: '',
-                time: "1:44.69 / 1:46.47 RTA",
+                time: "1:44.69",
+                rta: "1:46.47",
                 player: 'Quincely0',
                 url: 'https://youtu.be/stxsgl3xDsM'
             }
@@ -659,9 +682,9 @@ const alt = {
             },
             {
                 name: 'Clap Bubbles Clap Dragon',
-                time: 51.97,
-                player: 'ClipBoardGuy',
-                url: 'https://youtu.be/4QkAnWDeX6E'
+                time: 50.90,
+                player: 'Lewzr',
+                url: 'https://youtu.be/tqBsk49aoxs'
             },
             // {
             //     name: 'Clap Ring Clap (Skip)',
@@ -703,7 +726,8 @@ const alt = {
         goopylegrande: [
             {
                 name: 'Parries + Doubles',
-                time: '26.99 / 27.36 RTA',
+                time: 26.99,
+                rta: 27.36,
                 player: 'Yuka',
                 url: 'https://youtu.be/qhAG8U9AYNA'
             }
@@ -716,8 +740,24 @@ const alt = {
                 url: 'https://youtu.be/CDO4WD1o8HI'
             }
         ],
+        beppitheclown: [
+            {
+                name: 'Parryless',
+                time: 59.87,
+                player: 'myekul',
+                url: 'https://youtu.be/50AoT_hFBE0?si=cl6oQ5HBLYYadLEH&t=29s'
+            }
+        ],
+        kingdice: [
+            {
+                name: '3-4-8',
+                time: "1:55",
+                player: 'MarkinSws',
+                url: 'https://youtu.be/1GQjn0cuuI0'
+            }
+        ],
     },
-    'DLC L/S': {
+    'DLC': {
         estherwinchester: [
             {
                 name: '1 Nuke',
@@ -732,6 +772,14 @@ const alt = {
                 time: 37.61,
                 player: 'MarkinSws',
                 url: 'https://youtu.be/eEc9lHX2BYU?feature=shared&t=12'
+            }
+        ],
+        chefsaltbaker: [
+            {
+                name: 'Strawberries',
+                time: 52.49,
+                player: 'MarkinSws',
+                url: 'https://youtu.be/RRHoTUQKf4o'
             }
         ]
     },
@@ -750,6 +798,16 @@ const alt = {
                 time: 53.26,
                 player: 'myekul',
                 url: 'https://youtu.be/nyD7tfeUwXM'
+            }
+        ],
+    },
+    'DLC+Base': {
+        drkahlsrobot: [
+            {
+                name: 'Chalice, 1 Nuke',
+                time: 43.83,
+                player: 'MarkinSws',
+                url: 'https://youtu.be/hNf3fEyQHak?si=CLqp1ytnQvgTqVU9'
             }
         ],
     }

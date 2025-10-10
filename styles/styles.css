@@ -136,7 +136,7 @@ body {
 #headerRow {
     padding: 5px 0;
     background-color: var(--background2);
-    height:26px
+    height: 26px
 }
 
 #tabsDiv {
@@ -166,6 +166,10 @@ body {
     opacity: 0.4 !important;
     cursor: default !important;
     transform: none !important
+}
+
+#pageTitle {
+    width: 1000px
 }
 
 /* Ballpit */

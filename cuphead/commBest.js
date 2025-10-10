@@ -147,7 +147,8 @@ const commBestILs = {
             'Rapho',
             'SBDWolf',
             'Taylz',
-            'TitoOscarXxYT'
+            'TitoOscarXxYT',
+            'WoskiBoy'
         ]
     },
     'DLC C/S': {
@@ -202,7 +203,6 @@ const commBestILs = {
             "halfword",
             "AssasinNarga",
             "PorcoBrabo",
-            'WoskiBoy',
             'Mine_',
             'nomit'
         ]
