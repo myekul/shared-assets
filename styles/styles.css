@@ -169,7 +169,9 @@ body {
 }
 
 #pageTitle {
-    width: 1000px
+    width: 1000px;
+    margin: 0 auto;
+    position: relative
 }
 
 /* Ballpit */

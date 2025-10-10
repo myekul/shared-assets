@@ -535,6 +535,12 @@ const alt = {
                 url: 'https://youtu.be/7SiU5u3AW6U'
             },
             {
+                name: 'Cherry Bombs, Charge',
+                time: 37.98,
+                player: 'Lewzr',
+                url: 'https://youtu.be/J6MKRHmAvpo'
+            },
+            {
                 name: 'Cherry Bombs, Catapult',
                 time: 38.76,
                 player: 'Lewzr',
