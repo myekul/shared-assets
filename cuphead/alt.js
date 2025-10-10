@@ -20,13 +20,19 @@ const alt = {
                 time: 40.79,
                 player: 'Grondious',
                 url: 'https://youtu.be/-KvAjbtm56E'
+            },
+            {
+                name: 'Punches, Bulls',
+                time: "43.80",
+                player: 'Lewzr',
+                url: 'https://youtu.be/huuc7qQPy9I'
             }
         ],
         goopylegrande: [
             {
                 name: 'Sneeze Skip',
                 time: 21.93,
-                player: 'Grondious',
+                player: 'Quincely0',
                 url: 'https://youtu.be/lpWutnyKGlY'
             },
             {
@@ -66,10 +72,34 @@ const alt = {
         ],
         baronessvonbonbon: [
             {
+                name: 'Candy Corn, Cupcake, Waffle',
+                time: 32.67,
+                player: 'SBDWolf',
+                url: 'https://youtu.be/wGOuZEeCbH4'
+            },
+            {
+                name: 'Candy Corn, Cupcake, Jawbreaker',
+                time: 35.72,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=Pb4ukOwz5_oW-MLz&t=177'
+            },
+            {
+                name: 'Candy Corn, Jawbreaker, Gumball',
+                time: 37.39,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=3DbPZFVnWyFeorRX&t=362'
+            },
+            {
                 name: 'Waffle, Candy Corn, Cupcake',
                 time: 29.87,
                 player: 'Quincely0',
                 url: 'https://youtu.be/jpj_xHYncyk'
+            },
+            {
+                name: 'Waffle, Candy Corn, Jawbreaker',
+                time: 33.72,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=AuFaBFjRiJT_j1FJ&t=505'
             },
             {
                 name: 'Waffle, Cupcake, Gumball',
@@ -78,11 +108,53 @@ const alt = {
                 url: 'https://youtu.be/QhJ6cLoV7MQ'
             },
             {
-                name: 'Candy Corn, Cupcake, Waffle',
-                time: 32.67,
-                player: 'SBDWolf',
-                url: 'https://youtu.be/wGOuZEeCbH4'
-            }
+                name: 'Waffle, Jawbreaker, Candy Corn',
+                time: 34.79,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=QfMFQJ-Vu3h4Mnrs&t=752'
+            },
+            {
+                name: 'Cupcake, Candy Corn, Gumball',
+                time: 33.88,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=T0tvNwKwnxb3wnoZ&t=893'
+            },
+            {
+                name: 'Cupcake, Candy Corn, Jawbreaker',
+                time: 35.14,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=7gj84AyNeebsTgcC&t=928'
+            },
+            {
+                name: 'Cupcake, Gumball, Candy Corn',
+                time: 33.85,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=YYFkTfZ3WryeYYhS&t=1069'
+            },
+            {
+                name: 'Cupcake, Gumball, Jawbreaker',
+                time: 36.73,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=6sixBDoa4N6nakmN&t=1138'
+            },
+            {
+                name: 'Cupcake, Jawbreaker, Waffle',
+                time: 35.94,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=zzmweMrZrsBnbSzM&t=1252'
+            },
+            {
+                name: 'Gumball, Waffle, Candy Corn',
+                time: 33.98,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=yI2wDkHXLxGG0T6K&t=1394'
+            },
+            {
+                name: 'Gumball, Candy Corn, Waffle',
+                time: 33.29,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/-g2EcwDh5Ho?si=OMZG3d4pyRUxIB7m&t=1289'
+            },
         ],
         wallywarbles: [
             {
@@ -254,10 +326,28 @@ const alt = {
                 url: 'https://youtu.be/SeaoWgXfEbA'
             },
             {
+                name: 'Clap Ring Dragon',
+                time: 42.22,
+                player: 'Lewzr',
+                url: 'https://youtu.be/Ndr9l_q3tJc'
+            },
+            {
+                name: 'Clap Pinwheel Dragon',
+                time: 42.91,
+                player: 'Lewzr',
+                url: 'https://youtu.be/ZlNonqNSZ0Q'
+            },
+            {
                 name: 'Bubbles Spider',
                 time: 43.39,
                 player: 'Lewzr',
                 url: 'https://youtu.be/oYO-G9jognc'
+            },
+            {
+                name: 'Ring Spider',
+                time: 42.55,
+                player: 'Lewzr',
+                url: 'https://youtu.be/6JbHoh9RxFo'
             },
             {
                 name: 'Clap Bubbles Dragon',
