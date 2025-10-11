@@ -740,7 +740,7 @@ const alt = {
         thedevil: [
             // Non-freeze
             {
-                name: 'Ring Dragon (No freeze)',
+                name: 'Ring Dragon (No Freeze)',
                 time: "46.80",
                 player: 'myekul',
                 url: 'https://youtu.be/c3muDgZht_M'
@@ -752,7 +752,7 @@ const alt = {
                 url: 'https://youtu.be/GmJrlC0C4lg'
             },
             {
-                name: 'Dragon First',
+                name: 'Dragon Clap',
                 time: 49.54,
                 player: 'myekul',
                 url: 'https://youtu.be/W4lcHJRARJA'
