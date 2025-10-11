@@ -2,16 +2,22 @@ const alt = {
     '1.1+': {
         therootpack: [
             {
-                name: '2 Onion EXs',
+                name: 'TAStato, 2 Onion EXs',
                 time: 33.86,
                 player: 'ExclamationMarkYT',
                 url: 'https://youtu.be/5XuoQ9-PDu4'
             },
             {
-                name: '1 Onion EX',
+                name: 'TAStato, 1 Onion EX',
                 time: 34.36,
                 player: 'ExclamationMarkYT',
                 url: 'https://youtu.be/5XuoQ9-PDu4'
+            },
+            {
+                name: 'Double, 2 Onion EXs',
+                time: 34.97,
+                player: 'ExclamationMarkYT',
+                url: 'https://youtu.be/9SMEoXKvsOo'
             }
         ],
         ribbyandcroaks: [
@@ -549,11 +555,101 @@ const alt = {
         ],
         captainbrineybeard: [
             {
-                name: '',
+                name: '2-Gun, Gun (Captain SBD)',
                 time: 36.71,
                 player: 'Quincely0',
                 url: 'https://youtu.be/N6EBTHs8yXg'
-            }
+            },
+            {
+                name: '2-Gun, Squid',
+                time: 38.36,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/KYlqjQbUo8U'
+            },
+            {
+                name: '2-Gun, Shark',
+                time: 38.95,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/O_kXebQwfog'
+            },
+            {
+                name: '2-Gun, Dogfish',
+                time: 40.88,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/tybLSjBjbTE'
+            },
+            {
+                name: '4-Gun, Gun',
+                time: 41.58,
+                player: 'ClipBoardGuy',
+                url: 'https://www.twitch.tv/videos/2353665514'
+            },
+            {
+                name: '4-Gun, Squid',
+                time: 39.78,
+                player: 'ClipBoardGuy',
+                url: 'https://www.twitch.tv/videos/2353665514'
+            },
+            {
+                name: '4-Gun, Shark',
+                time: 42.96,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/VM84dBH2oz4'
+            },
+            {
+                name: '4-Gun, Dogfish',
+                time: 44.38,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/DXj_7V1Z2EQ'
+            },
+            {
+                name: 'Squid, Gun',
+                time: 38.98,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/cY4m9AAapnM'
+            },
+            {
+                name: 'Squid, Squid',
+                time: 41.72,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/sygpUQViNpg'
+            },
+            {
+                name: 'Squid, Shark',
+                time: 40.71,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/-tC2SKz4vWA'
+            },
+            {
+                name: 'Squid, Dogfish',
+                time: 43.99,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/rGWAY42aCn8'
+            },
+            {
+                name: 'Dogfish, Gun',
+                time: 41.98,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/_f84Id17otQ'
+            },
+            {
+                name: 'Dogfish, Squid',
+                time: 40.91,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/yWaRv7YjaCY'
+            },
+            {
+                name: 'Dogfish, Shark',
+                time: 43.51,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/mxY7V8sA8Kk'
+            },
+            {
+                name: 'Dogfish, Dogfish',
+                time: 45.79,
+                player: 'ClipBoardGuy',
+                url: 'https://www.twitch.tv/videos/2356808319'
+            },
         ],
         calamaria: [
             {
@@ -588,10 +684,10 @@ const alt = {
             },
             {
                 name: '1 Triple, Left Pumpkin',
-                time: 57.84,
-                rta: 59.48,
-                player: 'Misterbutter444',
-                url: 'https://youtu.be/dLVsNJ5ElXQ'
+                time: 57.70,
+                rta: 59.36,
+                player: 'GamerAttack27',
+                url: 'https://youtu.be/cif5WQOacxA'
             },
             {
                 name: '1 Double, Left Pumpkin',
@@ -649,6 +745,12 @@ const alt = {
                 time: 42.15,
                 player: 'Lewzr',
                 url: 'https://youtu.be/SeaoWgXfEbA'
+            },
+            {
+                name: 'Pinwheel Dragon',
+                time: 45.95,
+                player: 'Lewzr',
+                url: 'https://youtu.be/uYw2UUCSgZ0'
             },
             {
                 name: 'Clap Ring Dragon',

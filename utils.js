@@ -9,7 +9,7 @@ const fontAwesomeSet = {
     map: ['Map', 'flag'],
     sort: ['Sort', 'sort-amount-asc'],
     // Run Recap
-    commBestILs: ['Comm Best ILs', 'tasks'],
+    commBestILs: ['Comm Best ILs', 'trophy'],
     commBestSplits: ['Comm Best Splits', 'tasks'],
     sums: ['Sums', 'plus'],
     grid: ['Grid', 'group'],
