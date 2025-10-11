@@ -555,7 +555,7 @@ const alt = {
         ],
         captainbrineybeard: [
             {
-                name: '2-Gun, Gun (Captain SBD)',
+                name: '2-Gun, Gun',
                 time: 36.71,
                 player: 'Quincely0',
                 url: 'https://youtu.be/N6EBTHs8yXg'
@@ -620,8 +620,32 @@ const alt = {
                 player: 'ClipBoardGuy',
                 url: 'https://youtu.be/-tC2SKz4vWA'
             },
+            // {
+            //     name: 'Squid, Dogfish',
+            //     time: ,
+            //     player: 'ClipBoardGuy',
+            //     url: ''
+            // },
             {
-                name: 'Squid, Dogfish',
+                name: 'Shark, Gun',
+                time: 40.91,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/ERgokq-2Jgw'
+            },
+            {
+                name: 'Shark, Squid',
+                time: 39.48,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/Ihc9dYzvLB4'
+            },
+            {
+                name: 'Shark, Shark',
+                time: 42.91,
+                player: 'ClipBoardGuy',
+                url: 'https://youtu.be/GTFKgePScBA'
+            },
+            {
+                name: 'Shark, Dogfish',
                 time: 43.99,
                 player: 'ClipBoardGuy',
                 url: 'https://youtu.be/rGWAY42aCn8'
