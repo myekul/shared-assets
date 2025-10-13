@@ -2,22 +2,28 @@ const alt = {
     '1.1+': {
         therootpack: [
             {
-                name: 'TAStato, 2 Onion EXs',
+                name: 'TAStato, 2 Onion Triples',
                 time: 33.86,
                 player: 'ExclamationMarkYT',
-                url: 'https://youtu.be/5XuoQ9-PDu4'
+                url: 'https://youtu.be/jKPwTRLunOM'
             },
             {
-                name: 'TAStato, 1 Onion EX',
+                name: 'TAStato, 1 Onion Triple',
                 time: 34.36,
                 player: 'ExclamationMarkYT',
                 url: 'https://youtu.be/5XuoQ9-PDu4'
             },
             {
-                name: 'Double, 2 Onion EXs',
-                time: 34.97,
+                name: 'TAStato, 1 Double 1 Triple',
+                time: 34.91,
                 player: 'ExclamationMarkYT',
-                url: 'https://youtu.be/9SMEoXKvsOo'
+                url: 'https://youtu.be/m26QlGWif0c'
+            },
+            {
+                name: 'Double, 2 Onion Triples',
+                time: 34.76,
+                player: 'ExclamationMarkYT',
+                url: 'https://youtu.be/MT5an2EvQ90'
             }
         ],
         ribbyandcroaks: [
@@ -80,6 +86,12 @@ const alt = {
                 time: 33.96,
                 player: 'Grondious',
                 url: 'https://youtu.be/wBCzMTzm2dE'
+            }
+            {
+                name: 'Double Lunge, Bottom Lunge',
+                time: 35.92,
+                player: 'Quincely0',
+                url: 'https://youtu.be/rdF5WbS-qX4'
             }
         ],
         baronessvonbonbon: [
@@ -450,6 +462,12 @@ const alt = {
                 time: 46.77,
                 player: 'Quincely0',
                 url: 'https://youtu.be/hsDpiF7xC4s'
+            },
+            {
+                name: 'Nuke',
+                time: 48.57,
+                player: 'Quincely0',
+                url: 'https://youtu.be/F7wDapPa3kg'
             }
         ],
         djimmithegreat: [
@@ -476,10 +494,16 @@ const alt = {
         ],
         grimmatchstick: [
             {
-                name: '',
+                name: 'Three Lasers, Two Lasers',
                 time: 45.89,
                 player: 'Quincely0',
                 url: 'https://youtu.be/wADPxhZkybg'
+            },
+            {
+                name: 'Three Lasers, Meteors',
+                time: 49.29,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/kikSkcXOMGU'
             }
         ],
         rumorhoneybottoms: [
@@ -620,12 +644,12 @@ const alt = {
                 player: 'ClipBoardGuy',
                 url: 'https://youtu.be/-tC2SKz4vWA'
             },
-            // {
-            //     name: 'Squid, Dogfish',
-            //     time: ,
-            //     player: 'ClipBoardGuy',
-            //     url: ''
-            // },
+            {
+                name: 'Squid, Dogfish',
+                time: 41.60,
+                player: 'Quincely0',
+                url: 'https://youtu.be/wzAJYBCsnHM'
+            },
             {
                 name: 'Shark, Gun',
                 time: 40.91,
@@ -714,11 +738,25 @@ const alt = {
                 url: 'https://youtu.be/cif5WQOacxA'
             },
             {
+                name: '1 Triple, Right Pumpkin',
+                time: 58.44,
+                rta: 60.27,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/IOELMRgBIh4'
+            },
+            {
                 name: '1 Double, Left Pumpkin',
                 time: 58.57,
                 rta: 60.41,
                 player: 'ClipBoardGuy',
                 url: 'https://youtu.be/Q2yE0RMxHfc'
+            },
+            {
+                name: '1 Double, Right Pumpkin',
+                time: 58.69,
+                rta: 60.52,
+                player: 'Misterbutter444',
+                url: 'https://youtu.be/Mzw5eDoeoZE'
             },
             {
                 name: 'Safe Phase 1, 1 Triple, Left Pumpkin',
