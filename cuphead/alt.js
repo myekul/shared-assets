@@ -86,9 +86,9 @@ const alt = {
                 time: 33.96,
                 player: 'Grondious',
                 url: 'https://youtu.be/wBCzMTzm2dE'
-            }
+            },
             {
-                name: 'Double Lunge, Bottom Lunge',
+                name: 'Double Seeds, Bottom Lunge',
                 time: 35.92,
                 player: 'Quincely0',
                 url: 'https://youtu.be/rdF5WbS-qX4'
