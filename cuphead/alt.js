@@ -1,4 +1,20 @@
 const alt = {
+    'Legacy': {
+        therootpack: [
+            {
+                name: 'No Potato EXs',
+                time: 27.76,
+                player: 'Yuka',
+                url: 'https://youtu.be/qf1ZEKBi71o'
+            },
+            {
+                name: 'No Doubles/Triples',
+                time: 28.81,
+                player: 'Yuka',
+                url: 'https://youtu.be/ZPR2PWzL9gI'
+            },
+        ]
+    },
     '1.1+': {
         therootpack: [
             {
@@ -24,6 +40,12 @@ const alt = {
                 time: 34.76,
                 player: 'ExclamationMarkYT',
                 url: 'https://youtu.be/MT5an2EvQ90'
+            },
+            {
+                name: '3 Doubles',
+                time: 35.84,
+                player: 'Quincely0',
+                url: 'https://youtu.be/-A6eTyo0RT0'
             }
         ],
         ribbyandcroaks: [
@@ -62,10 +84,16 @@ const alt = {
         ],
         hildaberg: [
             {
-                name: '',
+                name: 'Gemini',
                 time: 59.55,
                 player: 'Quincely0',
                 url: 'https://youtu.be/PThx8scpvck'
+            },
+            {
+                name: 'Sagittarius',
+                time: '~1:00.99',
+                player: 'MarkinSws',
+                url: 'https://youtu.be/SKcVXh-sUwc'
             }
         ],
         cagneycarnation: [
@@ -265,9 +293,9 @@ const alt = {
             },
             {
                 name: 'Cupcake, Waffle, Gumball',
-                time: 34.42,
-                player: 'Misterbutter444',
-                url: 'https://youtu.be/-g2EcwDh5Ho?si=-8UnYK0RZ7qoOH78&t=999'
+                time: 34.25,
+                player: 'myekul',
+                url: 'https://youtu.be/huSfyl-WhDU'
             },
             {
                 name: 'Cupcake, Waffle, Jawbreaker',
@@ -472,10 +500,16 @@ const alt = {
         ],
         djimmithegreat: [
             {
-                name: 'Phase 2 Extra Bullets',
+                name: 'Gems, Phase 2 Extra Bullets',
                 time: "1:15.83",
                 player: 'SBDWolf',
                 url: 'https://youtu.be/EvywFzRtkuc'
+            },
+            {
+                name: 'Swords, Phase 2 Extra Bullets',
+                time: "1:16.83",
+                player: 'Quincely0',
+                url: 'https://youtu.be/5GDd1k1g_og'
             },
             // {
             //     name: 'Phase 2 No Extra Bullets',
@@ -494,13 +528,13 @@ const alt = {
         ],
         grimmatchstick: [
             {
-                name: 'Three Lasers, Two Lasers',
+                name: '3 Lasers, 2 Lasers',
                 time: 45.89,
                 player: 'Quincely0',
                 url: 'https://youtu.be/wADPxhZkybg'
             },
             {
-                name: 'Three Lasers, Meteors',
+                name: '3 Lasers, 2 Meteors',
                 time: 49.29,
                 player: 'Misterbutter444',
                 url: 'https://youtu.be/kikSkcXOMGU'
@@ -713,6 +747,12 @@ const alt = {
                 rta: 52.56,
                 player: 'ClipBoardGuy',
                 url: 'https://youtu.be/TDRTnzhNqL4'
+            },
+            {
+                name: 'Yellow Fish, Turtle',
+                time: 54.82,
+                player: 'SBDWolf',
+                url: 'https://youtu.be/15x3FcMpTk0'
             }
         ],
         phantomexpress: [
@@ -759,6 +799,12 @@ const alt = {
                 url: 'https://youtu.be/Mzw5eDoeoZE'
             },
             {
+                name: '1 Double, Right Pumpkin',
+                time: 59.44,
+                player: 'MarkinSws',
+                url: 'https://youtu.be/BFdOWkxh47o'
+            },
+            {
                 name: 'Safe Phase 1, 1 Triple, Left Pumpkin',
                 time: 59.99,
                 rta: 62.21,
@@ -776,18 +822,26 @@ const alt = {
             }
         ],
         thedevil: [
-            // Non-freeze
             {
-                name: 'Ring Dragon (No Freeze)',
+                title: 'No Freeze'
+            },
+            {
+                name: 'Ring Dragon (3 Quads)',
                 time: "46.80",
                 player: 'myekul',
                 url: 'https://youtu.be/c3muDgZht_M'
             },
             {
-                name: 'Clap Dragon',
-                time: 47.99,
+                name: 'Pinwheel Dragon',
+                time: 47.47,
                 player: 'myekul',
-                url: 'https://youtu.be/GmJrlC0C4lg'
+                url: 'https://youtu.be/1HxKGWSZqPA'
+            },
+            {
+                name: 'Clap Dragon',
+                time: 47.68,
+                player: 'myekul',
+                url: 'https://youtu.be/l9cyRO-um9w'
             },
             {
                 name: 'Dragon Clap',
@@ -795,7 +849,21 @@ const alt = {
                 player: 'myekul',
                 url: 'https://youtu.be/W4lcHJRARJA'
             },
-            // Dragon Freeze
+            {
+                name: 'Clap Ring Clap',
+                time: 51.49,
+                player: 'myekul',
+                url: 'https://youtu.be/7Bk3o0pRUZ8'
+            },
+            {
+                name: 'Clap Pinwheel Clap',
+                time: 52.69,
+                player: 'myekul',
+                url: 'https://youtu.be/EXK3Ki0Lkso'
+            },
+            {
+                title: 'Dragon Freeze'
+            },
             {
                 name: 'Bubbles Dragon',
                 time: 40.87,
@@ -803,7 +871,7 @@ const alt = {
                 url: 'https://youtu.be/z51F-XWMpTA'
             },
             {
-                name: 'Ring Dragon (Freeze)',
+                name: 'Ring Dragon (4 Quads)',
                 time: 42.15,
                 player: 'Lewzr',
                 url: 'https://youtu.be/SeaoWgXfEbA'
@@ -856,19 +924,8 @@ const alt = {
                 player: 'Lewzr',
                 url: 'https://youtu.be/tqBsk49aoxs'
             },
-            // {
-            //     name: 'Clap Ring Clap (Skip)',
-            //     time: 52,
-            //     player: 'myekul',
-            //     url: ''
-            // }
-
-            // Spider
             {
-                name: "Spider's Kiss",
-                time: 38.79,
-                player: 'Grondious',
-                url: 'https://youtu.be/FuAtHLS56Ms'
+                title: 'Spider Freeze'
             },
             {
                 name: 'Ring Spider',
@@ -882,9 +939,26 @@ const alt = {
                 player: 'Lewzr',
                 url: 'https://youtu.be/oYO-G9jognc'
             },
+            {
+                title: 'Other'
+            },
+            {
+                name: "Spider's Kiss",
+                time: 38.79,
+                player: 'Grondious',
+                url: 'https://youtu.be/FuAtHLS56Ms'
+            },
         ]
     },
     'NMG': {
+        therootpack: [
+            {
+                name: '3 Doubles',
+                time: 35.84,
+                player: 'Quincely0',
+                url: 'https://youtu.be/-A6eTyo0RT0'
+            }
+        ],
         ribbyandcroaks: [
             {
                 name: 'Punches Snakes',
@@ -918,12 +992,42 @@ const alt = {
                 url: 'https://youtu.be/50AoT_hFBE0?si=cl6oQ5HBLYYadLEH&t=29s'
             }
         ],
+        phantomexpress: [
+            {
+                name: 'Right Pumpkin, Safe Phase 3',
+                time: '1:00.59',
+                rta: '1:02.59',
+                player: 'HappyWolf',
+                url: 'https://youtu.be/4erfkfM-MV8'
+            }
+        ],
         kingdice: [
+            {
+                name: '3-5-7',
+                time: "1:53.45",
+                rta: '1:55.99',
+                player: 'Quincely0',
+                url: 'https://youtu.be/5dRO8Ye9PRE'
+            },
             {
                 name: '3-4-8',
                 time: "1:55",
                 player: 'MarkinSws',
                 url: 'https://youtu.be/1GQjn0cuuI0'
+            }
+        ],
+        thedevil: [
+            {
+                name: 'Ring Dragon',
+                time: 49.87,
+                player: 'myekul',
+                url: 'https://youtu.be/e9iuDrmwC78'
+            },
+            {
+                name: 'Clap Dragon',
+                time: 51.64,
+                player: 'myekul',
+                url: 'https://youtu.be/olimvJ8WeF0'
             }
         ],
     },

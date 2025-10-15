@@ -10,6 +10,7 @@ const fontAwesomeSet = {
     sort: ['Sort', 'sort-amount-asc'],
     // Run Recap
     commBestILs: ['Comm Best ILs', 'trophy'],
+    altStrats: ['Alternate Strats', 'database'],
     commBestSplits: ['Comm Best Splits', 'tasks'],
     sums: ['Sums', 'plus'],
     grid: ['Grid', 'group'],
