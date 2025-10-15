@@ -2,7 +2,13 @@ const alt = {
     'Legacy': {
         therootpack: [
             {
-                name: 'No Potato EXs',
+                name: 'Potato EX',
+                time: 26.20,
+                player: 'Yuka',
+                url: 'https://youtu.be/l9Rbi9SOiwA'
+            },
+            {
+                name: 'No Potato EXs, Onion Dash',
                 time: 27.76,
                 player: 'Yuka',
                 url: 'https://youtu.be/qf1ZEKBi71o'
@@ -43,9 +49,9 @@ const alt = {
             },
             {
                 name: '3 Doubles',
-                time: 35.84,
-                player: 'Quincely0',
-                url: 'https://youtu.be/-A6eTyo0RT0'
+                time: 35.55,
+                player: 'ExclamationMarkYT',
+                url: 'https://youtu.be/yyBm3pYhAVo'
             }
         ],
         ribbyandcroaks: [
@@ -56,6 +62,18 @@ const alt = {
                 url: 'https://youtu.be/-KvAjbtm56E'
             },
             {
+                name: '5 Flies Regular Skip, Snakes',
+                time: 41.81,
+                player: 'Quincely0',
+                url: 'https://youtu.be/gstVx9ibTKY'
+            },
+            {
+                name: '6 Flies Regular Skip, Snakes',
+                time: 42.40,
+                player: 'Quincely0',
+                url: 'https://youtu.be/68pJU4KHDxA'
+            },
+            {
                 name: 'Punches, Bulls',
                 time: "43.80",
                 player: 'Lewzr',
@@ -63,10 +81,16 @@ const alt = {
             },
             {
                 name: 'Punches, Snakes',
-                time: "44.99",
+                time: 44.99,
                 player: 'Lewzr',
                 url: 'https://youtu.be/6tt6L1itrvU'
-            }
+            },
+            {
+                name: '5 Flies Super Skip, Snakes',
+                time: 45.37,
+                player: 'Quincely0',
+                url: 'https://youtu.be/kTm8n9F8BAY'
+            },
         ],
         goopylegrande: [
             {
@@ -799,7 +823,7 @@ const alt = {
                 url: 'https://youtu.be/Mzw5eDoeoZE'
             },
             {
-                name: '1 Double, Right Pumpkin',
+                name: '1 Single, Right Pumpkin',
                 time: 59.44,
                 player: 'MarkinSws',
                 url: 'https://youtu.be/BFdOWkxh47o'
@@ -940,10 +964,10 @@ const alt = {
                 url: 'https://youtu.be/oYO-G9jognc'
             },
             {
-                title: 'Other'
+                title: "Spider's Kiss"
             },
             {
-                name: "Spider's Kiss",
+                name: "Clap Pinwheel Clap Spider",
                 time: 38.79,
                 player: 'Grondious',
                 url: 'https://youtu.be/FuAtHLS56Ms'
@@ -954,9 +978,9 @@ const alt = {
         therootpack: [
             {
                 name: '3 Doubles',
-                time: 35.84,
-                player: 'Quincely0',
-                url: 'https://youtu.be/-A6eTyo0RT0'
+                time: 35.55,
+                player: 'ExclamationMarkYT',
+                url: 'https://youtu.be/yyBm3pYhAVo'
             }
         ],
         ribbyandcroaks: [
