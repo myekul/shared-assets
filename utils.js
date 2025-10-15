@@ -115,6 +115,16 @@ function setFooter(text) {
         .then(t => document.querySelector('footer').innerHTML = t)
         .then(() => {
             document.getElementById('footerText').innerHTML = text
+            fetch(`https://api.github.com/repos/myekul/${window.location.pathname.split('/')[1]}/commits?path=index.html&page=1&per_page=1`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        const lastCommitDate = new Date(data[0].commit.committer.date);
+                        const formattedDate = lastCommitDate.toISOString().split('T')[0];
+                        document.getElementById('lastUpdated').textContent = `last updated ${formattedDate}`;
+                    }
+                })
+                .catch(err => console.error(err));
         })
     if (document.querySelector('title').innerText != 'myekul') setDiscord()
 }
