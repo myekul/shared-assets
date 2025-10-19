@@ -13,11 +13,12 @@ const fontAwesomeSet = {
     altStrats: ['Alternate Strats', 'database'],
     commBestSplits: ['Comm Best Splits', 'tasks'],
     sums: ['Sums', 'plus'],
+    residual: ['Residual', 'star'],
     grid: ['Grid', 'group'],
     // Speedrun Resources
     bossInfo: ['Boss Info', 'drivers-license-o'],
     hp: ['HP', 'heart'],
-    shotInfo: ['Shots', 'crosshairs'],
+    shotInfo: ['Shot Info', 'crosshairs'],
     tutorials: ['Tutorials', 'book'],
     monkeyTool: ['Monkey Tool', 'wrench'],
     graveyardTool: ['Graveyard Tool', 'wrench'],
