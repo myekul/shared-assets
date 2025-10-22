@@ -9,8 +9,8 @@ const fontAwesomeSet = {
     map: ['Map', 'flag'],
     sort: ['Sort', 'sort-amount-asc'],
     // Run Recap
-    commBestILs: ['Comm Best ILs', 'trophy'],
-    altStrats: ['Alternate Strats', 'database'],
+    altStrats: ['Comm Best ILs', 'database'],
+    commBestILs: ['Run Viable Golds', 'database'],
     commBestSplits: ['Comm Best Splits', 'tasks'],
     sums: ['Sums', 'plus'],
     residual: ['Residual', 'star'],
