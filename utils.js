@@ -133,7 +133,9 @@ function setFooter(text) {
         setDiscord()
         fetch('https://myekul.github.io/shared-assets/myekul/myekul.html')
             .then(r => r.text())
-            .then(t => document.querySelector('header').appendChild(t))
+            .then(t => {
+                document.querySelector('header').innerHTML += t;
+            });
     }
 }
 async function setSidebar(content) {
