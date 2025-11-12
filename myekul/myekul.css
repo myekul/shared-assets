@@ -190,3 +190,32 @@ footer img {
     font-family: 'cuphead-memphis';
     text-shadow: none;
 }
+
+/* the myekul project */
+
+#myekulProjectButton {
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background-color: midnightblue;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: width 0.2s ease-out;
+}
+
+#myekulProjectButton:hover {
+    width: 190px;
+}
+
+#myekulProjectText {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1
+}
+
+#myekulProjectButton:hover #myekulProjectText {
+    opacity: 1;
+}

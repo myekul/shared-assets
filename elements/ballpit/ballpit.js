@@ -6,7 +6,6 @@ function ballpitPrepare(content, elemSize, floorOffset) {
         })
 }
 function ballpitEngine(elemSize, floorOffset) {
-
     ballpitLoaded = true
 
     const elements = document.querySelectorAll('.ball, .square');
