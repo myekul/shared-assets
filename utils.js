@@ -129,7 +129,12 @@ function setFooter(text) {
                 })
                 .catch(err => console.error(err));
         })
-    if (document.querySelector('title').innerText != 'myekul') setDiscord()
+    if (document.querySelector('title').innerText != 'the myekul project') {
+        setDiscord()
+        fetch('https://myekul.github.io/shared-assets/myekul/myekul.html')
+            .then(r => r.text())
+            .then(t => document.querySelector('header').appendChild(t))
+    }
 }
 async function setSidebar(content) {
     addStylesheet('https://myekul.github.io/shared-assets/elements/sidebar/sidebar.css')
