@@ -10,7 +10,7 @@ const fontAwesomeSet = {
     WRs: ['World Records', 'trophy'],
     map: ['Map', 'flag'],
     sort: ['Sort', 'sort-amount-asc'],
-    connect4: ['Connect 4', 'braille'],
+    connect4: ['Connect 4', 'adjust'],
     // Run Recap
     altStrats: ['Comm Best ILs', 'database'],
     commBestILs: ['Run Viable ILs', 'trophy'],
