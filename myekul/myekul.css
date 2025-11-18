@@ -111,6 +111,10 @@ a {
     background-color: var(--gray);
 }
 
+.dim {
+    color: gray
+}
+
 input {
     font-family: var(--font);
     accent-color: var(--banner)
