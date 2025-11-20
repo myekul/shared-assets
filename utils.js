@@ -269,6 +269,19 @@ function initializeHash(tab) {
 function showTab(tab) {
     globalTab = tab
     buttonClick(globalTab + 'Button', 'tabs', 'activeBanner')
+    const infoButton = document.getElementById('infoButton')
+    if (infoButton) {
+        if (tab == 'info') {
+            infoButton.classList.remove('activeBanner')
+            infoButton.style.color = 'var(--bannerText)'
+        } else {
+            if (document.querySelector('title').innerText != 'the myekul project') {
+                infoButton.style.color = 'var(--background2)'
+            } else {
+                infoButton.style.color = 'white'
+            }
+        }
+    }
     window.history.pushState(null, null, '#' + tab);
     action()
 }
@@ -284,7 +297,7 @@ async function setTabs(tabs) {
             } else {
                 let tabContent = ''
                 if (fontAwesomeSet[elem]) tabContent = fontAwesome(fontAwesomeSet[elem][1])
-                HTMLContent += `<div id='${elem}Button' class='${elem == 'info' ? 'grow' : 'button'}' onclick="playSound('category_select');showTab('${elem}')">${tabContent}</div>`
+                HTMLContent += `<div id='${elem}Button' class='${elem == 'info' ? 'grow' : 'button'}' style='${elem == 'info' ? 'margin-right:8px' : ''}' onclick="playSound('category_select');showTab('${elem}')">${tabContent}</div>`
             }
         } else {
             HTMLContent += `<div class='dot'></div>`
