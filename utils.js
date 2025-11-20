@@ -273,11 +273,10 @@ function showTab(tab) {
     if (infoButton) {
         if (tab == 'info') {
             infoButton.classList.remove('activeBanner')
-            infoButton.style.color = ''
             if (document.querySelector('title').innerText == 'the myekul project') {
                 infoButton.style.color = 'var(--cuphead)'
             } else {
-                infoButton.style.color = 'var(--background1)'
+                infoButton.style.color = 'var(--banner)'
             }
         } else {
             infoButton.style.color = 'white'
