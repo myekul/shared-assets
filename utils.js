@@ -273,13 +273,14 @@ function showTab(tab) {
     if (infoButton) {
         if (tab == 'info') {
             infoButton.classList.remove('activeBanner')
-            infoButton.style.color = 'var(--bannerText)'
-        } else {
+            infoButton.style.color = ''
             if (document.querySelector('title').innerText == 'the myekul project') {
-                infoButton.style.color = 'var(--background1)'
+                infoButton.style.color = 'var(--cuphead)'
             } else {
-                infoButton.style.color = 'white'
+                infoButton.style.color = 'var(--background1)'
             }
+        } else {
+            infoButton.style.color = 'white'
         }
     }
     window.history.pushState(null, null, '#' + tab);
