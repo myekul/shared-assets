@@ -115,6 +115,11 @@ a {
     color: gray
 }
 
+.border {
+    border: 3px solid var(--banner);
+    border-radius: 5px
+}
+
 input {
     font-family: var(--font);
     accent-color: var(--banner)
