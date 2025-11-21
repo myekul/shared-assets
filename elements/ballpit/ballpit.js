@@ -1,5 +1,5 @@
 function ballpitPrepare(content, elemSize, floorOffset) {
-    setHTML('https://myekul.github.io/shared-assets/elements/ballpit/ballpit.html', 'ballpit')
+    setHTML('https://myekul.com/shared-assets/elements/ballpit/ballpit.html', 'ballpit')
         .then(() => {
             document.getElementById('ballpit').innerHTML += content
             ballpitEngine(elemSize, floorOffset)

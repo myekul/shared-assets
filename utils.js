@@ -110,11 +110,11 @@ async function setHTML(src, elem) {
     document.getElementById(elem).innerHTML = t;
 }
 async function setTitle(text) {
-    await setHTML('https://myekul.github.io/shared-assets/myekul/title.html', 'title')
+    await setHTML('https://myekul.com/shared-assets/myekul/title.html', 'title')
     document.getElementById('titleText').innerHTML = text
 }
 function setFooter(text) {
-    fetch('https://myekul.github.io/shared-assets/myekul/footer.html')
+    fetch('https://myekul.com/shared-assets/myekul/footer.html')
         .then(r => r.text())
         .then(t => document.querySelector('footer').innerHTML = t)
         .then(() => {
@@ -132,7 +132,7 @@ function setFooter(text) {
         })
     if (document.querySelector('title').innerText != 'the myekul project') {
         setDiscord()
-        fetch('https://myekul.github.io/shared-assets/myekul/myekul.html')
+        fetch('https://myekul.com/shared-assets/myekul/myekul.html')
             .then(r => r.text())
             .then(t => {
                 document.querySelector('header').innerHTML += t;
@@ -140,8 +140,8 @@ function setFooter(text) {
     }
 }
 async function setSidebar(content) {
-    addStylesheet('https://myekul.github.io/shared-assets/elements/sidebar/sidebar.css')
-    await setHTML('https://myekul.github.io/shared-assets/elements/sidebar/sidebar.html', 'sidebarDiv')
+    addStylesheet('https://myekul.com/shared-assets/elements/sidebar/sidebar.css')
+    await setHTML('https://myekul.com/shared-assets/elements/sidebar/sidebar.html', 'sidebarDiv')
     document.getElementById('sidebar').innerHTML = content
 }
 function setResources() {
@@ -202,7 +202,7 @@ function setAudio(source, audioNames) {
     audioNames.forEach(audio => {
         const audioElement = document.createElement('audio');
         audioElement.id = audio;
-        const src = source == 'cuphead' ? `https://myekul.github.io/shared-assets/cuphead/sfx/` : 'sfx/' + source + '/'
+        const src = source == 'cuphead' ? `https://myekul.com/shared-assets/cuphead/sfx/` : 'sfx/' + source + '/'
         audioElement.src = src + audio + '.wav';
         document.body.appendChild(audioElement);
     });
@@ -233,11 +233,11 @@ function stopSound(sfx) {
     }
 }
 document.addEventListener('DOMContentLoaded', function () {
-    addStylesheet('https://myekul.github.io/shared-assets/elements/modal/modal.css')
-    fetch('https://myekul.github.io/shared-assets/elements/modal/modal.html')
+    addStylesheet('https://myekul.com/shared-assets/elements/modal/modal.css')
+    fetch('https://myekul.com/shared-assets/elements/modal/modal.html')
         .then(r => r.text())
         .then(t => {
-            addJSFile('https://myekul.github.io/shared-assets/elements/modal/modal.js', () => {
+            addJSFile('https://myekul.com/shared-assets/elements/modal/modal.js', () => {
                 const modal = document.createElement('div');
                 modal.id = 'modal';
                 modal.innerHTML = t;
@@ -286,7 +286,7 @@ function showTab(tab) {
     action()
 }
 async function setTabs(tabs) {
-    await setHTML('https://myekul.github.io/shared-assets/html/tabs.html', 'tabsDiv')
+    await setHTML('https://myekul.com/shared-assets/html/tabs.html', 'tabsDiv')
     let HTMLContent = ''
     tabs.forEach(elem => {
         if (elem) {
@@ -355,13 +355,13 @@ function sharedAssetsImg(src) {
     return `<img src='${sharedAssetsURL(src)}'>`
 }
 function sharedAssetsURL(src) {
-    return `https://myekul.github.io/shared-assets/images/${src}.png`
+    return `https://myekul.com/shared-assets/images/${src}.png`
 }
 function setDiscord() {
     fetch('https://discord.com/api/guilds/1386406855391313960/widget.json')
         .then(response => response.json())
         .then(data => {
-            addJSFile('https://myekul.github.io/shared-assets/elements/discord.js', () => {
+            addJSFile('https://myekul.com/shared-assets/elements/discord.js', () => {
                 window.discordData = data
                 discordOnline(data.presence_count)
             })
@@ -373,7 +373,7 @@ function setBallpit(content, elemSize = 100, floorOffset = -40) {
         ballpitPrepare(content, elemSize, floorOffset)
     } else {
         addJSFile('https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js', () => {
-            addJSFile('https://myekul.github.io/shared-assets/elements/ballpit/ballpit.js', () => {
+            addJSFile('https://myekul.com/shared-assets/elements/ballpit/ballpit.js', () => {
                 ballpitPrepare(content, elemSize, floorOffset)
             })
         })
