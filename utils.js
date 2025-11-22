@@ -118,14 +118,18 @@ function setFooter(text) {
         .then(r => r.text())
         .then(t => document.querySelector('footer').innerHTML = t)
         .then(() => {
-            document.getElementById('footerText').innerHTML = text
-            fetch(`https://api.github.com/repos/myekul/${window.location.pathname.split('/')[1]}/commits?path=index.html&page=1&per_page=1`)
+            fetch(`https://api.github.com/repos/myekul/${document.querySelector('title').innerText != 'the myekul project' ? window.location.pathname.split('/')[1] : 'myekul.github.io'}/commits?path=index.html&page=1&per_page=1`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.length > 0) {
                         const lastCommitDate = new Date(data[0].commit.committer.date);
                         const formattedDate = lastCommitDate.toISOString().split('T')[0];
-                        document.getElementById('lastUpdated').textContent = `last updated ${formattedDate}`;
+                        document.getElementById('lastUpdated').textContent = `last updated ${formattedDate}`
+                        const year = formattedDate.slice(0, 4)
+                        if (year != text) {
+                            text += '-' + year
+                        }
+                        document.getElementById('footerText').innerHTML = text
                     }
                 })
                 .catch(err => console.error(err));
