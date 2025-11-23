@@ -155,9 +155,10 @@ function setResources() {
         elem.classList.add('shadow')
         elem.style.gap = '10px'
     })
-    const resources = document.getElementById('resources')
-    resources.classList.add('container')
-    resources.style.gap = '60px'
+    document.querySelectorAll('.resources').forEach(elem => {
+        elem.classList.add('container')
+        elem.style.gap = '60px'
+    })
 }
 function fontAwesome(icon) {
     return `<i class="fa fa-${icon}"></i>`
