@@ -2,7 +2,6 @@ const fontAwesomeSet = {
     home: ['Home', 'home'],
     ballpit: ['Ballpit', 'smile-o'],
     random: ['Random', 'question'],
-    // the myekul project
     info: ['Info', 'info-circle'],
     // Combined Leaderboard
     featured: ['Featured', 'star'],
@@ -15,6 +14,7 @@ const fontAwesomeSet = {
     altStrats: ['Comm Best ILs', 'database'],
     commBestILs: ['Run Viable ILs', 'trophy'],
     commBestSplits: ['Comm Best Splits', 'tasks'],
+    top10: ['1.1 Top 10', 'bullseye'],
     sums: ['Sums', 'plus'],
     residual: ['Residual', 'star'],
     grid: ['Grid', 'group'],
@@ -118,13 +118,14 @@ function setFooter(text) {
         .then(r => r.text())
         .then(t => document.querySelector('footer').innerHTML = t)
         .then(() => {
-            fetch(`https://api.github.com/repos/myekul/${document.querySelector('title').innerText != 'the myekul project' ? window.location.pathname.split('/')[1] : 'myekul.github.io'}/commits?path=index.html&page=1&per_page=1`)
+            const project = document.querySelector('title').innerText != 'the myekul project' ? window.location.pathname.split('/')[1] : 'myekul.github.io'
+            fetch(`https://api.github.com/repos/myekul/${project}/commits?path=index.html&page=1&per_page=1`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.length > 0) {
                         const lastCommitDate = new Date(data[0].commit.committer.date);
                         const formattedDate = lastCommitDate.toISOString().split('T')[0];
-                        document.getElementById('lastUpdated').textContent = `last updated ${formattedDate}`
+                        document.getElementById('lastUpdated').textContent = `<a href="https://github.com/myekul/${project}" class='grow'>last updated ${formattedDate}</div>`
                         const year = formattedDate.slice(0, 4)
                         if (year != text) {
                             text += '-' + year
