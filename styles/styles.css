@@ -186,7 +186,7 @@ body {
 
 /* Resources */
 
-#resources>div>div>a,
+.resources>div>div>a,
 .resourceButton {
     width: 340px;
     height: 60px;
@@ -194,7 +194,7 @@ body {
     font-size: 130%;
 }
 
-#resources>div>div>p,
+.resources>div>div>p,
 .resourceText {
     white-space: normal;
     max-width: 340px;
