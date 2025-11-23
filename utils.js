@@ -125,7 +125,7 @@ function setFooter(text) {
                     if (data.length > 0) {
                         const lastCommitDate = new Date(data[0].commit.committer.date);
                         const formattedDate = lastCommitDate.toISOString().split('T')[0];
-                        document.getElementById('lastUpdated').textContent = `<a href="https://github.com/myekul/${project}" class='grow'>last updated ${formattedDate}</div>`
+                        document.getElementById('lastUpdated').textContent = `<a href="https://github.com/myekul/${project}" class='grow'>last updated ${formattedDate}</a>`
                         const year = formattedDate.slice(0, 4)
                         if (year != text) {
                             text += '-' + year
