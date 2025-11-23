@@ -150,7 +150,7 @@ async function setSidebar(content) {
     document.getElementById('sidebar').innerHTML = content
 }
 function setResources() {
-    document.querySelectorAll('#resources > div > div > a').forEach(elem => {
+    document.querySelectorAll('.resources > div > div > a').forEach(elem => {
         elem.classList.add('button')
         elem.classList.add('shadow')
         elem.style.gap = '10px'
