@@ -309,6 +309,7 @@ async function setTabs(tabs) {
             HTMLContent += `<div class='dot'></div>`
         }
     })
+    HTMLContent += `<div id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</div>`
     document.getElementById('tabs').innerHTML = HTMLContent
 }
 function loadClient(now) {
@@ -435,4 +436,54 @@ const placeClass = {
     1: 'first',
     2: 'second',
     3: 'third'
+}
+let globalSnowLoaded
+let globalSnow = localStorage.getItem('snow')
+if (globalSnow) toggleSnow()
+function toggleSnow() {
+    const snowButton = document.getElementById('snowButton')
+    if (globalSnow) {
+        hide('particles-js')
+        localStorage.setItem('snow', false)
+        snowButton.style.color = 'gray'
+    } else {
+        show('particles-js')
+        localStorage.setItem('snow', true)
+        snowButton.style.color = 'white'
+        if (!globalSnowLoaded) {
+            const particles = document.createElement('div');
+            particles.id = 'particles-js';
+            document.body.appendChild(particles);
+            addJSFile('https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js', () => {
+                globalSnowLoaded = true
+                particlesJS("particles-js", {
+                    "particles": {
+                        "number": {
+                            "value": 64,
+                        },
+                        "color": { "value": "#ffffff" },
+                        "shape": { "type": "circle" },
+                        "opacity": {
+                            "value": 0.8,
+                            "random": true
+                        },
+                        "size": {
+                            "value": 4,
+                            "random": true
+                        },
+                        "line_linked": {
+                            "enable": false
+                        },
+                        "move": {
+                            "speed": 6,
+                            "direction": "bottom",
+                            "random": true,
+                            "straight": false,
+                            "out_mode": "out",
+                        }
+                    }
+                })
+            })
+        }
+    }
 }
