@@ -89,13 +89,13 @@ function show(elem) {
     if (typeof (elem) == 'string') {
         elem = document.getElementById(elem)
     }
-    elem?.style.display = ''
+    elem.style.display = ''
 }
 function hide(elem) {
     if (typeof (elem) == 'string') {
         elem = document.getElementById(elem)
     }
-    elem?.style.display = 'none'
+    elem.style.display = 'none'
 }
 function buttonClick(pressed, unpressed, className) {
     document.querySelectorAll('#' + unpressed + ' .button').forEach(button => {
@@ -442,6 +442,11 @@ let globalSnow = localStorage.getItem('snow')
 if (globalSnow) toggleSnow()
 function toggleSnow() {
     const snowButton = document.getElementById('snowButton')
+    if (!document.getElementById('particles-js')) {
+        const particles = document.createElement('div');
+        particles.id = 'particles-js';
+        document.body.appendChild(particles);
+    }
     if (globalSnow) {
         globalSnow = false
         hide('particles-js')
@@ -453,9 +458,6 @@ function toggleSnow() {
         localStorage.setItem('snow', true)
         snowButton.style.color = 'white'
         if (!globalSnowLoaded) {
-            const particles = document.createElement('div');
-            particles.id = 'particles-js';
-            document.body.appendChild(particles);
             addJSFile('https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js', () => {
                 globalSnowLoaded = true
                 particlesJS("particles-js", {
