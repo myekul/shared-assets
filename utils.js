@@ -311,6 +311,12 @@ async function setTabs(tabs) {
     })
     HTMLContent += `<div id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</div>`
     document.getElementById('tabs').innerHTML = HTMLContent
+    if (!document.getElementById('particles-js')) {
+        const particles = document.createElement('div');
+        particles.id = 'particles-js';
+        document.body.appendChild(particles);
+    }
+    if (localStorage.getItem('snow') == 'true') toggleSnow()
 }
 function loadClient(now) {
     gapi.client.setApiKey('AIzaSyBFOYjIw9IrbPirN1ov4zkVBTFOOCX1l8w');
@@ -438,24 +444,13 @@ const placeClass = {
     3: 'third'
 }
 let globalSnowLoaded
-let globalSnow = localStorage.getItem('snow')
-document.addEventListener('DOMContentLoaded', () => {
-    if (!document.getElementById('particles-js')) {
-        const particles = document.createElement('div');
-        particles.id = 'particles-js';
-        document.body.appendChild(particles);
-    }
-    if (globalSnow) toggleSnow()
-})
 function toggleSnow() {
     const snowButton = document.getElementById('snowButton')
-    if (globalSnow) {
-        globalSnow = false
+    if (localStorage.getItem('snow') == 'true') {
         hide('particles-js')
         localStorage.setItem('snow', false)
         snowButton.style.color = 'gray'
     } else {
-        globalSnow = true
         show('particles-js')
         localStorage.setItem('snow', true)
         snowButton.style.color = 'white'
