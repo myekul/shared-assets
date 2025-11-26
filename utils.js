@@ -89,13 +89,13 @@ function show(elem) {
     if (typeof (elem) == 'string') {
         elem = document.getElementById(elem)
     }
-    elem.style.display = ''
+    elem?.style.display = ''
 }
 function hide(elem) {
     if (typeof (elem) == 'string') {
         elem = document.getElementById(elem)
     }
-    elem.style.display = 'none'
+    elem?.style.display = 'none'
 }
 function buttonClick(pressed, unpressed, className) {
     document.querySelectorAll('#' + unpressed + ' .button').forEach(button => {
@@ -443,10 +443,12 @@ if (globalSnow) toggleSnow()
 function toggleSnow() {
     const snowButton = document.getElementById('snowButton')
     if (globalSnow) {
+        globalSnow = false
         hide('particles-js')
         localStorage.setItem('snow', false)
         snowButton.style.color = 'gray'
     } else {
+        globalSnow = true
         show('particles-js')
         localStorage.setItem('snow', true)
         snowButton.style.color = 'white'
