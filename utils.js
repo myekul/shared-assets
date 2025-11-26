@@ -439,14 +439,16 @@ const placeClass = {
 }
 let globalSnowLoaded
 let globalSnow = localStorage.getItem('snow')
-if (globalSnow) toggleSnow()
-function toggleSnow() {
-    const snowButton = document.getElementById('snowButton')
+document.addEventListener('DOMContentLoaded', () => {
     if (!document.getElementById('particles-js')) {
         const particles = document.createElement('div');
         particles.id = 'particles-js';
         document.body.appendChild(particles);
     }
+    if (globalSnow) toggleSnow()
+})
+function toggleSnow() {
+    const snowButton = document.getElementById('snowButton')
     if (globalSnow) {
         globalSnow = false
         hide('particles-js')
