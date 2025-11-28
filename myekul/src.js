@@ -26,6 +26,16 @@ function getPlayerIcon(player, size) {
     const src = imgsrc ? 'https://www.speedrun.com/static/user/' + player.id + '/image?v=' + imgsrc : 'images/null.png'
     return `<div style='width:${size}px;height:${size}px'><img src='${src}' style='width:100%;height:100%;border-radius: 50%;object-fit: cover;object-position:center' title='${player?.name}'></img></div>`
 }
+function playerDisplay(playerString = localStorage.getItem('username'), exception) {
+    const player = players.find(player => player.name == playerString)
+    const playerName = player ? getPlayerName(player) : playerString
+    let HTMLContent = `<div class='container' style='gap:6px;margin:0 3px'>`
+    HTMLContent += player && !exception ? `<div style='width:20px'>${getPlayerFlag(player, 13)}</div>` : ''
+    HTMLContent += player ? `<div>${getPlayerIcon(player, 27)}</div>` : ''
+    HTMLContent += `<div style='font-size:100%'>${playerName}</div>`
+    HTMLContent += `</div>`
+    return HTMLContent
+}
 function cleanRuns(runs) {
     const newRuns = []
     runs.forEach(run => {

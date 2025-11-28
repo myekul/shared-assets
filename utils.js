@@ -452,11 +452,11 @@ function toggleSnow() {
     const snowButton = document.getElementById('snowButton')
     if (localStorage.getItem('snow') == 'true') {
         hide('particles-js')
-        localStorage.setItem('snow', false)
+        localStorage.setItem('snow', 'false')
         snowButton.style.color = 'gray'
     } else {
         show('particles-js')
-        localStorage.setItem('snow', true)
+        localStorage.setItem('snow', 'true')
         snowButton.style.color = 'white'
         if (!globalSnowLoaded) {
             addJSFile('https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js', () => {
@@ -480,7 +480,7 @@ function toggleSnow() {
                             "enable": false
                         },
                         "move": {
-                            "speed": 6,
+                            "speed": 8,
                             "direction": "bottom",
                             "random": true,
                             "straight": false,
