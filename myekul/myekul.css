@@ -26,6 +26,11 @@
 }
 
 @font-face {
+    font-family: "cuphead-henriette";
+    src: url("fonts/cuphead-henriette.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "smash";
     src: url("fonts/FOT-RodinHimawariProUB.otf") format("opentype");
 }
