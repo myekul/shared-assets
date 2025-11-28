@@ -188,7 +188,7 @@ body {
 
 .resources>div>div>a,
 .resourceButton {
-    width: 340px;
+    width: 310px;
     height: 60px;
     border-radius: 40px;
     font-size: 130%;
@@ -197,7 +197,7 @@ body {
 .resources>div>div>p,
 .resourceText {
     white-space: normal;
-    max-width: 340px;
+    max-width: 310px;
     font-size: 14px;
     padding: 10px 0;
     margin: 0;

@@ -11,7 +11,7 @@ function discordOnline(num) {
 function discord() {
     let HTMLContent = ''
     HTMLContent += `
-    <div class='textBlock' style='max-width:500px;font-size:90%'>
+    <div class='textBlock' style='max-width:500px'>
     Join our community in ${myekulColor('myekul castle')}!
     Stay up-to-date with all the latest features and behind-the-scenes glimpses of ${myekulColor('the myekul project')}.
     </div>`
