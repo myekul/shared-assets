@@ -17,3 +17,15 @@ async function initializeDropbox() {
         handleFile(files[0])
     });
 }
+function savInfo() {
+    let player
+    if (players) player = players.find(player => player.name == localStorage.getItem('username'))
+    const name = player ? getPlayerName(player) : `<span style='color:white'>${localStorage.getItem('username') || 'USERNAME'}</span>`
+    let HTMLContent = `
+    <div>
+        SAVE FILE LOCATIONS:
+        <br>Windows: ${myekulColor(`C:\\Users\\${name}\\AppData\\Roaming\\Cuphead`)}
+        <br>Mac: ${myekulColor(`/Users/${name}/Library/Application\\ Support/unity.Studio\\ MDHR.Cuphead/Cuphead`)}
+    </div>`
+    return HTMLContent
+}
