@@ -19,7 +19,7 @@ async function initializeDropbox() {
 }
 function savInfo() {
     let player
-    if (players) player = players.find(player => player.name == localStorage.getItem('username'))
+    if (typeof players != "undefined") player = players.find(player => player.name == localStorage.getItem('username'))
     const name = player ? getPlayerName(player) : `<span style='color:white'>${localStorage.getItem('username') || 'USERNAME'}</span>`
     let HTMLContent = `
     <div>

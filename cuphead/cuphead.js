@@ -22,3 +22,21 @@ function cupheadShot(shot, size, extra) {
     }
     return ''
 }
+function downloadJSON(object, name = 'cuphead_player_data_v1_slot_0.sav') {
+    const jsonStr = JSON.stringify(object, null, 2)
+    const blob = new Blob([jsonStr], { type: "application/json" })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement("a")
+    a.href = url;
+    a.download = name
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+}
+function fancyTab(tab) {
+    return `<div id='${tab}Button' onclick="playSound('category_select');showTab('${tab}')" class="font2 button grayedOut"
+        style="width:80px;font-size:120%;gap:4px;background-color:var(--cuphead)">
+        <img src="https://myekul.com/shared-assets/cuphead/images/extra/${tab}.png" style="height:21px">.${tab}
+    </div>`
+}
