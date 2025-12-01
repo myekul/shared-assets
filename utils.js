@@ -10,6 +10,14 @@ const fontAwesomeSet = {
     map: ['Map', 'flag'],
     sort: ['Sort', 'sort-amount-asc'],
     connect4: ['Connect 4', 'adjust'],
+    // Runner Resources
+    bossInfo: ['Boss Info', 'drivers-license-o'],
+    hp: ['HP', 'heart'],
+    shotInfo: ['Shot Info', 'crosshairs'],
+    tutorials: ['Tutorials', 'book'],
+    monkeyTool: ['Monkey Tool', 'wrench'],
+    graveyardTool: ['Graveyard Tool', 'wrench'],
+    rumorTool: ['Rumor Tool', 'wrench'],
     // Run Recap
     altStrats: ['Comm Best ILs', 'database'],
     commBestILs: ['Run Viable ILs', 'trophy'],
@@ -18,14 +26,11 @@ const fontAwesomeSet = {
     sums: ['Sums', 'plus'],
     residual: ['Residual', 'star'],
     grid: ['Grid', 'group'],
-    // Speedrun Resources
-    bossInfo: ['Boss Info', 'drivers-license-o'],
-    hp: ['HP', 'heart'],
-    shotInfo: ['Shot Info', 'crosshairs'],
-    tutorials: ['Tutorials', 'book'],
-    monkeyTool: ['Monkey Tool', 'wrench'],
-    graveyardTool: ['Graveyard Tool', 'wrench'],
-    rumorTool: ['Rumor Tool', 'wrench'],
+    // Dr. Kahl's .sav inspector
+    levels: ['Levels', 'flag'],
+    inventory: ['Inventory', 'crosshairs'],
+    map: ['Map', 'map-o'],
+    raw: ['Raw', 'code'],
     // myekuldex
     pokedex: ['Pokedex', 'book'],
     sfx: ['SFX', 'volume-up'],
