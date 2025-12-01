@@ -16,20 +16,6 @@ const isles = [
     { id: 'hell', name: 'Hell', className: 'hell', numBosses: 2, mapID: 6 },
     { id: 'isle4', name: 'Isle 4', className: 'dlc', numBosses: 6, mapID: 68 }
 ]
-bosses.forEach(boss => {
-    if (boss.id == 'kingdice') {
-        boss.time = 259
-    } else if (['thedevil', 'chefsaltbaaker'].includes(boss.id)) {
-        boss.time = 194
-    } else {
-        boss.time = 129
-    }
-    if (['hildaberg', 'wallywarbles', 'djimmithegreat', "drhaklsrobot", 'calamaria', 'estherwinchester'].includes(boss.id)) {
-        boss.plane = true
-    } else {
-        boss.plane = false
-    }
-})
 function cupheadShot(shot, size, extra) {
     if (shot) {
         return `<img src="https://myekul.com/shared-assets/cuphead/images/inventory/weapon/${shot}.png" ${extra ? `class='container'` : ''} ${size ? `style='height:${size}px'` : ''}>`
