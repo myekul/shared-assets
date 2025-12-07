@@ -7,7 +7,6 @@ async function setCuphead() {
         elem.classList.add('container')
     })
 }
-const mausoleumID = 1481199742
 const nullTime = 3.4028234663852886e+38
 const isles = [
     { id: 'isle1', name: 'Isle 1', className: 'isle1', numBosses: 5, mapID: 3 },

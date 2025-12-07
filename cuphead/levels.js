@@ -2,6 +2,7 @@ const bosses = [
     {
         id: 'therootpack',
         name: 'The Root Pack',
+        internal: 'veggies',
         isle: 1,
         order: 7,
         levelID: 6
@@ -9,6 +10,7 @@ const bosses = [
     {
         id: 'goopylegrande',
         name: 'Goopy Le Grande',
+        internal: 'slime',
         isle: 1,
         order: 9,
         levelID: 1450863107
@@ -16,6 +18,7 @@ const bosses = [
     {
         id: 'hildaberg',
         name: 'Hilda Berg',
+        internal: 'flying_blimp',
         isle: 1,
         order: 10,
         levelID: 1449745424
@@ -23,6 +26,7 @@ const bosses = [
     {
         id: 'cagneycarnation',
         name: 'Cagney Carnation',
+        internal: 'flower',
         isle: 1,
         order: 11,
         levelID: 1450266910
@@ -30,6 +34,7 @@ const bosses = [
     {
         id: 'ribbyandcroaks',
         name: 'Ribby and Croaks',
+        internal: 'frogs',
         isle: 1,
         order: 8,
         levelID: 7
@@ -37,6 +42,7 @@ const bosses = [
     {
         id: 'baronessvonbonbon',
         name: 'Baroness Von Bon Bon',
+        internal: 'baroness',
         isle: 2,
         order: 12,
         levelID: 1451300935
@@ -44,6 +50,7 @@ const bosses = [
     {
         id: 'beppitheclown',
         name: 'Beppi The Clown',
+        internal: 'clown',
         isle: 2,
         order: 15,
         levelID: 1456125457
@@ -51,6 +58,7 @@ const bosses = [
     {
         id: 'djimmithegreat',
         name: 'Djimmi The Great',
+        internal: 'flying_genie',
         isle: 2,
         order: 14,
         levelID: 1460200177
@@ -58,6 +66,7 @@ const bosses = [
     {
         id: 'grimmatchstick',
         name: 'Grim Matchstick',
+        internal: 'dragon',
         isle: 2,
         order: 16,
         levelID: 1432722919
@@ -65,6 +74,7 @@ const bosses = [
     {
         id: 'wallywarbles',
         name: 'Wally Warbles',
+        internal: 'flying_bird',
         isle: 2,
         order: 13,
         levelID: 1428495827
@@ -72,6 +82,7 @@ const bosses = [
     {
         id: 'rumorhoneybottoms',
         name: 'Rumor Honeybottoms',
+        internal: 'bee',
         isle: 3,
         order: 17,
         levelID: 1429976377
@@ -79,6 +90,7 @@ const bosses = [
     {
         id: 'captainbrineybeard',
         name: 'Captain Brineybeard',
+        internal: 'pirate',
         isle: 3,
         order: 21,
         levelID: 2
@@ -86,6 +98,7 @@ const bosses = [
     {
         id: 'sallystageplay',
         name: 'Sally Stageplay',
+        internal: 'sally_stage_play',
         isle: 3,
         order: 19,
         levelID: 1456740288
@@ -93,6 +106,7 @@ const bosses = [
     {
         id: 'wernerwerman',
         name: 'Werner Werman',
+        internal: 'mouse',
         isle: 3,
         order: 20,
         levelID: 1430652919
@@ -100,6 +114,7 @@ const bosses = [
     {
         id: 'drkahlsrobot',
         name: "Dr. Kahl's Robot",
+        internal: 'robot',
         isle: 3,
         order: 18,
         levelID: 1452935394
@@ -107,6 +122,7 @@ const bosses = [
     {
         id: 'calamaria',
         name: 'Cala Maria',
+        internal: 'flying_mermaid',
         isle: 3,
         order: 22,
         levelID: 1446558823
@@ -114,6 +130,7 @@ const bosses = [
     {
         id: 'phantomexpress',
         name: 'Phantom Express',
+        internal: 'train',
         isle: 3,
         order: 23,
         levelID: 5
@@ -121,6 +138,7 @@ const bosses = [
     {
         id: 'kingdice',
         name: 'King Dice',
+        internal: 'dice_palace_main',
         isle: 4,
         order: 24,
         levelID: 1465296077
@@ -128,6 +146,7 @@ const bosses = [
     {
         id: 'thedevil',
         name: 'The Devil',
+        internal: 'devil',
         isle: 4,
         order: 25,
         levelID: 1466688317
@@ -135,6 +154,7 @@ const bosses = [
     {
         id: 'glumstonethegiant',
         name: 'Glumstone The Giant',
+        internal: 'old_man',
         isle: 5,
         order: 1,
         levelID: 1523429320
@@ -142,6 +162,7 @@ const bosses = [
     {
         id: 'moonshinemob',
         name: 'Moonshine Mob',
+        internal: 'rum_runners',
         isle: 5,
         order: 5,
         levelID: 1518081307
@@ -149,6 +170,7 @@ const bosses = [
     {
         id: 'thehowlingaces',
         name: 'The Howling Aces',
+        internal: 'airplane',
         isle: 5,
         order: 3,
         levelID: 1511943573
@@ -156,6 +178,7 @@ const bosses = [
     {
         id: 'mortimerfreeze',
         name: 'Mortimer Freeze',
+        internal: 'snow_cult',
         isle: 5,
         order: 2,
         levelID: 1527591209
@@ -163,6 +186,7 @@ const bosses = [
     {
         id: 'estherwinchester',
         name: 'Esther Winchester',
+        internal: 'flying_cowboy',
         isle: 5,
         order: 4,
         levelID: 1530096313
@@ -170,6 +194,7 @@ const bosses = [
     {
         id: 'chefsaltbaker',
         name: 'Chef Saltbaker',
+        internal: 'saltbaker',
         isle: 5,
         order: 6,
         levelID: 1573044456
@@ -178,22 +203,66 @@ const bosses = [
 bosses.forEach(boss => {
     if (boss.id == 'kingdice') {
         boss.time = 259
-    } else if (['thedevil', 'chefsaltbaaker'].includes(boss.id)) {
+    } else if (['thedevil', 'chefsaltbaker'].includes(boss.id)) {
         boss.time = 194
     } else {
         boss.time = 129
     }
-    if (['hildaberg', 'wallywarbles', 'djimmithegreat', "drhaklsrobot", 'calamaria', 'estherwinchester'].includes(boss.id)) {
+    if (['hildaberg', 'wallywarbles', 'djimmithegreat', "drkahlsrobot", 'calamaria', 'estherwinchester'].includes(boss.id)) {
         boss.plane = true
     } else {
         boss.plane = false
     }
 })
-const runNgunIDs = {
-    forestfollies: 1464969490,
-    treetoptrouble: 1464969491,
-    funhousefrazzle: 1496818712,
-    funfairfever: 1499704951,
-    perilouspiers: 1464969492,
-    ruggedridge: 1464969493
-}
+const runNguns = [
+    {
+        id: 'forestfollies',
+        name: 'Forest Follies',
+        internal: 'platforming_1_1F',
+        isle: 1,
+        levelID: 1464969490
+    },
+    {
+        id: 'treetoptrouble',
+        name: 'Treetop Trouble',
+        internal: 'platforming_1_2F',
+        isle: 1,
+        levelID: 1464969491
+    },
+    {
+        id: 'funhousefrazzle',
+        name: 'Funhouse Frazzle',
+        internal: 'platforming_2_1F',
+        isle: 2,
+        levelID: 1496818712
+    },
+    {
+        id: 'funhousefrazzle',
+        name: 'Funfair Fever',
+        internal: 'platforming_2_2F',
+        isle: 2,
+        levelID: 1499704951
+    },
+    {
+        id: 'perilouspiers',
+        name: 'Perilous Piers',
+        internal: 'platforming_3_1F',
+        isle: 3,
+        levelID: 1464969492
+    },
+    {
+        id: 'ruggedridge',
+        name: 'Rugged Ridge',
+        internal: 'platforming_3_2F',
+        isle: 3,
+        levelID: 1464969493
+    }
+]
+const cupheadLevels = {}
+bosses.forEach(boss => {
+    cupheadLevels[boss.internal] = boss
+})
+runNguns.forEach(level => {
+    cupheadLevels[level.internal] = level
+})
+const mausoleumID = 1481199742
