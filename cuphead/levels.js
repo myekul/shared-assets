@@ -258,11 +258,28 @@ const runNguns = [
         levelID: 1464969493
     }
 ]
-const cupheadLevels = {}
-bosses.forEach(boss => {
-    cupheadLevels[boss.internal] = boss
-})
-runNguns.forEach(level => {
-    cupheadLevels[level.internal] = level
-})
+const cupheadLevels = {};
+
+[...bosses, ...runNguns].forEach(level => {
+    cupheadLevels['level_' + level.internal] = level;
+});
+
+const cupheadCutscenes = {
+    intro: 'Intro',
+    world2: 'Isle 2',
+    world3: 'Isle 3',
+    kingdice: 'King Dice',
+    devil: 'The Devil',
+    dlc_intro: 'DLC Intro',
+    dlc_saltbaker_prebattle: 'Saltbaker Prebattle',
+    dlc_ending: 'DLC Ending',
+}
+
+const cupheadIntermissions = {
+    level_house_elder_kettle: "Elder Kettle's House",
+    level_tutorial: 'Tutorial',
+    shop: 'Shop',
+    level_mausoleum: 'Mausoleum',
+}
+
 const mausoleumID = 1481199742
