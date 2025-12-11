@@ -258,10 +258,14 @@ const runNguns = [
         levelID: 1464969493
     }
 ]
-const cupheadLevels = {};
+const cupheadBosses = {};
+const cupheadRunNguns = {};
 
-[...bosses, ...runNguns].forEach(level => {
-    cupheadLevels['level_' + level.internal] = level;
+bosses.forEach(level => {
+    cupheadBosses['level_' + level.internal] = level;
+});
+runNguns.forEach(level => {
+    cupheadRunNguns['level_' + level.internal] = level;
 });
 
 const cupheadCutscenes = {
@@ -278,8 +282,23 @@ const cupheadCutscenes = {
 const cupheadIntermissions = {
     level_house_elder_kettle: "Elder Kettle's House",
     level_tutorial: 'Tutorial',
+    level_shmup_tutorial: 'Plane Tutorial',
     shop: 'Shop',
     level_mausoleum: 'Mausoleum',
+    level_dice_gate: 'Die House',
+    level_kitchen: 'Bakery',
+    level_chalice_tutorial: 'Chalice Tutorial',
+    shop_dlc: 'Shop (DLC)',
+}
+
+const cupheadDLClevels = {
+    level_graveyard: 'Angel and Demon',
+    level_chess_pawn: 'Pawns',
+    level_chess_knight: 'Knight',
+    level_chess_bishop: 'Bishop',
+    level_chess_rook: 'Rook',
+    level_chess_queen: 'Queen',
+    level_chess_castle: "King of Games' Castle"
 }
 
 const mausoleumID = 1481199742
