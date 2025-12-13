@@ -269,18 +269,18 @@ runNguns.forEach(level => {
 });
 
 const cupheadCutscenes = {
-    intro: 'Intro',
-    world2: 'Isle 2',
-    world3: 'Isle 3',
-    kingdice: 'King Dice',
-    devil: 'The Devil',
-    dlc_intro: 'DLC Intro',
-    dlc_saltbaker_prebattle: 'Saltbaker Prebattle',
-    dlc_ending: 'DLC Ending',
+    cutscene_intro: 'Intro',
+    cutscene_world2: 'Isle 2',
+    cutscene_world3: 'Isle 3',
+    cutscene_kingdice: 'King Dice',
+    cutscene_devil: 'The Devil',
+    cutscene_dlc_intro: 'DLC Intro',
+    cutscene_dlc_saltbaker_prebattle: 'Saltbaker Prebattle',
+    cutscene_dlc_ending: 'DLC Ending',
 }
 
 const cupheadIntermissions = {
-    level_house_elder_kettle: "Elder Kettle's House",
+    level_house_elder_kettle: "Elder Kettle",
     level_tutorial: 'Tutorial',
     level_shmup_tutorial: 'Plane Tutorial',
     shop: 'Shop',
