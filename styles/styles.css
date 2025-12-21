@@ -163,9 +163,7 @@ body {
 }
 
 .grayedOut {
-    opacity: 0.4 !important;
-    cursor: default !important;
-    transform: none !important
+    opacity: 0.4 !important
 }
 
 #pageTitle {

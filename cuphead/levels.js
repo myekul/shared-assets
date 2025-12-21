@@ -289,9 +289,6 @@ const cupheadIntermissions = {
     level_kitchen: 'Bakery',
     level_chalice_tutorial: 'Chalice Tutorial',
     shop_dlc: 'Shop (DLC)',
-}
-
-const cupheadDLClevels = {
     level_graveyard: 'Angel and Demon',
     level_chess_pawn: 'Pawns',
     level_chess_knight: 'Knight',
