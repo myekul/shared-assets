@@ -466,6 +466,3 @@ function toggleSnow() {
         if (!globalSnowLoaded) addJSFile('https://myekul.com/shared-assets/elements/snow.js')
     }
 }
-function setDropbox() {
-    addJSFile('https://myekul.com/shared-assets/elements/dropbox/dropbox.js')
-}

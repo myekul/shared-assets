@@ -3,11 +3,13 @@
     <div onclick="document.getElementById('input_upload').click()" class='button cuphead'>
         <i class="fa fa-folder-open"></i>&nbsp;Open file
     </div>
-    <div onclick="openModal(savInfo(), 'INFO')" class='grow' style="padding-left:5px">
-        <i class="fa fa-info-circle"></i>
-    </div>
-    <div class='divider'></div>
-    <div onclick="processSavFile()" class="button cuphead" style="width:110px">
-        <i class="fa fa-plus"></i>&nbsp;Empty .sav
+    <div id="dropbox_sav" class="container">
+        <div onclick="openModal(savInfo(), 'INFO')" class='grow' style="padding-left:5px">
+            <i class="fa fa-info-circle"></i>
+        </div>
+        <div class='divider'></div>
+        <div onclick="processSavFile()" class="button cuphead" style="width:110px">
+            <i class="fa fa-plus"></i>&nbsp;Empty .sav
+        </div>
     </div>
 </div>

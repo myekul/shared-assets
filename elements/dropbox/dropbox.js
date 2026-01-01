@@ -1,4 +1,3 @@
-initializeDropbox()
 async function initializeDropbox() {
     setHTML('https://myekul.com/shared-assets/elements/dropbox/dropbox.html', 'dropbox').then
     const dropbox = document.getElementById('dropbox');

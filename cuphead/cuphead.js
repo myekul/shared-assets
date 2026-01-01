@@ -34,7 +34,7 @@ function downloadJSON(object, name = 'cuphead_player_data_v1_slot_0.sav') {
     URL.revokeObjectURL(url)
 }
 function fancyTab(tab) {
-    return `<div id='${tab}Button' onclick="playSound('category_select');showTab('${tab}')" class="font2 button grayedOut"
+    return `<div id='${tab}Button' onclick="playSound('category_select');showTab('${tab}')" class="font2 button"
         style="width:75px;font-size:120%;gap:2px;background-color:var(--cuphead)">
         <img src="https://myekul.com/shared-assets/cuphead/images/extra/${tab}.png" style="height:21px">.${tab}
     </div>`
