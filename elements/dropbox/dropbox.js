@@ -1,5 +1,5 @@
 async function initializeDropbox(sav) {
-    setHTML('https://myekul.com/shared-assets/elements/dropbox/dropbox.html', 'dropbox').then
+    await setHTML('https://myekul.com/shared-assets/elements/dropbox/dropbox.html', 'dropbox')
     const dropbox = document.getElementById('dropbox');
     const dropboxClass = 'dropboxHover'
     dropbox.addEventListener('dragover', (event) => {
