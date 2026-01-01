@@ -1,4 +1,4 @@
-async function initializeDropbox() {
+async function initializeDropbox(sav) {
     setHTML('https://myekul.com/shared-assets/elements/dropbox/dropbox.html', 'dropbox').then
     const dropbox = document.getElementById('dropbox');
     const dropboxClass = 'dropboxHover'
@@ -15,6 +15,7 @@ async function initializeDropbox() {
         const files = event.dataTransfer.files;
         handleFile(files[0])
     });
+    if (sav) show('dropbox_sav')
 }
 function savInfo() {
     let player
