@@ -39,3 +39,11 @@ function fancyTab(tab) {
         <img src="https://myekul.com/shared-assets/cuphead/images/extra/${tab}.png" style="height:21px">.${tab}
     </div>`
 }
+function tabCredit(name, text, imgID, style) {
+    document.getElementById('pageTitle').innerHTML += `
+    <div class='container' style='position:absolute;top:22px;right:100px;gap:8px'>
+        <div>${text}</div>
+        <img src='https://www.speedrun.com/static/user/${imgID}' style='height:32px;border-radius:50%'>
+        <div style='${style}'>${name}</div>
+    </div>`
+}
