@@ -466,3 +466,26 @@ function toggleSnow() {
         if (!globalSnowLoaded) addJSFile('https://myekul.com/shared-assets/elements/snow.js')
     }
 }
+function infoTitle(title) {
+    return `<br><div class='banner font2' style='font-size:140%;padding:0 10px;border-radius:5px'>${title}</div>`
+}
+function toast(message, duration = 2000) {
+    let toastContainer = document.getElementById('toastContainer')
+    if (!toastContainer) {
+        toastContainer = document.createElement('div')
+        toastContainer.id = 'toastContainer'
+        document.body.appendChild(toastContainer)
+    }
+    const existingToast = toastContainer.querySelector('.toast')
+    if (existingToast) {
+        existingToast.remove()
+    }
+    const toastElement = document.createElement('div')
+    toastElement.className = 'toast'
+    toastElement.textContent = message
+    toastElement.style.animationDuration = duration + 'ms'
+    toastContainer.appendChild(toastElement)
+    setTimeout(() => {
+        toastElement.remove()
+    }, duration)
+}
