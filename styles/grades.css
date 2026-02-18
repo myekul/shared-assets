@@ -54,6 +54,44 @@
     background-color: maroon !important;
 }
 
+.grade-s {
+    position: relative;
+    overflow: hidden;
+}
+
+.grade-s::before {
+    content: "";
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+    right: -100%;
+    bottom: -50%;
+    border-radius: 50%;
+
+    background: conic-gradient(tomato,
+            orange,
+            gold,
+            limegreen,
+            royalblue,
+            mediumpurple,
+            tomato);
+
+    animation: gradeSSpin 3s linear infinite;
+    z-index: 0;
+}
+
+.grade-s>* {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes gradeSSpin {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
 .delta-green {
     color: limegreen
 }

@@ -49,6 +49,7 @@ const fontAwesomeSet = {
     media: ['Media', 'newspaper-o'],
 }
 const grades = [
+    { grade: 'S', className: 'grade-s', threshold: 100 },
     { grade: 'A+', className: 'grade-a-plus', threshold: 97 },
     { grade: 'A', className: 'grade-a', threshold: 93 },
     { grade: 'A-', className: 'grade-a-minus', threshold: 90 },
