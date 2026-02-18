@@ -63,8 +63,8 @@
     content: "";
     position: absolute;
 
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     right: -100%;
     bottom: -50%;
     border-radius: 50%;
@@ -72,12 +72,12 @@
     background: conic-gradient(tomato,
             orange,
             gold,
-            limegreen,
-            royalblue,
+            yellowgreen,
+            dodgerblue,
             mediumpurple,
             tomato);
 
-    animation: gradeSSpin 3s linear infinite;
+    animation: gradeSSpin 2s linear infinite;
     z-index: 0;
 }
 
