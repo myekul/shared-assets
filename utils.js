@@ -22,7 +22,7 @@ const fontAwesomeSet = {
     altStrats: ['Comm Best ILs', 'database'],
     commBestILs: ['Run Viable ILs', 'trophy'],
     commBestSplits: ['Comm Best Splits', 'tasks'],
-    top10: ['1.1 Top 10', 'bullseye'],
+    theTop: ['The Top', 'bullseye'],
     sums: ['Sums', 'plus'],
     residual: ['Residual', 'star'],
     grid: ['Grid', 'group'],
