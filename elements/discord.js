@@ -28,7 +28,9 @@ function discord() {
         //     member.username = 'myekul'
         // }
         let srcMember
-        if (typeof players != "undefined") srcMember = players.find(player => player.name == member.username)
+        if (typeof players != "undefined") srcMember =
+            players.find(p => p.name == member.username) ||
+            allPlayers?.find(p => p.name === member.username)
         HTMLContent += `<tr>`
         HTMLContent += `<td><img src='${member.avatar_url}' style='height:30px;border-radius:15px'></td>`
         HTMLContent += `<td style='text-align:left;padding-left:5px'>${srcMember ? getPlayerName(srcMember) : member.username}</td>`

@@ -288,7 +288,7 @@ const cupheadIntermissions = {
     level_dice_gate: 'Die House',
     level_kitchen: 'Bakery',
     level_chalice_tutorial: 'Chalice Tutorial',
-    shop_dlc: 'Shop (DLC)',
+    shop_DLC: 'Shop (DLC)',
     level_graveyard: 'Angel and Demon',
     level_chess_pawn: 'Pawns',
     level_chess_knight: 'Knight',

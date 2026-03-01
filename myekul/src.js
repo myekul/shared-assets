@@ -29,7 +29,7 @@ function getPlayerIcon(player, size) {
 function playerDisplay(playerString = localStorage.getItem('username'), exception) {
     const player =
         players.find(p => p.name === playerString) ||
-        allPlayers?.find(p => p.name === playerString)
+        (typeof allPlayers != 'undefined' ? allPlayers?.find(p => p.name === playerString) : null)
     const playerName = player ? getPlayerName(player) : playerString
     let HTMLContent = `<div class='container' style='gap:6px;margin:0 3px'>`
     HTMLContent += player && !exception ? `<div style='width:20px'>${getPlayerFlag(player, 13)}</div>` : ''
