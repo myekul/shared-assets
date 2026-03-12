@@ -184,7 +184,7 @@ body {
 
 /* Resources */
 
-.resources>div>div>a,
+.resources a,
 .resourceButton {
     width: 310px;
     height: 60px;
