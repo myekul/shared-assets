@@ -315,7 +315,7 @@ async function setTabs(tabs) {
         }
     })
     // HTMLContent += `<div id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</div>`
-    // document.getElementById('tabs').innerHTML = HTMLContent
+    document.getElementById('tabs').innerHTML = HTMLContent
     // if (!document.getElementById('particles-js')) {
     //     const particles = document.createElement('div')
     //     particles.id = 'particles-js'
