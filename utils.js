@@ -155,7 +155,7 @@ async function setSidebar(content) {
     document.getElementById('sidebar').innerHTML = content
 }
 function setResources() {
-    document.querySelectorAll('.resources > div > div > a').forEach(elem => {
+    document.querySelectorAll('.resources a').forEach(elem => {
         elem.classList.add('button')
         elem.classList.add('shadow')
         elem.style.gap = '10px'
@@ -314,18 +314,18 @@ async function setTabs(tabs) {
             HTMLContent += `<div class='dot'></div>`
         }
     })
-    HTMLContent += `<div id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</div>`
-    document.getElementById('tabs').innerHTML = HTMLContent
-    if (!document.getElementById('particles-js')) {
-        const particles = document.createElement('div')
-        particles.id = 'particles-js'
-        document.body.prepend(particles)
-    }
-    if (localStorage.getItem('snow') == 'true') {
-        toggleSnow()
-    } else {
-        document.getElementById('snowButton').style.color = 'gray'
-    }
+    // HTMLContent += `<div id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</div>`
+    // document.getElementById('tabs').innerHTML = HTMLContent
+    // if (!document.getElementById('particles-js')) {
+    //     const particles = document.createElement('div')
+    //     particles.id = 'particles-js'
+    //     document.body.prepend(particles)
+    // }
+    // if (localStorage.getItem('snow') == 'true') {
+    //     toggleSnow()
+    // } else {
+    //     document.getElementById('snowButton').style.color = 'gray'
+    // }
 }
 function loadClient(now) {
     gapi.client.setApiKey('AIzaSyBFOYjIw9IrbPirN1ov4zkVBTFOOCX1l8w');
