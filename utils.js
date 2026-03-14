@@ -308,13 +308,13 @@ async function setTabs(tabs) {
             } else {
                 let tabContent = ''
                 if (fontAwesomeSet[elem]) tabContent = fontAwesome(fontAwesomeSet[elem][1])
-                HTMLContent += `<div id='${elem}Button' class='${elem == 'info' ? 'grow' : 'button'}' style='${elem == 'info' ? 'margin-right:8px' : ''}' onclick="playSound('category_select');showTab('${elem}')">${tabContent}</div>`
+                HTMLContent += `<button id='${elem}Button' class='${elem == 'info' ? 'grow' : 'button'}' style='${elem == 'info' ? 'margin-right:8px' : ''}' onclick="playSound('category_select');showTab('${elem}')">${tabContent}</button>`
             }
         } else {
             HTMLContent += `<div class='dot'></div>`
         }
     })
-    // HTMLContent += `<div id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</div>`
+    // HTMLContent += `<button id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</button>`
     document.getElementById('tabs').innerHTML = HTMLContent
     // if (!document.getElementById('particles-js')) {
     //     const particles = document.createElement('div')

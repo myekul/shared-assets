@@ -34,10 +34,11 @@ function downloadJSON(object, name = 'cuphead_player_data_v1_slot_0.sav') {
     URL.revokeObjectURL(url)
 }
 function fancyTab(tab) {
-    return `<div id='${tab}Button' onclick="playSound('category_select');showTab('${tab}')" class="font2 button"
+    return `
+    <button id='${tab}Button' onclick="playSound('category_select');showTab('${tab}')" class="font2 button"
         style="width:75px;font-size:120%;gap:2px">
         <img src="https://myekul.com/shared-assets/cuphead/images/extra/${tab}.png" style="height:21px">.${tab}
-    </div>`
+    </button>`
 }
 function tabCredit(name, text, imgID, style) {
     document.getElementById('pageTitle').innerHTML += `
