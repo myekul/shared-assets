@@ -110,14 +110,10 @@ const cupheadShots = [
         extotal: 40
     },
     {
-        name: "ARC",
-        subtitle: "",
-        description: ""
+        name: "ARC"
     },
     {
-        name: "EXPLODER",
-        subtitle: "",
-        description: ""
+        name: "EXPLODER"
     }
 ]
 const cupheadSupers = [
@@ -138,12 +134,6 @@ const cupheadSupers = [
         name: "SUPER ART III",
         subtitle: "Giant Ghost",
         description: "Maneuver your spirit and body<br>simultaneously for maximum damage."
-    },
-    {
-        id: 2147483647,
-        name: "-",
-        subtitle: "",
-        description: ""
     }
 ];
 const cupheadCharms = [
@@ -203,14 +193,6 @@ const cupheadCharms = [
     },
     {
         id: 1487056728,
-        name: "SHIELD",
-        subtitle: "",
-        description: ""
-    },
-    {
-        id: 2147483647,
-        name: "-",
-        subtitle: "",
-        description: ""
+        name: "SHIELD"
     }
 ];
