@@ -228,6 +228,7 @@ footer img {
     top: 5px;
     background-color: midnightblue;
     border-radius: 40px;
+    overflow: hidden;
     transition: width 0.2s ease-out;
 }
 
