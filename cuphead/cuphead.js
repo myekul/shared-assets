@@ -15,11 +15,14 @@ const isles = [
     { id: 'hell', name: 'Hell', className: 'hell', numBosses: 2, mapID: 6 },
     { id: 'isle4', name: 'Isle 4', className: 'dlc', numBosses: 6, mapID: 68 }
 ]
-function cupheadShot(shot, size, extra) {
+function cupheadItem(shot, size = 36, extra, type) {
     if (shot) {
-        return `<img src="https://myekul.com/shared-assets/cuphead/images/inventory/weapon/${shot}.png" ${extra ? `class='container'` : ''} ${size ? `style='height:${size}px'` : ''}>`
+        return `<img src="https://myekul.com/shared-assets/cuphead/images/inventory/${type}/${shot}.png" ${extra ? `class='container'` : ''} ${size ? `style='height:${size}px'` : ''}>`
     }
     return ''
+}
+function cupheadShot(shot, size = 36, extra) {
+    return cupheadItem(shot, size, extra, 'weapon')
 }
 function downloadJSON(object, name = 'cuphead_player_data_v1_slot_0.sav') {
     const jsonStr = JSON.stringify(object, null, 2)
