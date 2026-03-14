@@ -24,6 +24,14 @@ body {
     -moz-user-select: none;
 }
 
+button {
+    border: none;
+    font-family: var(--font);
+    background: none;
+    color: inherit;
+    font-size: inherit;
+}
+
 .button {
     width: 140px;
     height: 22px;

@@ -489,3 +489,19 @@ function toast(message, duration = 2000) {
         toastElement.remove()
     }, duration)
 }
+function getYouTubeID(link) {
+    let videoID = link.split('/')[link.split('/').length - 1].split('"')[0]
+    if (link.includes('?') && !link.includes('watch?')) {
+        videoID = videoID.split('?')[0]
+    }
+    if (videoID.includes('=')) {
+        videoID = videoID.split('=')[1].split('&')[0]
+    }
+    return videoID
+}
+function getThumbnail(link, size) {
+    const thumbnailSize = size ? 'width:224px;height:126px' : 'width:160px;height:90px'
+    const videoID = getYouTubeID(link)
+    const src = link.includes('twitch') ? 'images/twitch.png' : `https://img.youtube.com/vi/${videoID}/mqdefault.jpg`
+    return getAnchor(link) + `<img src='${src}' class='grow' style="${thumbnailSize}"></img></a>`
+}
