@@ -128,21 +128,6 @@ input {
     color: black
 }
 
-.first {
-    background-color: var(--cuphead) !important;
-    color: black
-}
-
-.second {
-    background-color: silver !important;
-    color: black
-}
-
-.third {
-    background-color: darkorange !important;
-    color: black
-}
-
 #particles-js {
     position: fixed;
     width: 100%;
@@ -238,4 +223,41 @@ footer img {
 
 #myekulProjectButton:hover #myekulProjectText {
     opacity: 1;
+}
+
+/* Speedruns */
+
+.first {
+    background-color: var(--cuphead) !important;
+    color: black
+}
+
+.second {
+    background-color: silver !important;
+    color: black
+}
+
+.third {
+    background-color: darkorange !important;
+    color: black
+}
+
+.trophy {
+    filter: drop-shadow(0.5px 1px 0 black) drop-shadow(-0.5px -0.5px 0 black);
+    padding: 0 3px
+}
+
+#podium {
+    height: 120px;
+    align-items: flex-end;
+    margin: 0 100px
+}
+
+#podium>div>div {
+    transform: translate(0px, -60px)
+}
+
+#podium div {
+    width: 150px;
+    justify-content: center
 }
