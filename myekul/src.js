@@ -61,6 +61,7 @@ function cleanRuns(runs) {
             videos: theRun.videos,
             id: theRun.weblink.split('run/')[1],
             url: url,
+            comment: theRun.comment
         }
         newRuns.push(newRun)
     })
