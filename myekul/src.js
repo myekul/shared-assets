@@ -175,3 +175,9 @@ function fancyTable(runs, numRuns = 5) {
     HTMLContent += `</table>`
     return HTMLContent
 }
+function normalize(percentage, value = 50) {
+    if (percentage < value) {
+        return 0
+    }
+    return ((percentage - value) / (100 - value)) * 100
+}
