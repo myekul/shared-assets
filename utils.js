@@ -502,6 +502,6 @@ function getYouTubeID(link) {
 function getThumbnail(link, size) {
     const thumbnailSize = size ? 'width:224px;height:126px' : 'width:160px;height:90px'
     const videoID = getYouTubeID(link)
-    const src = link.includes('twitch') ? 'images/twitch.png' : `https://img.youtube.com/vi/${videoID}/mqdefault.jpg`
+    const src = link.includes('twitch') ? 'https://myekul.com/shared-assets/images/twitch-thumb.png' : `https://img.youtube.com/vi/${videoID}/mqdefault.jpg`
     return getAnchor(link) + `<img src='${src}' class='grow' style="${thumbnailSize}"></img></a>`
 }
