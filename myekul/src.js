@@ -126,9 +126,9 @@ function podium(everyRun) {
     players.slice(3, 10).forEach(player => {
         HTMLContent += `<div>${getPlayerIcon(player, 50)}</div>`
     })
-    HTMLContent += `</div>`
-    HTMLContent += fancyTable(everyRun, 10)
-    HTMLContent += `</div>`
+    HTMLContent += `</div>
+    <div style='margin:0 auto'>${fancyTable(everyRun, 10)}</div>
+    </div>`
     return HTMLContent
 }
 function fancyThumbnail(run, size) {
