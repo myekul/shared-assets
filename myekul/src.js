@@ -127,7 +127,7 @@ function podium(everyRun) {
         HTMLContent += `<div>${getPlayerIcon(player, 50)}</div>`
     })
     HTMLContent += `</div>
-    <div style='margin:0 auto'>${fancyTable(everyRun, 10)}</div>
+    <div class='container'>${fancyTable(everyRun, 10)}</div>
     </div>`
     return HTMLContent
 }
