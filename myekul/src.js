@@ -181,3 +181,15 @@ function normalize(percentage, value = 50) {
     }
     return ((percentage - value) / (100 - value)) * 100
 }
+function runModal(playerName) {
+    const player = players.find(p => p.name == playerName)
+    const playerIndex = players.findIndex(p => p.name == playerName)
+    let HTMLContent = ''
+    HTMLContent += `
+    <table>
+    ${fancyRun(player.extra)}
+    ${fancyPlayer(playerIndex)}
+    </table>`
+    HTMLContent += player.extra.comment ? `<div class='container'><div class='border background1' style='max-width:400px;padding:10px;margin:10px 0'>${player.extra.comment}</div></div>` : ''
+    openModal(HTMLContent, 'RUN')
+}
