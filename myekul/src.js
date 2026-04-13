@@ -59,7 +59,7 @@ function cleanRuns(runs) {
             player: playerContent,
             score: theRun.times.primary_t,
             videos: theRun.videos,
-            id: theRun.weblink.split('run/')[1],
+            id: theRun.weblink.split('runs/')[1],
             url: url,
             comment: theRun.comment
         }
