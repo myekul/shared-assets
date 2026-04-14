@@ -182,6 +182,71 @@
     color: black
 }
 
+/* Minibosses */
+
+.tipsytroop {
+    background-color: lightgray;
+}
+
+.chipsbettigan {
+    color: var(--cuphead);
+    background-color: dodgerblue;
+}
+
+.mrwheezy {
+    background-color: saddlebrown;
+}
+
+.pipanddot {
+    background-color: cadetblue;
+}
+
+.hopuspocus {
+    background-color: royalblue;
+}
+
+.phearlap {
+    background-color: darkslateblue;
+    color: white
+}
+
+.pirouletta {
+    background-color: forestgreen;
+}
+
+.mangosteen {
+    background-color: black;
+    color: white
+}
+
+.mrchimes {
+    background-color: #63b5a9
+}
+
+.kingdice2 {
+    background-color: rebeccapurple;
+}
+
+.waffle {
+    background-color: peru;
+}
+
+.candycorn {
+    background-color: orange;
+}
+
+.cupcake {
+    background-color: lightgreen;
+}
+
+.gumball {
+    background-color: lightskyblue;
+}
+
+.jawbreaker {
+    background-color: tomato;
+}
+
 /* Other */
 
 #cupheadProjects a {
