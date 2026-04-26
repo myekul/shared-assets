@@ -198,7 +198,8 @@
 }
 
 .pipanddot {
-    background-color: cadetblue;
+    background-color: lightskyblue;
+    color: black
 }
 
 .hopuspocus {
@@ -207,7 +208,6 @@
 
 .phearlap {
     background-color: darkslateblue;
-    color: white
 }
 
 .pirouletta {
@@ -216,11 +216,11 @@
 
 .mangosteen {
     background-color: black;
-    color: white
 }
 
 .mrchimes {
-    background-color: #63b5a9
+    background-color: #63b5a9;
+    color: black
 }
 
 .kingdice2 {

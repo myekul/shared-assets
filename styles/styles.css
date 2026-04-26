@@ -30,6 +30,8 @@ button {
     background: none;
     color: inherit;
     font-size: inherit;
+    padding-block: 0px;
+    padding-inline: 0px;
 }
 
 .button {
