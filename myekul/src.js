@@ -116,18 +116,20 @@ function scoreGradeSpan(percentage) {
 }
 function podium(everyRun) {
     let HTMLContent = ''
-    HTMLContent += `<div style='padding-left:20px'>
+    HTMLContent += `
+    <div style='padding-left:20px'>
         <div id='podium' class='container'>
             <div class='second' style='height:50%'><div class='container'>${getPlayerIcon(players[1], 70)}</div></div>
             <div class='first' style='height:70%'><div class='container'>${getPlayerIcon(players[0], 70)}</div></div>
             <div class='third' style='height:30%'><div class='container'>${getPlayerIcon(players[2], 70)}</div></div>
-        </div>`
-    HTMLContent += `<div class='container' style='gap:10px;padding:15px 0'>`
+        </div>
+        <div class='container' style='gap:10px;padding:15px 0'>`
     players.slice(3, 10).forEach(player => {
         HTMLContent += `<div>${getPlayerIcon(player, 50)}</div>`
     })
-    HTMLContent += `</div>
-    <div class='container'>${fancyTable(everyRun, 10)}</div>
+    HTMLContent += `
+        </div>
+        <div class='container'>${fancyTable(everyRun, 10)}</div>
     </div>`
     return HTMLContent
 }
@@ -137,40 +139,42 @@ function fancyThumbnail(run, size) {
 function fancyDate(run) {
     const date = run.date
     const dateDif = daysAgo(getDateDif(new Date(), new Date(date)))
-    return `<td style='padding:0 8px'>
+    return `
+    <td style='padding:0 8px'>
         <div style='font-size:90%'>${date}</div>
         <div style='font-size:70%'>${dateDif}</div>
-        </td>`
+    </td>`
 }
 function fancyTime(run, categoryIndex, extra) {
     const category = categories[categoryIndex]
-    let HTMLContent = ''
-    HTMLContent += `<td style='padding:0 5px'>`
-    HTMLContent += sortCategoryIndex == -1 && mode == 'fullgame' ? `<div style='font-size:80%;padding-bottom:4px'>${categorySpan(category)}</div>` : ''
     const trophy = getTrophy(run.place)
-    HTMLContent += `<div class='container' ${trophy ? `style='gap:5px'` : ''}>
-    <div>${trophy}</div>
-    <div class='${category?.className}' style='font-size:140%;border-radius:5px;padding:0 4px'>${secondsToHMS(run.score)}</div>
-    </div>`
-    HTMLContent += !extra ? `<div style='font-size:80%;padding-top:4px'>${scoreGradeSpan(run.percentage)}</div>` : ''
-    HTMLContent += `</td>`
+    let HTMLContent = `
+    <td style='padding:0 5px'>
+        ${sortCategoryIndex == -1 && mode == 'fullgame' ? `<div style='font-size:80%;padding-bottom:4px'>${categorySpan(category)}</div>` : ''}
+        <div class='container' ${trophy ? `style='gap:5px'` : ''}>
+            <div>${trophy}</div>
+            <div class='${category?.className}' style='font-size:140%;border-radius:5px;padding:0 4px'>${secondsToHMS(run.score)}</div>
+        </div>
+        ${!extra ? `<div style='font-size:80%;padding-top:4px'>${scoreGradeSpan(run.percentage)}</div>` : ''}
+    </td>`
     return HTMLContent
 }
 function fancyPlayer(playerIndex) {
     const player = players[playerIndex]
-    let HTMLContent = ''
-    HTMLContent += `<td style='padding-left:8px'>${getPlayerFlag(player, 20)}</td>`
-    HTMLContent += `<td style='padding:0 5px'>${getPlayerIcon(player, 48)}</td>`
-    HTMLContent += `<td ${sortCategoryIndex == -1 ? `class='clickable' onclick="openModalCL(false,'${player.name}')"` : ''} style='font-size:120%;text-align:left;padding-right:8px'>${getPlayerName(player)}</td>`
+    let HTMLContent = `
+    <td style='padding-left:8px'>${getPlayerFlag(player, 20)}</td>
+    <td style='padding:0 5px'>${getPlayerIcon(player, 48)}</td>
+    <td ${sortCategoryIndex == -1 ? `class='clickable' onclick="openModalCL(false,'${player.name}')"` : ''} style='font-size:120%;text-align:left;padding-right:8px'>${getPlayerName(player)}</td>`
     return HTMLContent
 }
 function fancyTable(runs, numRuns = 5) {
     let HTMLContent = `<table class='bigShadow' style='border-collapse:collapse;border:4px solid var(--background1)'>`
     runs.slice(0, numRuns).forEach((run, runIndex) => {
-        HTMLContent += `<tr class='${getRowColor(runIndex)}'>`
-        HTMLContent += fancyRun(run.run, run.categoryIndex)
-        HTMLContent += fancyPlayer(run.playerIndex)
-        HTMLContent += `</tr>`
+        HTMLContent += `
+        <tr class='${getRowColor(runIndex)}'>
+            ${fancyRun(run.run, run.categoryIndex)}
+            ${fancyPlayer(run.playerIndex)}
+        </tr>`
     })
     HTMLContent += `</table>`
     return HTMLContent

@@ -30,11 +30,12 @@ function discord() {
         let srcMember
         if (typeof players != "undefined") srcMember = players.find(p => p.name == member.username)
         if (typeof allPlayers != "undefined") srcMember = allPlayers.find(p => p.name === member.username)
-        HTMLContent += `<tr>`
-        HTMLContent += `<td><img src='${member.avatar_url}' style='height:30px;border-radius:15px'></td>`
-        HTMLContent += `<td style='text-align:left;padding-left:5px'>${srcMember ? getPlayerName(srcMember) : member.username}</td>`
-        HTMLContent += member.game ? `<td style='padding-left:10px;color:var(--gray);text-align:left'>${member.game.name}</td>` : ''
-        HTMLContent += `</tr>`
+        HTMLContent += `
+        <tr>
+            <td><img src='${member.avatar_url}' style='height:30px;border-radius:15px'></td>
+            <td style='text-align:left;padding-left:5px'>${srcMember ? getPlayerName(srcMember) : member.username}</td>
+            ${member.game ? `<td style='padding-left:10px;color:var(--gray);text-align:left'>${member.game.name}</td>` : ''}
+        </tr>`
     })
     HTMLContent += `</table></div>`
     return HTMLContent
