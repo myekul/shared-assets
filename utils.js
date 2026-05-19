@@ -306,8 +306,7 @@ async function setTabs(tabs) {
                     HTMLContent += elem2
                 })
             } else {
-                let tabContent = ''
-                if (fontAwesomeSet[elem]) tabContent = fontAwesome(fontAwesomeSet[elem][1])
+                const tabContent = fontAwesomeSet[elem] ? fontAwesome(fontAwesomeSet[elem][1]) : ''
                 HTMLContent += `<button id='${elem}Button' class='${elem == 'info' ? 'grow' : 'button'}' style='${elem == 'info' ? 'margin-right:8px' : ''}' onclick="playSound('category_select');showTab('${elem}')">${tabContent}</button>`
             }
         } else {
@@ -465,9 +464,6 @@ function toggleSnow() {
         snowButton.style.color = 'white'
         if (!globalSnowLoaded) addJSFile('https://myekul.com/shared-assets/elements/snow.js')
     }
-}
-function infoTitle(title) {
-    return `<br><div class='banner font2' style='font-size:140%;padding:0 10px;border-radius:5px'>${title}</div>`
 }
 function toast(message, duration = 2000) {
     let toastContainer = document.getElementById('toastContainer')

@@ -185,6 +185,16 @@ label:active {
     position: relative
 }
 
+.infoTitle {
+    background-color: var(--banner);
+    color: var(--bannerText);
+    font-family: var(--font2);
+    font-size: 140%;
+    padding: 0 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
 /* Ballpit */
 
 .ball,
