@@ -51,3 +51,9 @@ function tabCredit(name, text, imgID, style) {
         <div style='${style}'>${name}</div>
     </div>`
 }
+const specialThanks = `
+I'd like to dedicate this section to the Cuphead speedrunning community for cultivating an incredible and friendly online space for people to engage in this niche hobby.
+It's cheesy, but I wouldn't be the person I am today if it weren't for you guys. Much love.
+<br><br>This is a static site written entirely in raw HTML / CSS / JavaScript, which makes it extremely lightweight and efficient.
+It was created from scratch, independently devloped, and crafted specifically for the speedrunning community.
+It is also open source, ad-free, nonprofit, and costs $0 to use, host, and maintain. Enjoy!`

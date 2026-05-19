@@ -21,11 +21,10 @@ function savInfo() {
     let player
     if (typeof players != "undefined") player = players.find(player => player.name == localStorage.getItem('username'))
     const name = player ? getPlayerName(player) : `<span style='color:white'>${localStorage.getItem('username') || 'USERNAME'}</span>`
-    let HTMLContent = `
+    return `
     <div>
         CUPHEAD .SAV FILE LOCATIONS:
         <br>Windows: ${myekulColor(`C:\\Users\\${name}\\AppData\\Roaming\\Cuphead`)}
         <br>Mac: ${myekulColor(`/Users/${name}/Library/Application\\ Support/unity.Studio\\ MDHR.Cuphead/Cuphead`)}
     </div>`
-    return HTMLContent
 }
