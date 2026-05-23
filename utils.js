@@ -313,7 +313,10 @@ async function setTabs(tabs) {
             HTMLContent += `<div class='dot'></div>`
         }
     })
-    HTMLContent += `<button class='grow' onclick="supporterModal()"><img src='images/supporters.png' style='width:30px;margin-left:5px'></button>`
+    HTMLContent += `
+    <button class='grow' onclick="supporterModal()">
+        <img src='https://myekul.com/shared-assets/images/supporters.png' style='width:30px;margin-left:5px'>
+    </button>`
     // HTMLContent += `<button id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</button>`
     document.getElementById('tabs').innerHTML = HTMLContent
     // if (!document.getElementById('particles-js')) {
@@ -502,6 +505,11 @@ function getThumbnail(link, size) {
     const src = link.includes('twitch') ? 'https://myekul.com/shared-assets/images/twitch-thumb.png' : `https://img.youtube.com/vi/${videoID}/mqdefault.jpg`
     return getAnchor(link) + `<img src='${src}' class='grow' style="${thumbnailSize}"></img></a>`
 }
+const SUPPORTERS = [['Lewzr', 'SBDWolf'], ['Taylz', 'FailedCriminal']]
+const SUPPORTERS_EXPANDED = []
+SUPPORTERS.forEach(supporterGroup => {
+    supporterGroup.forEach(supporter => { SUPPORTERS_EXPANDED.push(supporter) })
+})
 function supporterModal() {
     let HTMLContent = `<div>`
     SUPPORTERS.forEach(supporterGroup => {
@@ -524,7 +532,7 @@ function supporterModal() {
     </div>`
     const headerContent = `
     <div class='container' style='position:relative'>
-        <img src='images/supporters.png' style='width:55px;position:absolute;left:0px'></div>
+        <img src='https://myekul.com/shared-assets/images/supporters.png' style='width:55px;position:absolute;left:0px'></div>
         <div style='margin-left:60px;margin-right:20px'>SUPPORTERS</div>
     <div>`
     openModal(HTMLContent, headerContent)
