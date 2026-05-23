@@ -539,7 +539,7 @@ function supporterModal() {
 }
 function playerDisplay(playerString = localStorage.getItem('username'), exception) {
     const player =
-        players.find(p => p.name === playerString) ||
+        (typeof players != 'undefined' ? players.find(p => p.name === playerString) : null) ||
         (typeof allPlayers != 'undefined' ? allPlayers?.find(p => p.name === playerString) : null)
     const playerName = player ? getPlayerName(player) : playerString
     return `
