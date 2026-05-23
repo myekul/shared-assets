@@ -20,7 +20,7 @@ const fontAwesomeSet = {
     rumorTool: ['Rumor Tool', 'wrench'],
     // Run Recap
     altStrats: ['Comm Best ILs', 'database'],
-    commBestILs: ['Run Viable ILs', 'trophy'],
+    runViableILs: ['Run Viable ILs', 'trophy'],
     commBestSplits: ['Comm Best Splits', 'tasks'],
     theTop: ['The Top', 'bullseye'],
     sums: ['Sums', 'plus'],
