@@ -136,6 +136,11 @@ input {
     z-index: 9999;
 }
 
+.supporter div {
+    justify-content: left;
+    padding: 1px
+}
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {

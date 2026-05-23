@@ -314,7 +314,7 @@ async function setTabs(tabs) {
         }
     })
     HTMLContent += `
-    <button class='grow' onclick="supporterModal()">
+    <button class='container grow' style='margin:0;margin-bottom:1px' onclick="supporterModal()">
         <img src='https://myekul.com/shared-assets/images/supporters.png' style='width:30px;margin-left:5px'>
     </button>`
     // HTMLContent += `<button id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</button>`
@@ -536,4 +536,17 @@ function supporterModal() {
         <div style='margin-left:60px;margin-right:20px'>SUPPORTERS</div>
     <div>`
     openModal(HTMLContent, headerContent)
+}
+function playerDisplay(playerString = localStorage.getItem('username'), exception) {
+    const player =
+        players.find(p => p.name === playerString) ||
+        (typeof allPlayers != 'undefined' ? allPlayers?.find(p => p.name === playerString) : null)
+    const playerName = player ? getPlayerName(player) : playerString
+    return `
+    <div class='container' style='gap:6px;margin:0 3px'>
+        ${player && !exception ? `<div style='width:20px'>${getPlayerFlag(player, 13)}</div>` : ''}
+        ${player ? `<div>${getPlayerIcon(player, 27)}</div>` : ''}
+        <div style='font-size:100%'>${playerName}</div>
+    </div>`
+    return HTMLContent
 }
