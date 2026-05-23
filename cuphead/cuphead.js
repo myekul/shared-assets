@@ -57,9 +57,8 @@ It's cheesy, but I wouldn't be the person I am today if it weren't for you guys.
 <br><br>This is a static site written entirely in raw HTML / CSS / JavaScript, which makes it extremely lightweight and efficient.
 It was created from scratch, independently devloped, and crafted specifically for the speedrunning community.
 It is also open source, ad-free, nonprofit, and costs $0 to use, host, and maintain. Enjoy!`
-
-const javaSav=`
-One of my first ever coding projects was a text-based Cuphead .sav reader that I wrote in Java back in 2023 during college.
-When I ran ILs back then, I used this tool to view my .sav file after getting a new S-Rank WR to view the exact time.
+const javaSav = `
+One of my first ever coding projects was a <span class='myekulColor'>text-based Cuphead .sav reader</span> that I wrote in Java back in 2023 during college.
+When I ran ILs back then, I used this tool to view my .sav file after getting new S-Rank PBs to view the exact time.
 During college, I learned web development, and one of my first web projects was an expanded v2 of that little Java program, written in HTML / CSS / JavaScript.
 It served the same purpose, except I made a visual frontend for it.`

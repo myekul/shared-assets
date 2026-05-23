@@ -31,11 +31,12 @@ function playerDisplay(playerString = localStorage.getItem('username'), exceptio
         players.find(p => p.name === playerString) ||
         (typeof allPlayers != 'undefined' ? allPlayers?.find(p => p.name === playerString) : null)
     const playerName = player ? getPlayerName(player) : playerString
-    let HTMLContent = `<div class='container' style='gap:6px;margin:0 3px'>`
-    HTMLContent += player && !exception ? `<div style='width:20px'>${getPlayerFlag(player, 13)}</div>` : ''
-    HTMLContent += player ? `<div>${getPlayerIcon(player, 27)}</div>` : ''
-    HTMLContent += `<div style='font-size:100%'>${playerName}</div>`
-    HTMLContent += `</div>`
+    return `
+    <div class='container' style='gap:6px;margin:0 3px'>
+        ${player && !exception ? `<div style='width:20px'>${getPlayerFlag(player, 13)}</div>` : ''}
+        ${player ? `<div>${getPlayerIcon(player, 27)}</div>` : ''}
+        <div style='font-size:100%'>${playerName}</div>
+    </div>`
     return HTMLContent
 }
 function cleanRuns(runs) {
@@ -115,8 +116,7 @@ function scoreGradeSpan(percentage) {
     return `<div class='${grade.className}' style='display:inline-block;border-radius:5px;padding:0 5px'><span>${displayPercentage(percentage)}% ${grade.grade}</span></div>`
 }
 function podium(everyRun) {
-    let HTMLContent = ''
-    HTMLContent += `
+    let HTMLContent = `
     <div style='padding-left:20px'>
         <div id='podium' class='container'>
             <div class='second' style='height:50%'><div class='container'>${getPlayerIcon(players[1], 70)}</div></div>
