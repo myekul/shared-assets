@@ -505,7 +505,7 @@ function getThumbnail(link, size) {
     const src = link.includes('twitch') ? 'https://myekul.com/shared-assets/images/twitch-thumb.png' : `https://img.youtube.com/vi/${videoID}/mqdefault.jpg`
     return getAnchor(link) + `<img src='${src}' class='grow' style="${thumbnailSize}"></img></a>`
 }
-const SUPPORTERS = [['Lewzr', 'SBDWolf', 'Taylz'], ['Twist_SR', 'FailedCriminal']]
+const SUPPORTERS = [['GamerAttack27', 'Lewzr', 'SBDWolf'], ['Taylz', 'Twist_SR', 'FailedCriminal']]
 const SUPPORTERS_EXPANDED = []
 SUPPORTERS.forEach(supporterGroup => {
     supporterGroup.forEach(supporter => { SUPPORTERS_EXPANDED.push(supporter) })
