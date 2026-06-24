@@ -11,6 +11,7 @@ const fontAwesomeSet = {
     sort: ['Sort', 'sort-amount-asc'],
     connect4: ['Connect 4', 'adjust'],
     // Runner Resources
+    debug: ['Debug Mod', 'bug'],
     bossInfo: ['Boss Info', 'drivers-license-o'],
     hp: ['HP', 'heart'],
     shotInfo: ['Shot Info', 'crosshairs'],

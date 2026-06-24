@@ -185,20 +185,22 @@
 /* Minibosses */
 
 .tipsytroop {
-    background-color: lightgray;
+    background-color: lightskyblue;
+    color: black
 }
 
 .chipsbettigan {
-    color: var(--cuphead);
     background-color: dodgerblue;
+    color: var(--cuphead);
 }
 
 .mrwheezy {
     background-color: saddlebrown;
+    color: var(--cuphead);
 }
 
 .pipanddot {
-    background-color: lightskyblue;
+    background-color: lightgray;
     color: black
 }
 
@@ -212,6 +214,7 @@
 
 .pirouletta {
     background-color: forestgreen;
+    color: var(--cuphead)
 }
 
 .mangosteen {
