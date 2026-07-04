@@ -195,6 +195,13 @@ label:active {
     border-radius: 5px;
 }
 
+.bigHeader {
+    font-family: var(--font2);
+    font-size: 120%;
+    padding: 5px 8px;
+    white-space: nowrap
+}
+
 /* Ballpit */
 
 .ball,
