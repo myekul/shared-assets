@@ -206,7 +206,7 @@ function getColorFromClass(className, textColor) {
     document.body.removeChild(tempEl);
     return color;
 }
-// Sounds
+// SFX
 function setAudio(source, audioNames) {
     if (source == 'cuphead') {
         audioNames = ['cardup', 'carddown', 'cardflip', 'category_select', 'equip_move', 'locked', 'move', 'ready', 'win_time_loop', 'win_time_loop_end']
@@ -244,6 +244,7 @@ function stopSound(sfx) {
         sound.currentTime = 0
     }
 }
+//
 document.addEventListener('DOMContentLoaded', function () {
     addStylesheet('https://myekul.com/shared-assets/elements/modal/modal.css')
     fetch('https://myekul.com/shared-assets/elements/modal/modal.html')
