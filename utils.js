@@ -484,7 +484,7 @@ function toast(message, duration = 2000) {
     }
     const toastElement = document.createElement('div')
     toastElement.className = 'toast'
-    toastElement.textContent = message
+    toastElement.innerHTML = message
     toastElement.style.animationDuration = duration + 'ms'
     toastContainer.appendChild(toastElement)
     setTimeout(() => {
