@@ -3,6 +3,8 @@ const fontAwesomeSet = {
     ballpit: ['Ballpit', 'smile-o'],
     random: ['Random', 'question'],
     info: ['Info', 'info-circle'],
+    // myekul.com
+    adventures: ['Adventures', 'globe'],
     // Combined Leaderboard
     featured: ['Featured', 'star'],
     leaderboards: ['Leaderboards', 'cubes'],
