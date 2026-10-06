@@ -43,6 +43,7 @@ const fontAwesomeSet = {
     courses: ['Courses', 'star'],
     // Roster Realm
     list: ['List', 'book'],
+    console: ['Console', 'gamepad'],
     // Media Anthology
     artist: ['Artist', 'users'],
     stats: ['Stats', 'pie-chart'],
