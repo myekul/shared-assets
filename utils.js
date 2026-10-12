@@ -542,6 +542,14 @@ function supporterModal() {
     <div>`
     openModal(HTMLContent, headerContent)
 }
+async function setMyekulProjects(game) {
+    const r = await fetch(`https://myekul.com/shared-assets/myekul/projects/${game}.html`);
+    const t = await r.text();
+    document.querySelector('header').insertAdjacentHTML("afterbegin", t)
+    document.querySelectorAll('#myekulProjects a').forEach(elem => {
+        elem.classList.add('container')
+    })
+}
 function playerDisplay(playerString = localStorage.getItem('username'), exception) {
     const player =
         (typeof players != 'undefined' ? players.find(p => p.name === playerString) : null) ||

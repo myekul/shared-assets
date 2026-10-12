@@ -1,12 +1,4 @@
-setCuphead()
-async function setCuphead() {
-    const r = await fetch('https://myekul.com/shared-assets/cuphead/projects.html');
-    const t = await r.text();
-    document.querySelector('header').insertAdjacentHTML("afterbegin", t)
-    document.querySelectorAll('#cupheadProjects a').forEach(elem => {
-        elem.classList.add('container')
-    })
-}
+setMyekulProjects('cuphead')
 const nullTime = 3.4028234663852886e+38
 const isles = [
     { id: 'isle1', name: 'Isle 1', className: 'isle1', numBosses: 5, mapID: 3 },

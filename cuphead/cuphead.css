@@ -252,7 +252,7 @@
 
 /* Other */
 
-#cupheadProjects a {
+#myekulProjects a {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     padding-top: 25px;
@@ -262,11 +262,11 @@
     transition: transform 0.1s cubic-bezier(.4, 0, .2, 1);
 }
 
-#cupheadProjects a:hover {
+#myekulProjects a:hover {
     transform: scale(1.2);
 }
 
-#cupheadProjects img {
+#myekulProjects img {
     height: 40px;
     width: auto;
 }
