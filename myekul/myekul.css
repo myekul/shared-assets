@@ -279,3 +279,24 @@ td.short-border::after {
     width: var(--border-width, 100%);
     border-bottom: 2px solid var(--border-color, #494949);
 }
+
+/* myekul projects */
+
+#myekulProjects a {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-top: 25px;
+    padding-bottom: 7px;
+    width: 50px;
+    transform: translateY(-20px);
+    transition: transform 0.1s cubic-bezier(.4, 0, .2, 1);
+}
+
+#myekulProjects a:hover {
+    transform: scale(1.2);
+}
+
+#myekulProjects img {
+    height: 40px;
+    width: auto;
+}
