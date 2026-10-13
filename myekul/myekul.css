@@ -282,6 +282,12 @@ td.short-border::after {
 
 /* myekul projects */
 
+#myekulProjects {
+    position: absolute;
+    right: 230px;
+    z-index: 3
+}
+
 #myekulProjects a {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
