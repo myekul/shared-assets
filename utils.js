@@ -22,13 +22,10 @@ const fontAwesomeSet = {
     graveyardTool: ['Graveyard Tool', 'wrench'],
     rumorTool: ['Rumor Tool', 'wrench'],
     // Run Recap
-    altStrats: ['Comm Best ILs', 'database'],
+    altStrats: ['Alt Strats', 'database'],
     runViableILs: ['Run Viable ILs', 'trophy'],
     commBestSplits: ['Comm Best Splits', 'tasks'],
     theTop: ['The Top', 'bullseye'],
-    sums: ['Sums', 'plus'],
-    residual: ['Residual', 'star'],
-    grid: ['Grid', 'group'],
     // Dr. Kahl's .sav inspector
     levels: ['Levels', 'flag'],
     inventory: ['Inventory', 'crosshairs'],
