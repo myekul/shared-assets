@@ -284,7 +284,7 @@ td.short-border::after {
 
 #myekulProjects {
     position: absolute;
-    right: 230px;
+    right: 210px;
     z-index: 3
 }
 
@@ -293,7 +293,7 @@ td.short-border::after {
     border-bottom-right-radius: 40px;
     padding-top: 25px;
     padding-bottom: 7px;
-    width: 50px;
+    width: 40px;
     transform: translateY(-20px);
     transition: transform 0.1s cubic-bezier(.4, 0, .2, 1);
 }
@@ -303,6 +303,6 @@ td.short-border::after {
 }
 
 #myekulProjects img {
-    height: 40px;
+    height: 35px;
     width: auto;
 }

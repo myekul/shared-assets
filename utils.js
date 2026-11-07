@@ -105,10 +105,8 @@ function hide(elem) {
 }
 function buttonClick(pressed, unpressed, className) {
     document.querySelectorAll('#' + unpressed + ' .button').forEach(button => {
-        button.classList.remove(className)
+        button?.classList.toggle(className, button?.id == pressed)
     })
-    const button = document.getElementById(pressed)
-    button?.classList.add(className)
 }
 async function setHTML(src, elem) {
     const r = await fetch(src);

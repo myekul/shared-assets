@@ -21,7 +21,8 @@ const bosses = [
         internal: 'flying_blimp',
         isle: 1,
         order: 10,
-        levelID: 1449745424
+        levelID: 1449745424,
+        plane: true
     },
     {
         id: 'cagneycarnation',
@@ -61,7 +62,8 @@ const bosses = [
         internal: 'flying_genie',
         isle: 2,
         order: 14,
-        levelID: 1460200177
+        levelID: 1460200177,
+        plane: true
     },
     {
         id: 'grimmatchstick',
@@ -77,7 +79,8 @@ const bosses = [
         internal: 'flying_bird',
         isle: 2,
         order: 13,
-        levelID: 1428495827
+        levelID: 1428495827,
+        plane: true
     },
     {
         id: 'rumorhoneybottoms',
@@ -117,7 +120,8 @@ const bosses = [
         internal: 'robot',
         isle: 3,
         order: 18,
-        levelID: 1452935394
+        levelID: 1452935394,
+        plane: true
     },
     {
         id: 'calamaria',
@@ -125,7 +129,8 @@ const bosses = [
         internal: 'flying_mermaid',
         isle: 3,
         order: 22,
-        levelID: 1446558823
+        levelID: 1446558823,
+        plane: true
     },
     {
         id: 'phantomexpress',
@@ -189,7 +194,8 @@ const bosses = [
         internal: 'flying_cowboy',
         isle: 5,
         order: 4,
-        levelID: 1530096313
+        levelID: 1530096313,
+        plane: true
     },
     {
         id: 'chefsaltbaker',
@@ -208,11 +214,6 @@ bosses.forEach(boss => {
     } else {
         boss.time = 129
     }
-    if (['hildaberg', 'wallywarbles', 'djimmithegreat', "drkahlsrobot", 'calamaria', 'estherwinchester'].includes(boss.id)) {
-        boss.plane = true
-    } else {
-        boss.plane = false
-    }
 })
 const runNguns = [
     {
@@ -220,6 +221,7 @@ const runNguns = [
         name: 'Forest Follies',
         internal: 'platforming_1_1F',
         isle: 1,
+        order: 1,
         levelID: 1464969490
     },
     {
@@ -227,6 +229,7 @@ const runNguns = [
         name: 'Treetop Trouble',
         internal: 'platforming_1_2F',
         isle: 1,
+        order: 2,
         levelID: 1464969491
     },
     {
@@ -234,13 +237,15 @@ const runNguns = [
         name: 'Funhouse Frazzle',
         internal: 'platforming_2_1F',
         isle: 2,
+        order: 4,
         levelID: 1496818712
     },
     {
-        id: 'funhousefrazzle',
+        id: 'funfairfever',
         name: 'Funfair Fever',
         internal: 'platforming_2_2F',
         isle: 2,
+        order: 3,
         levelID: 1499704951
     },
     {
@@ -248,6 +253,7 @@ const runNguns = [
         name: 'Perilous Piers',
         internal: 'platforming_3_1F',
         isle: 3,
+        order: 6,
         levelID: 1464969492
     },
     {
@@ -255,6 +261,7 @@ const runNguns = [
         name: 'Rugged Ridge',
         internal: 'platforming_3_2F',
         isle: 3,
+        order: 5,
         levelID: 1464969493
     }
 ]
