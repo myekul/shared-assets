@@ -317,18 +317,18 @@ async function setTabs(tabs) {
     <button class='container grow' style='margin:0;margin-bottom:1px' onclick="supporterModal()">
         <img src='https://myekul.com/shared-assets/images/supporters.png' style='width:30px;margin-left:5px'>
     </button>`
-    // HTMLContent += `<button id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</button>`
+    HTMLContent += `<button id='snowButton' class='container grow' style='margin:0;width:30px' onclick="toggleSnow()">${fontAwesome('snowflake-o')}</button>`
     document.getElementById('tabs').innerHTML = HTMLContent
-    // if (!document.getElementById('particles-js')) {
-    //     const particles = document.createElement('div')
-    //     particles.id = 'particles-js'
-    //     document.body.prepend(particles)
-    // }
-    // if (localStorage.getItem('snow') == 'true') {
-    //     toggleSnow()
-    // } else {
-    //     document.getElementById('snowButton').style.color = 'gray'
-    // }
+    if (!document.getElementById('particles-js')) {
+        const particles = document.createElement('div')
+        particles.id = 'particles-js'
+        document.body.prepend(particles)
+    }
+    if (localStorage.getItem('snow') == 'true') {
+        toggleSnow()
+    } else {
+        document.getElementById('snowButton').style.color = 'gray'
+    }
 }
 function loadClient(now) {
     gapi.client.setApiKey('AIzaSyBFOYjIw9IrbPirN1ov4zkVBTFOOCX1l8w');
@@ -505,7 +505,7 @@ function getThumbnail(link, size) {
     const src = link?.includes('twitch') ? 'https://myekul.com/shared-assets/images/twitch-thumb.png' : `https://img.youtube.com/vi/${videoID}/mqdefault.jpg`
     return getAnchor(link) + `<img src='${src}' class='grow' style="${thumbnailSize}"></img></a>`
 }
-const SUPPORTERS = [['GamerAttack27', 'Lewzr', 'SBDWolf'], ['Taylz', 'Twist_SR', 'FailedCriminal']]
+const SUPPORTERS = [['GamerAttack27', 'Quincely0', 'lewzr'], ['SBDWolf', 'Taylz'], ['Twist_SR', 'FailedCriminal']]
 const SUPPORTERS_EXPANDED = []
 SUPPORTERS.forEach(supporterGroup => {
     supporterGroup.forEach(supporter => { SUPPORTERS_EXPANDED.push(supporter) })
