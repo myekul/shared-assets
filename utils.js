@@ -324,10 +324,13 @@ async function setTabs(tabs) {
         particles.id = 'particles-js'
         document.body.prepend(particles)
     }
-    if (localStorage.getItem('snow') == 'true') {
-        toggleSnow()
+    const snowButton = document.getElementById('snowButton')
+    if (isSnowSeason()) {
+        snowButton.style.display = ''
+        setSnowEnabled(localStorage.getItem('snow') == 'true')
     } else {
-        document.getElementById('snowButton').style.color = 'gray'
+        snowButton.style.display = 'none'
+        hide('particles-js')
     }
 }
 function loadClient(now) {
@@ -456,18 +459,27 @@ const placeClass = {
     3: 'third'
 }
 let globalSnowLoaded
-function toggleSnow() {
+function isSnowSeason(date = new Date()) {
+    const month = date.getMonth()
+    const day = date.getDate()
+    return (month == 11 && day >= 1) || (month == 0 && day <= 31)
+}
+function setSnowEnabled(enabled) {
     const snowButton = document.getElementById('snowButton')
-    if (localStorage.getItem('snow') == 'true') {
-        hide('particles-js')
-        localStorage.setItem('snow', 'false')
-        snowButton.style.color = 'gray'
-    } else {
+    if (enabled) {
         show('particles-js')
-        localStorage.setItem('snow', 'true')
         snowButton.style.color = 'white'
         if (!globalSnowLoaded) addJSFile('https://myekul.com/shared-assets/elements/snow.js')
+    } else {
+        hide('particles-js')
+        snowButton.style.color = 'gray'
     }
+}
+function toggleSnow() {
+    if (!isSnowSeason()) return
+    const enabled = localStorage.getItem('snow') != 'true'
+    localStorage.setItem('snow', enabled ? 'true' : 'false')
+    setSnowEnabled(enabled)
 }
 function toast(message, duration = 2000) {
     let toastContainer = document.getElementById('toastContainer')
